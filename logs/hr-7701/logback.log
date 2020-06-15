@@ -1,0 +1,1457 @@
+[2020-06-10 00:01:21:28210786][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 00:06:22:28510891][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 00:11:22:28810893][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 00:16:22:29110894][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 00:21:22:29410895][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 00:26:22:29710896][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 00:31:22:30010913][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 00:36:22:30310914][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 00:41:22:30610915][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 00:46:22:30910916][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 00:51:22:31210917][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 00:56:22:31510918][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 01:01:22:31810919][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 01:06:22:32110920][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 01:11:22:32410922][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 01:16:22:32710923][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 01:21:22:33010924][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 01:26:22:33310925][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 01:31:22:33610926][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 01:36:22:33910927][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 01:41:22:34210928][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 01:46:22:34510929][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 01:51:22:34810930][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 01:56:22:35110931][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 02:01:22:35410932][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 02:06:22:35710933][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 02:11:22:36010934][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 02:16:22:36310936][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 02:21:22:36610937][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 02:26:22:36910938][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 02:31:22:37210939][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 02:36:22:37510940][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 02:41:22:37810941][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 02:46:22:38110942][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 02:51:22:38410943][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 02:56:22:38710944][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 03:01:22:39010945][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 03:06:22:39310946][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 03:11:22:39610947][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 03:16:22:39910949][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 03:21:22:40210950][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 03:26:22:40510951][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 03:31:22:40810952][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 03:36:22:41110953][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 03:41:22:41410954][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 03:46:22:41710955][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 03:51:22:42010956][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 03:56:22:42310957][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 04:01:22:42610958][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 04:06:22:42910959][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 04:11:22:43210960][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 04:16:22:43510962][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 04:21:22:43810963][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 04:26:22:44110964][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 04:31:22:44410965][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 04:36:22:44710966][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 04:41:22:45010967][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 04:46:22:45310968][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 04:51:22:45610970][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 04:56:22:45910971][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 05:01:22:46210972][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 05:06:22:46510973][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 05:11:22:46810974][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 05:16:22:47110976][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 05:21:22:47410977][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 05:26:22:47710978][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 05:31:22:48010979][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 05:36:22:48310980][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 05:41:22:48610981][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 05:46:22:48910982][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 05:51:22:49210983][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 05:56:22:49510984][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 06:01:22:49810985][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 06:06:22:50110986][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 06:11:22:50410987][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 06:16:22:50710988][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 06:21:22:51010990][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 06:26:22:51310991][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 06:31:22:51610992][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 06:36:22:51910993][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 06:41:22:52210994][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 06:46:22:52510995][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 06:51:22:52810996][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 06:56:22:53110998][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 07:01:22:53410999][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 07:06:22:53711000][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 07:11:22:54011001][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 07:16:22:54311002][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 07:21:22:54611004][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 07:26:22:54911005][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 07:31:22:55211006][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 07:36:22:55511007][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 07:41:22:55811008][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 07:46:22:56111009][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 07:51:22:56411010][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 07:56:22:56711011][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 08:01:22:57011012][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 08:06:22:57311013][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 08:11:22:57611014][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 08:16:22:57911015][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 08:21:22:58211017][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 08:26:22:58511018][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 08:31:22:58811019][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 08:36:43:1308][main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ea6b0aef] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2020-06-10 08:36:44:1947][main] INFO  com.ibiz.api.ApiApplication - No active profile set, falling back to default profiles: default
+[2020-06-10 08:36:45:3052][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2020-06-10 08:36:45:3053][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[2020-06-10 08:36:45:3075][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14ms. Found 0 repository interfaces.
+[2020-06-10 08:36:45:3084][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2020-06-10 08:36:45:3085][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[2020-06-10 08:36:45:3101][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+[2020-06-10 08:36:45:3215][main] WARN  o.s.b.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[2020-06-10 08:36:45:3302][main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.ibiz.api.service, com.ibiz.api]' package. Please check your configuration.
+[2020-06-10 08:36:45:3368][main] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=8075fe36-4e59-3f72-ba1e-d9d50de9f5c9
+[2020-06-10 08:36:45:3648][main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$72e8ccf1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2020-06-10 08:36:45:3689][main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[2020-06-10 08:36:46:3721][main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2020-06-10 08:36:46:3925][main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ea6b0aef] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2020-06-10 08:36:46:4502][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7701 (http)
+[2020-06-10 08:36:46:4511][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7701"]
+[2020-06-10 08:36:46:4512][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2020-06-10 08:36:46:4512][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[2020-06-10 08:36:46:4704][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2020-06-10 08:36:46:4704][main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2745 ms
+[2020-06-10 08:36:46:4704][main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2745 ms
+[2020-06-10 08:36:47:4782][main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[2020-06-10 08:36:47:4782][main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[2020-06-10 08:36:47:4800][main] INFO  c.n.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@554188ac
+[2020-06-10 08:36:48:5909][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2020-06-10 08:36:48:6526][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2020-06-10 08:36:48:6574][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2020-06-10 08:36:48:6662][main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.8.Final}
+[2020-06-10 08:36:49:6866][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[2020-06-10 08:36:49:7133][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+[2020-06-10 08:36:49:7466][main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2020-06-10 08:36:49:7474][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2020-06-10 08:36:50:7898][main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2020-06-10 08:36:50:8062][main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[2020-06-10 08:36:50:8062][main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[2020-06-10 08:36:51:8828][main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+[2020-06-10 08:36:51:8866][main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 18 endpoint(s) beneath base path '/actuator'
+[2020-06-10 08:36:51:8896][main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+[2020-06-10 08:36:51:8938][main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+[2020-06-10 08:36:51:9028][main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+[2020-06-10 08:36:51:9029][main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+[2020-06-10 08:36:51:9177][main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+[2020-06-10 08:36:51:9178][main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+[2020-06-10 08:36:51:9339][main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 08:36:51:9635][main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+[2020-06-10 08:36:51:9635][main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+[2020-06-10 08:36:51:9635][main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+[2020-06-10 08:36:51:9635][main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+[2020-06-10 08:36:51:9635][main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+[2020-06-10 08:36:51:9635][main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+[2020-06-10 08:36:51:9635][main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+[2020-06-10 08:36:52:9905][main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+[2020-06-10 08:36:52:9907][main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+[2020-06-10 08:36:52:9909][main] INFO  c.n.d.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+[2020-06-10 08:36:52:9912][main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1591745812206 with initial instances count: 4
+[2020-06-10 08:36:52:9914][main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application IBIZ-HR with eureka with status UP
+[2020-06-10 08:36:52:9914][main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1591745812209, current=UP, previous=STARTING]
+[2020-06-10 08:36:52:9916][DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_IBIZ-HR/hr-7701: registering service...
+[2020-06-10 08:36:52:9931][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7701"]
+[2020-06-10 08:36:52:9946][DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_IBIZ-HR/hr-7701 - registration status: 204
+[2020-06-10 08:36:52:9953][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7701 (http) with context path ''
+[2020-06-10 08:36:52:9954][main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 7701
+[2020-06-10 08:36:52:10345][main] INFO  com.ibiz.api.ApiApplication - Started ApiApplication in 10.153 seconds (JVM running for 10.791)
+[2020-06-10 08:37:01:19343][http-nio-7701-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2020-06-10 08:37:01:19344][http-nio-7701-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2020-06-10 08:37:01:19344][http-nio-7701-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2020-06-10 08:37:01:19351][http-nio-7701-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+[2020-06-10 08:37:01:19351][http-nio-7701-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+[2020-06-10 08:37:01:19494][http-nio-7701-exec-1] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+[2020-06-10 08:37:01:19496][http-nio-7701-exec-1] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+[2020-06-10 08:37:02:20265][http-nio-7701-exec-1] INFO  c.i.a.c.CostCenterController - Call Controller : com.ibiz.api.controller.DeptChgHisController.selectDeptTree
+[2020-06-10 08:37:02:20283][http-nio-7701-exec-1] INFO  c.i.api.service.DeptChgHisService - call Service : com.ibiz.api.service.DeptChgHisService.selectDeptTree
+[2020-06-10 08:37:02:20283][http-nio-7701-exec-1] INFO  c.i.api.service.DeptChgHisService - Paramater : null
+[2020-06-10 08:37:02:20283][http-nio-7701-exec-1] INFO  c.i.api.service.DeptChgHisService - Paramater : DeptChgHisVO [deptId=null, deptNm=null, hgrkDeptId=null, hgrkDeptNm=null, deptSortSeqc=null, deptLvlCd=null, deptLvlCdNm=null, hddpEmpId=null, hddpEmpNm=null, sellOcrYn=null, orgCrtDate=null, orgCloseDate=null, avlStartDate=null, avlEndDate=null, ofpsCdNm=null, ofpsCd=null, stadDate=20200610, valChk=null, chgEmpId=null, listCnt=null, pageSize=null, pageNumber=null, rowNumber=null, depthLevel=null, orgDstCd=null, orgDstCdNm=null, standardDate=null, isAddRecord=null, isCreating=null]
+[2020-06-10 08:37:02:20471][http-nio-7701-exec-2] INFO  c.i.a.c.CostCenterController - Call Controller : com.ibiz.api.controller.DeptChgHisController.selectDeptParentSelectList
+[2020-06-10 08:37:02:20474][http-nio-7701-exec-2] INFO  c.i.api.service.DeptChgHisService - call Service : com.ibiz.api.service.DeptChgHisService.selectDeptParentSelectList
+[2020-06-10 08:37:02:20475][http-nio-7701-exec-2] INFO  c.i.api.service.DeptChgHisService - Paramater : null
+[2020-06-10 08:37:02:20475][http-nio-7701-exec-2] INFO  c.i.api.service.DeptChgHisService - Paramater : DeptChgHisVO [deptId=null, deptNm=null, hgrkDeptId=null, hgrkDeptNm=null, deptSortSeqc=null, deptLvlCd=null, deptLvlCdNm=null, hddpEmpId=null, hddpEmpNm=null, sellOcrYn=null, orgCrtDate=null, orgCloseDate=null, avlStartDate=20200610, avlEndDate=null, ofpsCdNm=null, ofpsCd=null, stadDate=null, valChk=null, chgEmpId=null, listCnt=null, pageSize=null, pageNumber=null, rowNumber=null, depthLevel=null, orgDstCd=null, orgDstCdNm=null, standardDate=null, isAddRecord=null, isCreating=null]
+[2020-06-10 08:37:02:20526][http-nio-7701-exec-3] INFO  c.i.a.c.CostCenterController - Call Controller : com.ibiz.api.controller.DeptChgHisController.selectDeptParentSelectList
+[2020-06-10 08:37:02:20528][http-nio-7701-exec-3] INFO  c.i.api.service.DeptChgHisService - call Service : com.ibiz.api.service.DeptChgHisService.selectDeptParentSelectList
+[2020-06-10 08:37:02:20528][http-nio-7701-exec-3] INFO  c.i.api.service.DeptChgHisService - Paramater : null
+[2020-06-10 08:37:02:20528][http-nio-7701-exec-3] INFO  c.i.api.service.DeptChgHisService - Paramater : DeptChgHisVO [deptId=null, deptNm=null, hgrkDeptId=null, hgrkDeptNm=null, deptSortSeqc=null, deptLvlCd=null, deptLvlCdNm=null, hddpEmpId=null, hddpEmpNm=null, sellOcrYn=null, orgCrtDate=null, orgCloseDate=null, avlStartDate=20200610, avlEndDate=null, ofpsCdNm=null, ofpsCd=null, stadDate=null, valChk=null, chgEmpId=null, listCnt=null, pageSize=null, pageNumber=null, rowNumber=null, depthLevel=null, orgDstCd=null, orgDstCdNm=null, standardDate=null, isAddRecord=null, isCreating=null]
+[2020-06-10 08:37:13:30973][http-nio-7701-exec-4] INFO  c.i.a.c.CostCenterController - Call Controller : com.ibiz.api.controller.DeptChgHisController.updateDept
+[2020-06-10 08:37:13:30976][http-nio-7701-exec-4] INFO  c.i.api.service.DeptChgHisService - call Service : com.ibiz.api.service.DeptChgHisService.updateDept
+[2020-06-10 08:37:13:30976][http-nio-7701-exec-4] INFO  c.i.api.service.DeptChgHisService - Paramater : null
+[2020-06-10 08:37:13:30976][http-nio-7701-exec-4] INFO  c.i.api.service.DeptChgHisService - Paramater : DeptChgHisVO [deptId=1005, deptNm=1005, hgrkDeptId=8100, hgrkDeptNm=null, deptSortSeqc=null, deptLvlCd=0, deptLvlCdNm=null, hddpEmpId=null, hddpEmpNm=null, sellOcrYn=N, orgCrtDate=20200610, orgCloseDate=99991231, avlStartDate=20200610, avlEndDate=99991231, ofpsCdNm=null, ofpsCd=null, stadDate=null, valChk=null, chgEmpId=374099, listCnt=null, pageSize=null, pageNumber=null, rowNumber=null, depthLevel=null, orgDstCd=M, orgDstCdNm=null, standardDate=null, isAddRecord=, isCreating=true]
+[2020-06-10 08:37:18:36134][http-nio-7701-exec-5] INFO  c.i.a.c.CostCenterController - Call Controller : com.ibiz.api.controller.DeptChgHisController.updateDept
+[2020-06-10 08:37:18:36136][http-nio-7701-exec-5] INFO  c.i.api.service.DeptChgHisService - call Service : com.ibiz.api.service.DeptChgHisService.updateDept
+[2020-06-10 08:37:18:36136][http-nio-7701-exec-5] INFO  c.i.api.service.DeptChgHisService - Paramater : null
+[2020-06-10 08:37:18:36136][http-nio-7701-exec-5] INFO  c.i.api.service.DeptChgHisService - Paramater : DeptChgHisVO [deptId=1005, deptNm=1005, hgrkDeptId=8100, hgrkDeptNm=null, deptSortSeqc=null, deptLvlCd=0, deptLvlCdNm=null, hddpEmpId=null, hddpEmpNm=null, sellOcrYn=N, orgCrtDate=20200610, orgCloseDate=99991231, avlStartDate=20200610, avlEndDate=99991231, ofpsCdNm=null, ofpsCd=null, stadDate=null, valChk=null, chgEmpId=374099, listCnt=null, pageSize=null, pageNumber=null, rowNumber=null, depthLevel=null, orgDstCd=M, orgDstCdNm=null, standardDate=null, isAddRecord=, isCreating=true]
+[2020-06-10 08:43:31:1157][main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e65e5127] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2020-06-10 08:43:31:1673][main] INFO  com.ibiz.api.ApiApplication - No active profile set, falling back to default profiles: default
+[2020-06-10 08:43:32:2378][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2020-06-10 08:43:32:2379][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[2020-06-10 08:43:32:2401][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
+[2020-06-10 08:43:32:2411][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2020-06-10 08:43:32:2412][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[2020-06-10 08:43:32:2426][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
+[2020-06-10 08:43:32:2521][main] WARN  o.s.b.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[2020-06-10 08:43:32:2597][main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.ibiz.api.service, com.ibiz.api]' package. Please check your configuration.
+[2020-06-10 08:43:32:2659][main] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=8075fe36-4e59-3f72-ba1e-d9d50de9f5c9
+[2020-06-10 08:43:32:2910][main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$6edc1329] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2020-06-10 08:43:32:2955][main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[2020-06-10 08:43:32:2972][main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2020-06-10 08:43:32:3132][main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e65e5127] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2020-06-10 08:43:33:3678][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7701 (http)
+[2020-06-10 08:43:33:3686][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7701"]
+[2020-06-10 08:43:33:3687][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2020-06-10 08:43:33:3687][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[2020-06-10 08:43:33:3862][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2020-06-10 08:43:33:3862][main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2178 ms
+[2020-06-10 08:43:33:3862][main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2178 ms
+[2020-06-10 08:43:33:3942][main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[2020-06-10 08:43:33:3943][main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[2020-06-10 08:43:33:3957][main] INFO  c.n.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4f2d014a
+[2020-06-10 08:43:34:5028][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2020-06-10 08:43:35:5581][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2020-06-10 08:43:35:5626][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2020-06-10 08:43:35:5687][main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.8.Final}
+[2020-06-10 08:43:35:5822][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[2020-06-10 08:43:35:6049][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+[2020-06-10 08:43:36:6343][main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2020-06-10 08:43:36:6350][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2020-06-10 08:43:36:6717][main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2020-06-10 08:43:36:6911][main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[2020-06-10 08:43:36:6912][main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[2020-06-10 08:43:37:7682][main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+[2020-06-10 08:43:37:7725][main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 18 endpoint(s) beneath base path '/actuator'
+[2020-06-10 08:43:37:7769][main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+[2020-06-10 08:43:37:7808][main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+[2020-06-10 08:43:37:7896][main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+[2020-06-10 08:43:37:7896][main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+[2020-06-10 08:43:37:8012][main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+[2020-06-10 08:43:37:8012][main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+[2020-06-10 08:43:38:8173][main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 08:43:38:8463][main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+[2020-06-10 08:43:38:8463][main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+[2020-06-10 08:43:38:8463][main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+[2020-06-10 08:43:38:8463][main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+[2020-06-10 08:43:38:8463][main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+[2020-06-10 08:43:38:8463][main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+[2020-06-10 08:43:38:8463][main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+[2020-06-10 08:43:38:8621][main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+[2020-06-10 08:43:38:8623][main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+[2020-06-10 08:43:38:8625][main] INFO  c.n.d.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+[2020-06-10 08:43:38:8628][main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1591746218471 with initial instances count: 4
+[2020-06-10 08:43:38:8631][main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application IBIZ-HR with eureka with status UP
+[2020-06-10 08:43:38:8631][main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1591746218475, current=UP, previous=STARTING]
+[2020-06-10 08:43:38:8633][DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_IBIZ-HR/hr-7701: registering service...
+[2020-06-10 08:43:38:8649][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7701"]
+[2020-06-10 08:43:38:8672][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7701 (http) with context path ''
+[2020-06-10 08:43:38:8672][main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 7701
+[2020-06-10 08:43:38:8682][DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_IBIZ-HR/hr-7701 - registration status: 204
+[2020-06-10 08:43:38:9144][main] INFO  com.ibiz.api.ApiApplication - Started ApiApplication in 8.967 seconds (JVM running for 9.573)
+[2020-06-10 08:43:39:9534][http-nio-7701-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2020-06-10 08:43:39:9534][http-nio-7701-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2020-06-10 08:43:39:9534][http-nio-7701-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2020-06-10 08:43:39:9542][http-nio-7701-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+[2020-06-10 08:43:39:9542][http-nio-7701-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+[2020-06-10 08:43:39:9643][http-nio-7701-exec-1] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+[2020-06-10 08:43:39:9645][http-nio-7701-exec-1] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+[2020-06-10 08:43:40:10387][http-nio-7701-exec-1] INFO  c.i.a.c.CostCenterController - Call Controller : com.ibiz.api.controller.DeptChgHisController.selectDeptTree
+[2020-06-10 08:43:40:10408][http-nio-7701-exec-1] INFO  c.i.api.service.DeptChgHisService - call Service : com.ibiz.api.service.DeptChgHisService.selectDeptTree
+[2020-06-10 08:43:40:10408][http-nio-7701-exec-1] INFO  c.i.api.service.DeptChgHisService - Paramater : null
+[2020-06-10 08:43:40:10408][http-nio-7701-exec-1] INFO  c.i.api.service.DeptChgHisService - Paramater : DeptChgHisVO [deptId=null, deptNm=null, hgrkDeptId=null, hgrkDeptNm=null, deptSortSeqc=null, deptLvlCd=null, deptLvlCdNm=null, hddpEmpId=null, hddpEmpNm=null, sellOcrYn=null, orgCrtDate=null, orgCloseDate=null, avlStartDate=null, avlEndDate=null, ofpsCdNm=null, ofpsCd=null, stadDate=20200610, valChk=null, chgEmpId=null, listCnt=null, pageSize=null, pageNumber=null, rowNumber=null, depthLevel=null, orgDstCd=null, orgDstCdNm=null, standardDate=null, isAddRecord=null, isCreating=null]
+[2020-06-10 08:43:40:10586][http-nio-7701-exec-2] INFO  c.i.a.c.CostCenterController - Call Controller : com.ibiz.api.controller.DeptChgHisController.selectDeptParentSelectList
+[2020-06-10 08:43:40:10589][http-nio-7701-exec-2] INFO  c.i.api.service.DeptChgHisService - call Service : com.ibiz.api.service.DeptChgHisService.selectDeptParentSelectList
+[2020-06-10 08:43:40:10589][http-nio-7701-exec-2] INFO  c.i.api.service.DeptChgHisService - Paramater : null
+[2020-06-10 08:43:40:10589][http-nio-7701-exec-2] INFO  c.i.api.service.DeptChgHisService - Paramater : DeptChgHisVO [deptId=null, deptNm=null, hgrkDeptId=null, hgrkDeptNm=null, deptSortSeqc=null, deptLvlCd=null, deptLvlCdNm=null, hddpEmpId=null, hddpEmpNm=null, sellOcrYn=null, orgCrtDate=null, orgCloseDate=null, avlStartDate=20200610, avlEndDate=null, ofpsCdNm=null, ofpsCd=null, stadDate=null, valChk=null, chgEmpId=null, listCnt=null, pageSize=null, pageNumber=null, rowNumber=null, depthLevel=null, orgDstCd=null, orgDstCdNm=null, standardDate=null, isAddRecord=null, isCreating=null]
+[2020-06-10 08:43:40:10640][http-nio-7701-exec-3] INFO  c.i.a.c.CostCenterController - Call Controller : com.ibiz.api.controller.DeptChgHisController.selectDeptParentSelectList
+[2020-06-10 08:43:40:10642][http-nio-7701-exec-3] INFO  c.i.api.service.DeptChgHisService - call Service : com.ibiz.api.service.DeptChgHisService.selectDeptParentSelectList
+[2020-06-10 08:43:40:10642][http-nio-7701-exec-3] INFO  c.i.api.service.DeptChgHisService - Paramater : null
+[2020-06-10 08:43:40:10642][http-nio-7701-exec-3] INFO  c.i.api.service.DeptChgHisService - Paramater : DeptChgHisVO [deptId=null, deptNm=null, hgrkDeptId=null, hgrkDeptNm=null, deptSortSeqc=null, deptLvlCd=null, deptLvlCdNm=null, hddpEmpId=null, hddpEmpNm=null, sellOcrYn=null, orgCrtDate=null, orgCloseDate=null, avlStartDate=20200610, avlEndDate=null, ofpsCdNm=null, ofpsCd=null, stadDate=null, valChk=null, chgEmpId=null, listCnt=null, pageSize=null, pageNumber=null, rowNumber=null, depthLevel=null, orgDstCd=null, orgDstCdNm=null, standardDate=null, isAddRecord=null, isCreating=null]
+[2020-06-10 08:43:53:23424][http-nio-7701-exec-4] INFO  c.i.a.c.CostCenterController - Call Controller : com.ibiz.api.controller.DeptChgHisController.updateDept
+[2020-06-10 08:43:53:23426][http-nio-7701-exec-4] INFO  c.i.api.service.DeptChgHisService - call Service : com.ibiz.api.service.DeptChgHisService.updateDept
+[2020-06-10 08:43:53:23426][http-nio-7701-exec-4] INFO  c.i.api.service.DeptChgHisService - Paramater : null
+[2020-06-10 08:43:53:23426][http-nio-7701-exec-4] INFO  c.i.api.service.DeptChgHisService - Paramater : DeptChgHisVO [deptId=1005, deptNm=1005, hgrkDeptId=8100, hgrkDeptNm=null, deptSortSeqc=null, deptLvlCd=1, deptLvlCdNm=null, hddpEmpId=null, hddpEmpNm=null, sellOcrYn=N, orgCrtDate=20200610, orgCloseDate=99991231, avlStartDate=20200610, avlEndDate=99991231, ofpsCdNm=null, ofpsCd=null, stadDate=null, valChk=null, chgEmpId=374099, listCnt=null, pageSize=null, pageNumber=null, rowNumber=null, depthLevel=null, orgDstCd=M, orgDstCdNm=null, standardDate=null, isAddRecord=, isCreating=true]
+[2020-06-10 08:43:53:23440][http-nio-7701-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Failure in @ExceptionHandler com.ibiz.api.exception.GlobalExceptionHandler#handleException(Exception)
+java.lang.ClassCastException: com.ibiz.api.exception.CodeOverlapException cannot be cast to org.apache.logging.log4j.util.Supplier
+	at com.ibiz.api.exception.GlobalExceptionHandler.handleException(GlobalExceptionHandler.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:407)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:61)
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:141)
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80)
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1300)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1111)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[2020-06-10 08:43:53:23440][http-nio-7701-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Failure in @ExceptionHandler com.ibiz.api.exception.GlobalExceptionHandler#handleException(Exception)
+java.lang.ClassCastException: com.ibiz.api.exception.CodeOverlapException cannot be cast to org.apache.logging.log4j.util.Supplier
+	at com.ibiz.api.exception.GlobalExceptionHandler.handleException(GlobalExceptionHandler.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:407)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:61)
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:141)
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80)
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1300)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1111)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[2020-06-10 08:43:53:23444][http-nio-7701-exec-4] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.ibiz.api.exception.CodeOverlapException: 조직] with root cause
+com.ibiz.api.exception.CodeOverlapException: 조직
+	at com.ibiz.api.service.DeptChgHisService.updateDept(DeptChgHisService.java:159)
+	at com.ibiz.api.service.DeptChgHisService$$FastClassBySpringCGLIB$$ccc4457c.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:366)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:99)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.ibiz.api.service.DeptChgHisService$$EnhancerBySpringCGLIB$$9957b350.updateDept(<generated>)
+	at com.ibiz.api.controller.DeptChgHisController.updateDept(DeptChgHisController.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[2020-06-10 08:43:58:28911][http-nio-7701-exec-5] INFO  c.i.a.c.CostCenterController - Call Controller : com.ibiz.api.controller.DeptChgHisController.selectDeptTree
+[2020-06-10 08:43:58:28913][http-nio-7701-exec-5] INFO  c.i.api.service.DeptChgHisService - call Service : com.ibiz.api.service.DeptChgHisService.selectDeptTree
+[2020-06-10 08:43:58:28913][http-nio-7701-exec-5] INFO  c.i.api.service.DeptChgHisService - Paramater : null
+[2020-06-10 08:43:58:28913][http-nio-7701-exec-5] INFO  c.i.api.service.DeptChgHisService - Paramater : DeptChgHisVO [deptId=null, deptNm=null, hgrkDeptId=null, hgrkDeptNm=null, deptSortSeqc=null, deptLvlCd=null, deptLvlCdNm=null, hddpEmpId=null, hddpEmpNm=null, sellOcrYn=null, orgCrtDate=null, orgCloseDate=null, avlStartDate=null, avlEndDate=null, ofpsCdNm=null, ofpsCd=null, stadDate=20200610, valChk=null, chgEmpId=null, listCnt=null, pageSize=null, pageNumber=null, rowNumber=null, depthLevel=null, orgDstCd=null, orgDstCdNm=null, standardDate=null, isAddRecord=null, isCreating=null]
+[2020-06-10 08:43:58:29023][http-nio-7701-exec-6] INFO  c.i.a.c.CostCenterController - Call Controller : com.ibiz.api.controller.DeptChgHisController.selectDeptParentSelectList
+[2020-06-10 08:43:58:29025][http-nio-7701-exec-6] INFO  c.i.api.service.DeptChgHisService - call Service : com.ibiz.api.service.DeptChgHisService.selectDeptParentSelectList
+[2020-06-10 08:43:58:29025][http-nio-7701-exec-6] INFO  c.i.api.service.DeptChgHisService - Paramater : null
+[2020-06-10 08:43:58:29026][http-nio-7701-exec-6] INFO  c.i.api.service.DeptChgHisService - Paramater : DeptChgHisVO [deptId=null, deptNm=null, hgrkDeptId=null, hgrkDeptNm=null, deptSortSeqc=null, deptLvlCd=null, deptLvlCdNm=null, hddpEmpId=null, hddpEmpNm=null, sellOcrYn=null, orgCrtDate=null, orgCloseDate=null, avlStartDate=20200610, avlEndDate=null, ofpsCdNm=null, ofpsCd=null, stadDate=null, valChk=null, chgEmpId=null, listCnt=null, pageSize=null, pageNumber=null, rowNumber=null, depthLevel=null, orgDstCd=null, orgDstCdNm=null, standardDate=null, isAddRecord=null, isCreating=null]
+[2020-06-10 08:43:58:29094][http-nio-7701-exec-7] INFO  c.i.a.c.CostCenterController - Call Controller : com.ibiz.api.controller.DeptChgHisController.selectDeptParentSelectList
+[2020-06-10 08:43:58:29096][http-nio-7701-exec-7] INFO  c.i.api.service.DeptChgHisService - call Service : com.ibiz.api.service.DeptChgHisService.selectDeptParentSelectList
+[2020-06-10 08:43:58:29096][http-nio-7701-exec-7] INFO  c.i.api.service.DeptChgHisService - Paramater : null
+[2020-06-10 08:43:58:29096][http-nio-7701-exec-7] INFO  c.i.api.service.DeptChgHisService - Paramater : DeptChgHisVO [deptId=null, deptNm=null, hgrkDeptId=null, hgrkDeptNm=null, deptSortSeqc=null, deptLvlCd=null, deptLvlCdNm=null, hddpEmpId=null, hddpEmpNm=null, sellOcrYn=null, orgCrtDate=null, orgCloseDate=null, avlStartDate=20200610, avlEndDate=null, ofpsCdNm=null, ofpsCd=null, stadDate=null, valChk=null, chgEmpId=null, listCnt=null, pageSize=null, pageNumber=null, rowNumber=null, depthLevel=null, orgDstCd=null, orgDstCdNm=null, standardDate=null, isAddRecord=null, isCreating=null]
+[2020-06-10 08:44:05:35448][http-nio-7701-exec-8] INFO  c.i.a.c.CostCenterController - Call Controller : com.ibiz.api.controller.DeptChgHisController.updateDept
+[2020-06-10 08:44:05:35452][http-nio-7701-exec-8] INFO  c.i.api.service.DeptChgHisService - call Service : com.ibiz.api.service.DeptChgHisService.updateDept
+[2020-06-10 08:44:05:35452][http-nio-7701-exec-8] INFO  c.i.api.service.DeptChgHisService - Paramater : null
+[2020-06-10 08:44:05:35452][http-nio-7701-exec-8] INFO  c.i.api.service.DeptChgHisService - Paramater : DeptChgHisVO [deptId=1005, deptNm=1005, hgrkDeptId=8100, hgrkDeptNm=null, deptSortSeqc=null, deptLvlCd=0, deptLvlCdNm=null, hddpEmpId=null, hddpEmpNm=null, sellOcrYn=N, orgCrtDate=20200610, orgCloseDate=99991231, avlStartDate=20200610, avlEndDate=99991231, ofpsCdNm=null, ofpsCd=null, stadDate=null, valChk=null, chgEmpId=374099, listCnt=null, pageSize=null, pageNumber=null, rowNumber=null, depthLevel=null, orgDstCd=M, orgDstCdNm=null, standardDate=null, isAddRecord=, isCreating=true]
+[2020-06-10 08:44:05:35461][http-nio-7701-exec-8] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Failure in @ExceptionHandler com.ibiz.api.exception.GlobalExceptionHandler#handleException(Exception)
+java.lang.ClassCastException: com.ibiz.api.exception.CodeOverlapException cannot be cast to org.apache.logging.log4j.util.Supplier
+	at com.ibiz.api.exception.GlobalExceptionHandler.handleException(GlobalExceptionHandler.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:407)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:61)
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:141)
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80)
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1300)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1111)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[2020-06-10 08:44:05:35461][http-nio-7701-exec-8] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Failure in @ExceptionHandler com.ibiz.api.exception.GlobalExceptionHandler#handleException(Exception)
+java.lang.ClassCastException: com.ibiz.api.exception.CodeOverlapException cannot be cast to org.apache.logging.log4j.util.Supplier
+	at com.ibiz.api.exception.GlobalExceptionHandler.handleException(GlobalExceptionHandler.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:407)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:61)
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:141)
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80)
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1300)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1111)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[2020-06-10 08:44:05:35463][http-nio-7701-exec-8] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.ibiz.api.exception.CodeOverlapException: 조직] with root cause
+com.ibiz.api.exception.CodeOverlapException: 조직
+	at com.ibiz.api.service.DeptChgHisService.updateDept(DeptChgHisService.java:159)
+	at com.ibiz.api.service.DeptChgHisService$$FastClassBySpringCGLIB$$ccc4457c.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:366)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:99)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.ibiz.api.service.DeptChgHisService$$EnhancerBySpringCGLIB$$9957b350.updateDept(<generated>)
+	at com.ibiz.api.controller.DeptChgHisController.updateDept(DeptChgHisController.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[2020-06-10 08:44:07:38129][http-nio-7701-exec-9] INFO  c.i.a.c.CostCenterController - Call Controller : com.ibiz.api.controller.DeptChgHisController.updateDept
+[2020-06-10 08:44:07:38131][http-nio-7701-exec-9] INFO  c.i.api.service.DeptChgHisService - call Service : com.ibiz.api.service.DeptChgHisService.updateDept
+[2020-06-10 08:44:07:38132][http-nio-7701-exec-9] INFO  c.i.api.service.DeptChgHisService - Paramater : null
+[2020-06-10 08:44:07:38132][http-nio-7701-exec-9] INFO  c.i.api.service.DeptChgHisService - Paramater : DeptChgHisVO [deptId=1005, deptNm=1005, hgrkDeptId=8100, hgrkDeptNm=null, deptSortSeqc=null, deptLvlCd=2, deptLvlCdNm=null, hddpEmpId=null, hddpEmpNm=null, sellOcrYn=N, orgCrtDate=20200610, orgCloseDate=99991231, avlStartDate=20200610, avlEndDate=99991231, ofpsCdNm=null, ofpsCd=null, stadDate=null, valChk=null, chgEmpId=374099, listCnt=null, pageSize=null, pageNumber=null, rowNumber=null, depthLevel=null, orgDstCd=M, orgDstCdNm=null, standardDate=null, isAddRecord=, isCreating=true]
+[2020-06-10 08:44:07:38139][http-nio-7701-exec-9] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Failure in @ExceptionHandler com.ibiz.api.exception.GlobalExceptionHandler#handleException(Exception)
+java.lang.ClassCastException: com.ibiz.api.exception.CodeOverlapException cannot be cast to org.apache.logging.log4j.util.Supplier
+	at com.ibiz.api.exception.GlobalExceptionHandler.handleException(GlobalExceptionHandler.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:407)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:61)
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:141)
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80)
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1300)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1111)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[2020-06-10 08:44:07:38139][http-nio-7701-exec-9] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Failure in @ExceptionHandler com.ibiz.api.exception.GlobalExceptionHandler#handleException(Exception)
+java.lang.ClassCastException: com.ibiz.api.exception.CodeOverlapException cannot be cast to org.apache.logging.log4j.util.Supplier
+	at com.ibiz.api.exception.GlobalExceptionHandler.handleException(GlobalExceptionHandler.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:407)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:61)
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:141)
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80)
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1300)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1111)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[2020-06-10 08:44:07:38141][http-nio-7701-exec-9] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.ibiz.api.exception.CodeOverlapException: 조직] with root cause
+com.ibiz.api.exception.CodeOverlapException: 조직
+	at com.ibiz.api.service.DeptChgHisService.updateDept(DeptChgHisService.java:159)
+	at com.ibiz.api.service.DeptChgHisService$$FastClassBySpringCGLIB$$ccc4457c.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:366)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:99)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.ibiz.api.service.DeptChgHisService$$EnhancerBySpringCGLIB$$9957b350.updateDept(<generated>)
+	at com.ibiz.api.controller.DeptChgHisController.updateDept(DeptChgHisController.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[2020-06-10 08:44:10:40793][http-nio-7701-exec-10] INFO  c.i.a.c.CostCenterController - Call Controller : com.ibiz.api.controller.DeptChgHisController.updateDept
+[2020-06-10 08:44:10:40796][http-nio-7701-exec-10] INFO  c.i.api.service.DeptChgHisService - call Service : com.ibiz.api.service.DeptChgHisService.updateDept
+[2020-06-10 08:44:10:40797][http-nio-7701-exec-10] INFO  c.i.api.service.DeptChgHisService - Paramater : null
+[2020-06-10 08:44:10:40797][http-nio-7701-exec-10] INFO  c.i.api.service.DeptChgHisService - Paramater : DeptChgHisVO [deptId=1005, deptNm=1005, hgrkDeptId=8100, hgrkDeptNm=null, deptSortSeqc=null, deptLvlCd=5, deptLvlCdNm=null, hddpEmpId=null, hddpEmpNm=null, sellOcrYn=N, orgCrtDate=20200610, orgCloseDate=99991231, avlStartDate=20200610, avlEndDate=99991231, ofpsCdNm=null, ofpsCd=null, stadDate=null, valChk=null, chgEmpId=374099, listCnt=null, pageSize=null, pageNumber=null, rowNumber=null, depthLevel=null, orgDstCd=M, orgDstCdNm=null, standardDate=null, isAddRecord=, isCreating=true]
+[2020-06-10 08:44:10:40805][http-nio-7701-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Failure in @ExceptionHandler com.ibiz.api.exception.GlobalExceptionHandler#handleException(Exception)
+java.lang.ClassCastException: com.ibiz.api.exception.CodeOverlapException cannot be cast to org.apache.logging.log4j.util.Supplier
+	at com.ibiz.api.exception.GlobalExceptionHandler.handleException(GlobalExceptionHandler.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:407)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:61)
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:141)
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80)
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1300)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1111)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[2020-06-10 08:44:10:40805][http-nio-7701-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Failure in @ExceptionHandler com.ibiz.api.exception.GlobalExceptionHandler#handleException(Exception)
+java.lang.ClassCastException: com.ibiz.api.exception.CodeOverlapException cannot be cast to org.apache.logging.log4j.util.Supplier
+	at com.ibiz.api.exception.GlobalExceptionHandler.handleException(GlobalExceptionHandler.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:407)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:61)
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:141)
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80)
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1300)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1111)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[2020-06-10 08:44:10:40807][http-nio-7701-exec-10] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.ibiz.api.exception.CodeOverlapException: 조직] with root cause
+com.ibiz.api.exception.CodeOverlapException: 조직
+	at com.ibiz.api.service.DeptChgHisService.updateDept(DeptChgHisService.java:159)
+	at com.ibiz.api.service.DeptChgHisService$$FastClassBySpringCGLIB$$ccc4457c.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:366)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:99)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.ibiz.api.service.DeptChgHisService$$EnhancerBySpringCGLIB$$9957b350.updateDept(<generated>)
+	at com.ibiz.api.controller.DeptChgHisController.updateDept(DeptChgHisController.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[2020-06-10 08:44:12:42473][http-nio-7701-exec-1] INFO  c.i.a.c.CostCenterController - Call Controller : com.ibiz.api.controller.DeptChgHisController.selectDeptHisList
+[2020-06-10 08:44:12:42475][http-nio-7701-exec-1] INFO  c.i.api.service.DeptChgHisService - call Service : com.ibiz.api.service.DeptChgHisService.selectDeptHisList
+[2020-06-10 08:44:12:42476][http-nio-7701-exec-1] INFO  c.i.api.service.DeptChgHisService - Paramater : null
+[2020-06-10 08:44:12:42476][http-nio-7701-exec-1] INFO  c.i.api.service.DeptChgHisService - Paramater : DeptChgHisVO [deptId=1050, deptNm=null, hgrkDeptId=null, hgrkDeptNm=null, deptSortSeqc=null, deptLvlCd=null, deptLvlCdNm=null, hddpEmpId=null, hddpEmpNm=null, sellOcrYn=null, orgCrtDate=null, orgCloseDate=null, avlStartDate=null, avlEndDate=null, ofpsCdNm=null, ofpsCd=null, stadDate=null, valChk=null, chgEmpId=null, listCnt=null, pageSize=10, pageNumber=1, rowNumber=null, depthLevel=null, orgDstCd=null, orgDstCdNm=null, standardDate=null, isAddRecord=null, isCreating=null]
+[2020-06-10 08:44:12:42509][http-nio-7701-exec-2] INFO  c.i.a.c.CostCenterController - Call Controller : com.ibiz.api.controller.DeptChgHisController.selectLastDeptHisList
+[2020-06-10 08:44:12:42511][http-nio-7701-exec-2] INFO  c.i.api.service.DeptChgHisService - call Service : com.ibiz.api.service.DeptChgHisService.selectLastDeptHisList
+[2020-06-10 08:44:12:42511][http-nio-7701-exec-2] INFO  c.i.api.service.DeptChgHisService - Paramater : null
+[2020-06-10 08:44:12:42511][http-nio-7701-exec-2] INFO  c.i.api.service.DeptChgHisService - Paramater : DeptChgHisVO [deptId=1050, deptNm=null, hgrkDeptId=null, hgrkDeptNm=null, deptSortSeqc=null, deptLvlCd=null, deptLvlCdNm=null, hddpEmpId=null, hddpEmpNm=null, sellOcrYn=null, orgCrtDate=null, orgCloseDate=null, avlStartDate=null, avlEndDate=null, ofpsCdNm=null, ofpsCd=null, stadDate=null, valChk=null, chgEmpId=null, listCnt=null, pageSize=null, pageNumber=null, rowNumber=null, depthLevel=null, orgDstCd=null, orgDstCdNm=null, standardDate=null, isAddRecord=null, isCreating=null]
+[2020-06-10 08:44:12:42582][http-nio-7701-exec-3] INFO  c.i.a.c.CostCenterController - Call Controller : com.ibiz.api.controller.DeptChgHisController.selectDeptParentComboList
+[2020-06-10 08:44:12:42583][http-nio-7701-exec-3] INFO  c.i.api.service.DeptChgHisService - call Service : com.ibiz.api.service.DeptChgHisService.selectDeptParentComboList
+[2020-06-10 08:44:12:42583][http-nio-7701-exec-3] INFO  c.i.api.service.DeptChgHisService - Paramater : null
+[2020-06-10 08:44:12:42583][http-nio-7701-exec-3] INFO  c.i.api.service.DeptChgHisService - Paramater : DeptChgHisVO [deptId=null, deptNm=null, hgrkDeptId=null, hgrkDeptNm=null, deptSortSeqc=null, deptLvlCd=null, deptLvlCdNm=null, hddpEmpId=null, hddpEmpNm=null, sellOcrYn=null, orgCrtDate=null, orgCloseDate=null, avlStartDate=20200609, avlEndDate=99991231, ofpsCdNm=null, ofpsCd=null, stadDate=null, valChk=null, chgEmpId=null, listCnt=null, pageSize=null, pageNumber=null, rowNumber=null, depthLevel=null, orgDstCd=null, orgDstCdNm=null, standardDate=null, isAddRecord=null, isCreating=null]
+[2020-06-10 08:44:13:43315][http-nio-7701-exec-4] INFO  c.i.a.c.CostCenterController - Call Controller : com.ibiz.api.controller.DeptChgHisController.selectDeptHisList
+[2020-06-10 08:44:13:43318][http-nio-7701-exec-4] INFO  c.i.api.service.DeptChgHisService - call Service : com.ibiz.api.service.DeptChgHisService.selectDeptHisList
+[2020-06-10 08:44:13:43318][http-nio-7701-exec-4] INFO  c.i.api.service.DeptChgHisService - Paramater : null
+[2020-06-10 08:44:13:43318][http-nio-7701-exec-4] INFO  c.i.api.service.DeptChgHisService - Paramater : DeptChgHisVO [deptId=1005, deptNm=null, hgrkDeptId=null, hgrkDeptNm=null, deptSortSeqc=null, deptLvlCd=null, deptLvlCdNm=null, hddpEmpId=334028, hddpEmpNm=null, sellOcrYn=null, orgCrtDate=null, orgCloseDate=null, avlStartDate=null, avlEndDate=null, ofpsCdNm=null, ofpsCd=null, stadDate=null, valChk=null, chgEmpId=null, listCnt=null, pageSize=10, pageNumber=1, rowNumber=null, depthLevel=null, orgDstCd=null, orgDstCdNm=null, standardDate=null, isAddRecord=null, isCreating=null]
+[2020-06-10 08:44:13:43335][http-nio-7701-exec-5] INFO  c.i.a.c.CostCenterController - Call Controller : com.ibiz.api.controller.DeptChgHisController.selectLastDeptHisList
+[2020-06-10 08:44:13:43336][http-nio-7701-exec-5] INFO  c.i.api.service.DeptChgHisService - call Service : com.ibiz.api.service.DeptChgHisService.selectLastDeptHisList
+[2020-06-10 08:44:13:43336][http-nio-7701-exec-5] INFO  c.i.api.service.DeptChgHisService - Paramater : null
+[2020-06-10 08:44:13:43336][http-nio-7701-exec-5] INFO  c.i.api.service.DeptChgHisService - Paramater : DeptChgHisVO [deptId=1005, deptNm=null, hgrkDeptId=null, hgrkDeptNm=null, deptSortSeqc=null, deptLvlCd=null, deptLvlCdNm=null, hddpEmpId=null, hddpEmpNm=null, sellOcrYn=null, orgCrtDate=null, orgCloseDate=null, avlStartDate=null, avlEndDate=null, ofpsCdNm=null, ofpsCd=null, stadDate=null, valChk=null, chgEmpId=null, listCnt=null, pageSize=null, pageNumber=null, rowNumber=null, depthLevel=null, orgDstCd=null, orgDstCdNm=null, standardDate=null, isAddRecord=null, isCreating=null]
+[2020-06-10 08:44:13:43372][http-nio-7701-exec-6] INFO  c.i.a.c.CostCenterController - Call Controller : com.ibiz.api.controller.DeptChgHisController.selectDeptParentComboList
+[2020-06-10 08:44:13:43374][http-nio-7701-exec-6] INFO  c.i.api.service.DeptChgHisService - call Service : com.ibiz.api.service.DeptChgHisService.selectDeptParentComboList
+[2020-06-10 08:44:13:43374][http-nio-7701-exec-6] INFO  c.i.api.service.DeptChgHisService - Paramater : null
+[2020-06-10 08:44:13:43374][http-nio-7701-exec-6] INFO  c.i.api.service.DeptChgHisService - Paramater : DeptChgHisVO [deptId=null, deptNm=null, hgrkDeptId=null, hgrkDeptNm=null, deptSortSeqc=null, deptLvlCd=null, deptLvlCdNm=null, hddpEmpId=null, hddpEmpNm=null, sellOcrYn=null, orgCrtDate=null, orgCloseDate=null, avlStartDate=20190101, avlEndDate=99991231, ofpsCdNm=null, ofpsCd=null, stadDate=null, valChk=null, chgEmpId=null, listCnt=null, pageSize=null, pageNumber=null, rowNumber=null, depthLevel=null, orgDstCd=null, orgDstCdNm=null, standardDate=null, isAddRecord=null, isCreating=null]
+[2020-06-10 08:44:13:43771][http-nio-7701-exec-7] INFO  c.i.a.c.CostCenterController - Call Controller : com.ibiz.api.controller.DeptChgHisController.selectDeptHisList
+[2020-06-10 08:44:13:43772][http-nio-7701-exec-7] INFO  c.i.api.service.DeptChgHisService - call Service : com.ibiz.api.service.DeptChgHisService.selectDeptHisList
+[2020-06-10 08:44:13:43772][http-nio-7701-exec-7] INFO  c.i.api.service.DeptChgHisService - Paramater : null
+[2020-06-10 08:44:13:43772][http-nio-7701-exec-7] INFO  c.i.api.service.DeptChgHisService - Paramater : DeptChgHisVO [deptId=1050, deptNm=null, hgrkDeptId=null, hgrkDeptNm=null, deptSortSeqc=null, deptLvlCd=null, deptLvlCdNm=null, hddpEmpId=364075, hddpEmpNm=null, sellOcrYn=null, orgCrtDate=null, orgCloseDate=null, avlStartDate=null, avlEndDate=null, ofpsCdNm=null, ofpsCd=null, stadDate=null, valChk=null, chgEmpId=null, listCnt=null, pageSize=10, pageNumber=1, rowNumber=null, depthLevel=null, orgDstCd=null, orgDstCdNm=null, standardDate=null, isAddRecord=null, isCreating=null]
+[2020-06-10 08:44:13:43791][http-nio-7701-exec-8] INFO  c.i.a.c.CostCenterController - Call Controller : com.ibiz.api.controller.DeptChgHisController.selectLastDeptHisList
+[2020-06-10 08:44:13:43792][http-nio-7701-exec-8] INFO  c.i.api.service.DeptChgHisService - call Service : com.ibiz.api.service.DeptChgHisService.selectLastDeptHisList
+[2020-06-10 08:44:13:43793][http-nio-7701-exec-8] INFO  c.i.api.service.DeptChgHisService - Paramater : null
+[2020-06-10 08:44:13:43793][http-nio-7701-exec-8] INFO  c.i.api.service.DeptChgHisService - Paramater : DeptChgHisVO [deptId=1050, deptNm=null, hgrkDeptId=null, hgrkDeptNm=null, deptSortSeqc=null, deptLvlCd=null, deptLvlCdNm=null, hddpEmpId=null, hddpEmpNm=null, sellOcrYn=null, orgCrtDate=null, orgCloseDate=null, avlStartDate=null, avlEndDate=null, ofpsCdNm=null, ofpsCd=null, stadDate=null, valChk=null, chgEmpId=null, listCnt=null, pageSize=null, pageNumber=null, rowNumber=null, depthLevel=null, orgDstCd=null, orgDstCdNm=null, standardDate=null, isAddRecord=null, isCreating=null]
+[2020-06-10 08:44:13:43826][http-nio-7701-exec-9] INFO  c.i.a.c.CostCenterController - Call Controller : com.ibiz.api.controller.DeptChgHisController.selectDeptParentComboList
+[2020-06-10 08:44:13:43827][http-nio-7701-exec-9] INFO  c.i.api.service.DeptChgHisService - call Service : com.ibiz.api.service.DeptChgHisService.selectDeptParentComboList
+[2020-06-10 08:44:13:43827][http-nio-7701-exec-9] INFO  c.i.api.service.DeptChgHisService - Paramater : null
+[2020-06-10 08:44:13:43827][http-nio-7701-exec-9] INFO  c.i.api.service.DeptChgHisService - Paramater : DeptChgHisVO [deptId=null, deptNm=null, hgrkDeptId=null, hgrkDeptNm=null, deptSortSeqc=null, deptLvlCd=null, deptLvlCdNm=null, hddpEmpId=null, hddpEmpNm=null, sellOcrYn=null, orgCrtDate=null, orgCloseDate=null, avlStartDate=20200609, avlEndDate=99991231, ofpsCdNm=null, ofpsCd=null, stadDate=null, valChk=null, chgEmpId=null, listCnt=null, pageSize=null, pageNumber=null, rowNumber=null, depthLevel=null, orgDstCd=null, orgDstCdNm=null, standardDate=null, isAddRecord=null, isCreating=null]
+[2020-06-10 08:44:14:45030][http-nio-7701-exec-10] INFO  c.i.a.c.CostCenterController - Call Controller : com.ibiz.api.controller.DeptChgHisController.selectDeptParentSelectList
+[2020-06-10 08:44:14:45032][http-nio-7701-exec-10] INFO  c.i.api.service.DeptChgHisService - call Service : com.ibiz.api.service.DeptChgHisService.selectDeptParentSelectList
+[2020-06-10 08:44:14:45032][http-nio-7701-exec-10] INFO  c.i.api.service.DeptChgHisService - Paramater : null
+[2020-06-10 08:44:14:45032][http-nio-7701-exec-10] INFO  c.i.api.service.DeptChgHisService - Paramater : DeptChgHisVO [deptId=null, deptNm=null, hgrkDeptId=null, hgrkDeptNm=null, deptSortSeqc=null, deptLvlCd=null, deptLvlCdNm=null, hddpEmpId=null, hddpEmpNm=null, sellOcrYn=null, orgCrtDate=null, orgCloseDate=null, avlStartDate=20200610, avlEndDate=null, ofpsCdNm=null, ofpsCd=null, stadDate=null, valChk=null, chgEmpId=null, listCnt=null, pageSize=null, pageNumber=null, rowNumber=null, depthLevel=null, orgDstCd=null, orgDstCdNm=null, standardDate=null, isAddRecord=null, isCreating=null]
+[2020-06-10 08:44:18:48906][http-nio-7701-exec-1] INFO  c.i.a.c.CostCenterController - Call Controller : com.ibiz.api.controller.DeptChgHisController.updateDept
+[2020-06-10 08:44:18:48908][http-nio-7701-exec-1] INFO  c.i.api.service.DeptChgHisService - call Service : com.ibiz.api.service.DeptChgHisService.updateDept
+[2020-06-10 08:44:18:48908][http-nio-7701-exec-1] INFO  c.i.api.service.DeptChgHisService - Paramater : null
+[2020-06-10 08:44:18:48908][http-nio-7701-exec-1] INFO  c.i.api.service.DeptChgHisService - Paramater : DeptChgHisVO [deptId=1005, deptNm=1005, hgrkDeptId=8100, hgrkDeptNm=null, deptSortSeqc=1, deptLvlCd=0, deptLvlCdNm=null, hddpEmpId=null, hddpEmpNm=null, sellOcrYn=N, orgCrtDate=20200610, orgCloseDate=99991231, avlStartDate=20200610, avlEndDate=99991231, ofpsCdNm=null, ofpsCd=null, stadDate=null, valChk=null, chgEmpId=374099, listCnt=null, pageSize=null, pageNumber=null, rowNumber=null, depthLevel=null, orgDstCd=M, orgDstCdNm=null, standardDate=null, isAddRecord=, isCreating=true]
+[2020-06-10 08:44:18:48915][http-nio-7701-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Failure in @ExceptionHandler com.ibiz.api.exception.GlobalExceptionHandler#handleException(Exception)
+java.lang.ClassCastException: com.ibiz.api.exception.CodeOverlapException cannot be cast to org.apache.logging.log4j.util.Supplier
+	at com.ibiz.api.exception.GlobalExceptionHandler.handleException(GlobalExceptionHandler.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:407)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:61)
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:141)
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80)
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1300)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1111)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[2020-06-10 08:44:18:48915][http-nio-7701-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Failure in @ExceptionHandler com.ibiz.api.exception.GlobalExceptionHandler#handleException(Exception)
+java.lang.ClassCastException: com.ibiz.api.exception.CodeOverlapException cannot be cast to org.apache.logging.log4j.util.Supplier
+	at com.ibiz.api.exception.GlobalExceptionHandler.handleException(GlobalExceptionHandler.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:407)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:61)
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:141)
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80)
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1300)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1111)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[2020-06-10 08:44:18:48917][http-nio-7701-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.ibiz.api.exception.CodeOverlapException: 조직] with root cause
+com.ibiz.api.exception.CodeOverlapException: 조직
+	at com.ibiz.api.service.DeptChgHisService.updateDept(DeptChgHisService.java:159)
+	at com.ibiz.api.service.DeptChgHisService$$FastClassBySpringCGLIB$$ccc4457c.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:366)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:99)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.ibiz.api.service.DeptChgHisService$$EnhancerBySpringCGLIB$$9957b350.updateDept(<generated>)
+	at com.ibiz.api.controller.DeptChgHisController.updateDept(DeptChgHisController.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[2020-06-10 08:44:46:76582][http-nio-7701-exec-2] INFO  c.i.a.c.CostCenterController - Call Controller : com.ibiz.api.controller.DeptChgHisController.selectDeptHisList
+[2020-06-10 08:44:46:76584][http-nio-7701-exec-2] INFO  c.i.api.service.DeptChgHisService - call Service : com.ibiz.api.service.DeptChgHisService.selectDeptHisList
+[2020-06-10 08:44:46:76584][http-nio-7701-exec-2] INFO  c.i.api.service.DeptChgHisService - Paramater : null
+[2020-06-10 08:44:46:76584][http-nio-7701-exec-2] INFO  c.i.api.service.DeptChgHisService - Paramater : DeptChgHisVO [deptId=1050, deptNm=null, hgrkDeptId=null, hgrkDeptNm=null, deptSortSeqc=null, deptLvlCd=null, deptLvlCdNm=null, hddpEmpId=null, hddpEmpNm=null, sellOcrYn=null, orgCrtDate=null, orgCloseDate=null, avlStartDate=null, avlEndDate=null, ofpsCdNm=null, ofpsCd=null, stadDate=null, valChk=null, chgEmpId=null, listCnt=null, pageSize=10, pageNumber=1, rowNumber=null, depthLevel=null, orgDstCd=null, orgDstCdNm=null, standardDate=null, isAddRecord=null, isCreating=null]
+[2020-06-10 08:44:46:76601][http-nio-7701-exec-3] INFO  c.i.a.c.CostCenterController - Call Controller : com.ibiz.api.controller.DeptChgHisController.selectLastDeptHisList
+[2020-06-10 08:44:46:76602][http-nio-7701-exec-3] INFO  c.i.api.service.DeptChgHisService - call Service : com.ibiz.api.service.DeptChgHisService.selectLastDeptHisList
+[2020-06-10 08:44:46:76602][http-nio-7701-exec-3] INFO  c.i.api.service.DeptChgHisService - Paramater : null
+[2020-06-10 08:44:46:76602][http-nio-7701-exec-3] INFO  c.i.api.service.DeptChgHisService - Paramater : DeptChgHisVO [deptId=1050, deptNm=null, hgrkDeptId=null, hgrkDeptNm=null, deptSortSeqc=null, deptLvlCd=null, deptLvlCdNm=null, hddpEmpId=null, hddpEmpNm=null, sellOcrYn=null, orgCrtDate=null, orgCloseDate=null, avlStartDate=null, avlEndDate=null, ofpsCdNm=null, ofpsCd=null, stadDate=null, valChk=null, chgEmpId=null, listCnt=null, pageSize=null, pageNumber=null, rowNumber=null, depthLevel=null, orgDstCd=null, orgDstCdNm=null, standardDate=null, isAddRecord=null, isCreating=null]
+[2020-06-10 08:44:46:76644][http-nio-7701-exec-4] INFO  c.i.a.c.CostCenterController - Call Controller : com.ibiz.api.controller.DeptChgHisController.selectDeptParentComboList
+[2020-06-10 08:44:46:76645][http-nio-7701-exec-4] INFO  c.i.api.service.DeptChgHisService - call Service : com.ibiz.api.service.DeptChgHisService.selectDeptParentComboList
+[2020-06-10 08:44:46:76646][http-nio-7701-exec-4] INFO  c.i.api.service.DeptChgHisService - Paramater : null
+[2020-06-10 08:44:46:76646][http-nio-7701-exec-4] INFO  c.i.api.service.DeptChgHisService - Paramater : DeptChgHisVO [deptId=null, deptNm=null, hgrkDeptId=null, hgrkDeptNm=null, deptSortSeqc=null, deptLvlCd=null, deptLvlCdNm=null, hddpEmpId=null, hddpEmpNm=null, sellOcrYn=null, orgCrtDate=null, orgCloseDate=null, avlStartDate=20200609, avlEndDate=99991231, ofpsCdNm=null, ofpsCd=null, stadDate=null, valChk=null, chgEmpId=null, listCnt=null, pageSize=null, pageNumber=null, rowNumber=null, depthLevel=null, orgDstCd=null, orgDstCdNm=null, standardDate=null, isAddRecord=null, isCreating=null]
+[2020-06-10 08:44:54:84685][http-nio-7701-exec-5] INFO  c.i.a.c.CostCenterController - Call Controller : com.ibiz.api.controller.DeptChgHisController.selectDeptParentSelectList
+[2020-06-10 08:44:54:84687][http-nio-7701-exec-5] INFO  c.i.api.service.DeptChgHisService - call Service : com.ibiz.api.service.DeptChgHisService.selectDeptParentSelectList
+[2020-06-10 08:44:54:84687][http-nio-7701-exec-5] INFO  c.i.api.service.DeptChgHisService - Paramater : null
+[2020-06-10 08:44:54:84687][http-nio-7701-exec-5] INFO  c.i.api.service.DeptChgHisService - Paramater : DeptChgHisVO [deptId=null, deptNm=null, hgrkDeptId=null, hgrkDeptNm=null, deptSortSeqc=null, deptLvlCd=null, deptLvlCdNm=null, hddpEmpId=null, hddpEmpNm=null, sellOcrYn=null, orgCrtDate=null, orgCloseDate=null, avlStartDate=20200610, avlEndDate=null, ofpsCdNm=null, ofpsCd=null, stadDate=null, valChk=null, chgEmpId=null, listCnt=null, pageSize=null, pageNumber=null, rowNumber=null, depthLevel=null, orgDstCd=null, orgDstCdNm=null, standardDate=null, isAddRecord=null, isCreating=null]
+[2020-06-10 08:45:01:91236][http-nio-7701-exec-6] INFO  c.i.a.c.CostCenterController - Call Controller : com.ibiz.api.controller.DeptChgHisController.updateDept
+[2020-06-10 08:45:01:91238][http-nio-7701-exec-6] INFO  c.i.api.service.DeptChgHisService - call Service : com.ibiz.api.service.DeptChgHisService.updateDept
+[2020-06-10 08:45:01:91238][http-nio-7701-exec-6] INFO  c.i.api.service.DeptChgHisService - Paramater : null
+[2020-06-10 08:45:01:91239][http-nio-7701-exec-6] INFO  c.i.api.service.DeptChgHisService - Paramater : DeptChgHisVO [deptId=1005, deptNm=1005, hgrkDeptId=8100, hgrkDeptNm=null, deptSortSeqc=1, deptLvlCd=4, deptLvlCdNm=null, hddpEmpId=null, hddpEmpNm=null, sellOcrYn=N, orgCrtDate=20200610, orgCloseDate=99991231, avlStartDate=20200610, avlEndDate=99991231, ofpsCdNm=null, ofpsCd=null, stadDate=null, valChk=null, chgEmpId=374099, listCnt=null, pageSize=null, pageNumber=null, rowNumber=null, depthLevel=null, orgDstCd=M, orgDstCdNm=null, standardDate=null, isAddRecord=, isCreating=true]
+[2020-06-10 08:45:01:91245][http-nio-7701-exec-6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Failure in @ExceptionHandler com.ibiz.api.exception.GlobalExceptionHandler#handleException(Exception)
+java.lang.ClassCastException: com.ibiz.api.exception.CodeOverlapException cannot be cast to org.apache.logging.log4j.util.Supplier
+	at com.ibiz.api.exception.GlobalExceptionHandler.handleException(GlobalExceptionHandler.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:407)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:61)
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:141)
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80)
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1300)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1111)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[2020-06-10 08:45:01:91245][http-nio-7701-exec-6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Failure in @ExceptionHandler com.ibiz.api.exception.GlobalExceptionHandler#handleException(Exception)
+java.lang.ClassCastException: com.ibiz.api.exception.CodeOverlapException cannot be cast to org.apache.logging.log4j.util.Supplier
+	at com.ibiz.api.exception.GlobalExceptionHandler.handleException(GlobalExceptionHandler.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:407)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:61)
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:141)
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80)
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1300)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1111)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[2020-06-10 08:45:01:91247][http-nio-7701-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.ibiz.api.exception.CodeOverlapException: 조직] with root cause
+com.ibiz.api.exception.CodeOverlapException: 조직
+	at com.ibiz.api.service.DeptChgHisService.updateDept(DeptChgHisService.java:159)
+	at com.ibiz.api.service.DeptChgHisService$$FastClassBySpringCGLIB$$ccc4457c.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:366)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:99)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.ibiz.api.service.DeptChgHisService$$EnhancerBySpringCGLIB$$9957b350.updateDept(<generated>)
+	at com.ibiz.api.controller.DeptChgHisController.updateDept(DeptChgHisController.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[2020-06-10 08:45:25:115757][http-nio-7701-exec-7] INFO  c.i.a.c.CostCenterController - Call Controller : com.ibiz.api.controller.CmnController.selectAuthDeptList
+[2020-06-10 08:45:25:115763][http-nio-7701-exec-7] INFO  com.ibiz.api.service.CmnService - call Service : com.ibiz.api.service.CmnService.selectAuthDeptList
+[2020-06-10 08:45:25:115763][http-nio-7701-exec-7] INFO  com.ibiz.api.service.CmnService - Paramater : AccountVO [ userId=374099, custId=2019000166, pswd=UiT8+1TJ/CxEpnv7ww+Row==, deptId=8110, empId=374099, userNm=오수진, ofpsCd=14, resoCd=105, ofpsNm=과장, resoNm=팀원, deptNm=경영정보팀, roleList=[GN, MG, MK, BS, TS, RD, AD, null, null]]
+[2020-06-10 08:45:25:115763][http-nio-7701-exec-7] INFO  com.ibiz.api.service.CmnService - Paramater : DeptVO [deptId=null, deptNm=null, ccCd=null, orgDstCd=null, orgDstCdNm=null, hgrkDeptId=null, deptSortSeqc=null, bltcCd=null, deptLvlCd=null, hddpEmpId=null, crtDate=null, closeDate=null, sellOcrYn=null, regEmpId=null, regDt=null, chgEmpId=null, chgDt =null, gridStatus=null, searchValue=null, deptIds=null, cntLowerDeptID=null, depthLevel=null, lowerCnt=null, hgrkDeptNm=null, slsEmpId=null, empId=null, userGrpCd=BS, totalSize=null, isAllAuth=null, priorUserGrpCd=null, critYear=2020]
+[2020-06-10 08:48:38:308466][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 08:53:38:608468][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 08:58:38:908469][AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 09:00:08:998571][http-nio-7701-exec-9] INFO  c.i.a.c.CostCenterController - Call Controller : com.ibiz.api.controller.CmnController.selectAuthDeptList
+[2020-06-10 09:00:08:998575][http-nio-7701-exec-9] INFO  com.ibiz.api.service.CmnService - call Service : com.ibiz.api.service.CmnService.selectAuthDeptList
+[2020-06-10 09:00:08:998575][http-nio-7701-exec-9] INFO  com.ibiz.api.service.CmnService - Paramater : AccountVO [ userId=374099, custId=2019000166, pswd=UiT8+1TJ/CxEpnv7ww+Row==, deptId=8110, empId=374099, userNm=오수진, ofpsCd=14, resoCd=105, ofpsNm=과장, resoNm=팀원, deptNm=경영정보팀, roleList=[GN, MG, MK, BS, TS, RD, AD, null, null]]
+[2020-06-10 09:00:08:998575][http-nio-7701-exec-9] INFO  com.ibiz.api.service.CmnService - Paramater : DeptVO [deptId=null, deptNm=null, ccCd=null, orgDstCd=null, orgDstCdNm=null, hgrkDeptId=null, deptSortSeqc=null, bltcCd=null, deptLvlCd=null, hddpEmpId=null, crtDate=null, closeDate=null, sellOcrYn=null, regEmpId=null, regDt=null, chgEmpId=null, chgDt =null, gridStatus=null, searchValue=null, deptIds=null, cntLowerDeptID=null, depthLevel=null, lowerCnt=null, hgrkDeptNm=null, slsEmpId=null, empId=null, userGrpCd=BS, totalSize=null, isAllAuth=null, priorUserGrpCd=null, critYear=2020]
+[2020-06-10 09:00:16:1006178][http-nio-7701-exec-10] INFO  c.i.a.c.CostCenterController - Call Controller : com.ibiz.api.controller.CmnController.selectAuthDeptList
+[2020-06-10 09:00:16:1006181][http-nio-7701-exec-10] INFO  com.ibiz.api.service.CmnService - call Service : com.ibiz.api.service.CmnService.selectAuthDeptList
+[2020-06-10 09:00:16:1006181][http-nio-7701-exec-10] INFO  com.ibiz.api.service.CmnService - Paramater : AccountVO [ userId=374099, custId=2019000166, pswd=UiT8+1TJ/CxEpnv7ww+Row==, deptId=8110, empId=374099, userNm=오수진, ofpsCd=14, resoCd=105, ofpsNm=과장, resoNm=팀원, deptNm=경영정보팀, roleList=[GN, MG, MK, BS, TS, RD, AD, null, null]]
+[2020-06-10 09:00:16:1006181][http-nio-7701-exec-10] INFO  com.ibiz.api.service.CmnService - Paramater : DeptVO [deptId=null, deptNm=null, ccCd=null, orgDstCd=null, orgDstCdNm=null, hgrkDeptId=null, deptSortSeqc=null, bltcCd=null, deptLvlCd=null, hddpEmpId=null, crtDate=null, closeDate=null, sellOcrYn=null, regEmpId=null, regDt=null, chgEmpId=null, chgDt =null, gridStatus=null, searchValue=null, deptIds=null, cntLowerDeptID=null, depthLevel=null, lowerCnt=null, hgrkDeptNm=null, slsEmpId=null, empId=null, userGrpCd=BS, totalSize=null, isAllAuth=null, priorUserGrpCd=null, critYear=2020]
+[2020-06-10 09:02:25:1135416][http-nio-7701-exec-2] INFO  c.i.a.c.CostCenterController - Call Controller : com.ibiz.api.controller.CmnController.selectAuthDeptList
+[2020-06-10 09:02:25:1135418][http-nio-7701-exec-2] INFO  com.ibiz.api.service.CmnService - call Service : com.ibiz.api.service.CmnService.selectAuthDeptList
+[2020-06-10 09:02:25:1135418][http-nio-7701-exec-2] INFO  com.ibiz.api.service.CmnService - Paramater : AccountVO [ userId=374099, custId=2019000166, pswd=UiT8+1TJ/CxEpnv7ww+Row==, deptId=8110, empId=374099, userNm=오수진, ofpsCd=14, resoCd=105, ofpsNm=과장, resoNm=팀원, deptNm=경영정보팀, roleList=[GN, MG, MK, BS, TS, RD, AD, null, null]]
+[2020-06-10 09:02:25:1135418][http-nio-7701-exec-2] INFO  com.ibiz.api.service.CmnService - Paramater : DeptVO [deptId=null, deptNm=null, ccCd=null, orgDstCd=null, orgDstCdNm=null, hgrkDeptId=null, deptSortSeqc=null, bltcCd=null, deptLvlCd=null, hddpEmpId=null, crtDate=null, closeDate=null, sellOcrYn=null, regEmpId=null, regDt=null, chgEmpId=null, chgDt =null, gridStatus=null, searchValue=null, deptIds=null, cntLowerDeptID=null, depthLevel=null, lowerCnt=null, hgrkDeptNm=null, slsEmpId=null, empId=null, userGrpCd=BS, totalSize=null, isAllAuth=null, priorUserGrpCd=null, critYear=2020]
+[2020-06-10 09:02:27:1137748][http-nio-7701-exec-3] INFO  c.i.a.c.CostCenterController - Call Controller : com.ibiz.api.controller.CmnController.selectAuthDeptList
+[2020-06-10 09:02:27:1137750][http-nio-7701-exec-3] INFO  com.ibiz.api.service.CmnService - call Service : com.ibiz.api.service.CmnService.selectAuthDeptList
+[2020-06-10 09:02:27:1137750][http-nio-7701-exec-3] INFO  com.ibiz.api.service.CmnService - Paramater : AccountVO [ userId=374099, custId=2019000166, pswd=UiT8+1TJ/CxEpnv7ww+Row==, deptId=8110, empId=374099, userNm=오수진, ofpsCd=14, resoCd=105, ofpsNm=과장, resoNm=팀원, deptNm=경영정보팀, roleList=[GN, MG, MK, BS, TS, RD, AD, null, null]]
+[2020-06-10 09:02:27:1137750][http-nio-7701-exec-3] INFO  com.ibiz.api.service.CmnService - Paramater : DeptVO [deptId=null, deptNm=null, ccCd=null, orgDstCd=null, orgDstCdNm=null, hgrkDeptId=null, deptSortSeqc=null, bltcCd=null, deptLvlCd=null, hddpEmpId=null, crtDate=null, closeDate=null, sellOcrYn=null, regEmpId=null, regDt=null, chgEmpId=null, chgDt =null, gridStatus=null, searchValue=null, deptIds=null, cntLowerDeptID=null, depthLevel=null, lowerCnt=null, hgrkDeptNm=null, slsEmpId=null, empId=null, userGrpCd=BS, totalSize=null, isAllAuth=null, priorUserGrpCd=null, critYear=2020]
+[2020-06-10 09:03:44:1274][main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$61ec3c5e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2020-06-10 09:03:45:1814][main] INFO  com.ibiz.api.ApiApplication - No active profile set, falling back to default profiles: default
+[2020-06-10 09:03:45:2646][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2020-06-10 09:03:45:2648][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[2020-06-10 09:03:46:2671][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
+[2020-06-10 09:03:46:2682][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2020-06-10 09:03:46:2684][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[2020-06-10 09:03:46:2705][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
+[2020-06-10 09:03:46:2812][main] WARN  o.s.b.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[2020-06-10 09:03:46:2899][main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.ibiz.api.service, com.ibiz.api]' package. Please check your configuration.
+[2020-06-10 09:03:46:2978][main] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=8075fe36-4e59-3f72-ba1e-d9d50de9f5c9
+[2020-06-10 09:03:46:3267][main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$ea69fe60] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2020-06-10 09:03:46:3292][main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[2020-06-10 09:03:46:3306][main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2020-06-10 09:03:46:3476][main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$61ec3c5e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2020-06-10 09:03:47:4031][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7701 (http)
+[2020-06-10 09:03:47:4040][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7701"]
+[2020-06-10 09:03:47:4041][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2020-06-10 09:03:47:4041][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[2020-06-10 09:03:47:4247][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2020-06-10 09:03:47:4247][main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2420 ms
+[2020-06-10 09:03:47:4247][main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2420 ms
+[2020-06-10 09:03:47:4338][main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[2020-06-10 09:03:47:4338][main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[2020-06-10 09:03:47:4354][main] INFO  c.n.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@44bbb7c6
+[2020-06-10 09:03:48:5523][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2020-06-10 09:03:49:6183][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2020-06-10 09:03:49:6231][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2020-06-10 09:03:49:6297][main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.8.Final}
+[2020-06-10 09:03:49:6452][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[2020-06-10 09:03:50:6728][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+[2020-06-10 09:03:50:7192][main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2020-06-10 09:03:50:7200][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2020-06-10 09:03:50:7544][main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2020-06-10 09:03:51:7717][main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[2020-06-10 09:03:51:7717][main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[2020-06-10 09:03:51:8513][main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+[2020-06-10 09:03:51:8557][main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 18 endpoint(s) beneath base path '/actuator'
+[2020-06-10 09:03:51:8595][main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+[2020-06-10 09:03:51:8637][main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+[2020-06-10 09:03:52:8730][main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+[2020-06-10 09:03:52:8730][main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+[2020-06-10 09:03:52:8852][main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+[2020-06-10 09:03:52:8852][main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+[2020-06-10 09:03:52:9045][main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+[2020-06-10 09:03:52:9328][main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+[2020-06-10 09:03:52:9328][main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+[2020-06-10 09:03:52:9328][main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+[2020-06-10 09:03:52:9328][main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+[2020-06-10 09:03:52:9328][main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+[2020-06-10 09:03:52:9328][main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+[2020-06-10 09:03:52:9328][main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+[2020-06-10 09:03:52:9521][main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+[2020-06-10 09:03:52:9524][main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+[2020-06-10 09:03:52:9527][main] INFO  c.n.d.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+[2020-06-10 09:03:52:9532][main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1591747432868 with initial instances count: 4
+[2020-06-10 09:03:52:9535][main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application IBIZ-HR with eureka with status UP
+[2020-06-10 09:03:52:9536][main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1591747432874, current=UP, previous=STARTING]
+[2020-06-10 09:03:52:9537][DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_IBIZ-HR/hr-7701: registering service...
+[2020-06-10 09:03:52:9553][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7701"]
+[2020-06-10 09:03:52:9581][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7701 (http) with context path ''
+[2020-06-10 09:03:52:9582][main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 7701
+[2020-06-10 09:03:52:9587][DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_IBIZ-HR/hr-7701 - registration status: 204
+[2020-06-10 09:03:53:9985][main] INFO  com.ibiz.api.ApiApplication - Started ApiApplication in 9.796 seconds (JVM running for 10.43)
+[2020-06-10 09:03:59:16214][http-nio-7701-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2020-06-10 09:03:59:16214][http-nio-7701-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2020-06-10 09:03:59:16214][http-nio-7701-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2020-06-10 09:03:59:16227][http-nio-7701-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+[2020-06-10 09:03:59:16227][http-nio-7701-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+[2020-06-10 09:03:59:16388][http-nio-7701-exec-1] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+[2020-06-10 09:03:59:16390][http-nio-7701-exec-1] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+[2020-06-10 09:04:00:17189][http-nio-7701-exec-1] INFO  c.i.a.c.CostCenterController - Call Controller : com.ibiz.api.controller.CmnController.selectAuthDeptList
+[2020-06-10 09:04:00:17214][http-nio-7701-exec-1] INFO  com.ibiz.api.service.CmnService - call Service : com.ibiz.api.service.CmnService.selectAuthDeptList
+[2020-06-10 09:04:00:17214][http-nio-7701-exec-1] INFO  com.ibiz.api.service.CmnService - Paramater : AccountVO [ userId=374099, custId=2019000166, pswd=UiT8+1TJ/CxEpnv7ww+Row==, deptId=8110, empId=374099, userNm=오수진, ofpsCd=14, resoCd=105, ofpsNm=과장, resoNm=팀원, deptNm=경영정보팀, roleList=[GN, MG, MK, BS, TS, RD, AD, null, null]]
+[2020-06-10 09:04:00:17214][http-nio-7701-exec-1] INFO  com.ibiz.api.service.CmnService - Paramater : DeptVO [deptId=null, deptNm=null, ccCd=null, orgDstCd=null, orgDstCdNm=null, hgrkDeptId=null, deptSortSeqc=null, bltcCd=null, deptLvlCd=null, hddpEmpId=null, crtDate=null, closeDate=null, sellOcrYn=null, regEmpId=null, regDt=null, chgEmpId=null, chgDt =null, gridStatus=null, searchValue=null, deptIds=null, cntLowerDeptID=null, depthLevel=null, lowerCnt=null, hgrkDeptNm=null, slsEmpId=null, empId=null, userGrpCd=BS, totalSize=null, isAllAuth=null, priorUserGrpCd=null, critYear=2020]

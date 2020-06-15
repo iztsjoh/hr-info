@@ -1,0 +1,53 @@
+server:
+  port: 7700
+
+spring:
+  application:
+    name: ibiz-hr
+  redis:
+    host: localhost
+    port: 6379
+    #password: operation0307
+#    password: staging1216
+    #password: dev5791
+
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver #net.sf.log4jdbc.sql.jdbcapi.DriverSpy # oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@192.168.18.120:1521:ibiz #jdbc:log4jdbc:oracle:thin:@192.168.19.230:1521:ibiz # jdbc:oracle:thin:@192.168.19.230:1521:ibiz
+    #    url: jdbc:oracle:thin:@183.111.96.41:1521:orcl
+    #    username: IBIZ_PRODUCT
+    #    password: IBIZ1229
+    username: IBIZ
+    password: IBIZ1229
+#    username: IBIZ_STAGING
+#    password: wjsfirrlghlr#123
+
+
+mybatis:
+  mapper-locations: "classpath:/mapper/*.xml"
+  configuration:
+    map-underscore-to-camel-case: true
+    jdbc-type-for-null: varchar
+
+logging:
+  config: classpath:logback-spring.xml
+  level:
+    com.ibiz.api.controller: INFO
+    log4jdbc: INFO
+
+eureka:
+  instance:
+    instance-id: hr-7700
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/
+    enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    shutdown:
+      enabled: true

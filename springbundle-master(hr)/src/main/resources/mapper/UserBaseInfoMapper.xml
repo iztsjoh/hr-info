@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="UserBaseInfoMapper">
+    <!--
+		Select
+	-->
+    <!-- 임직원기본정보 조회-->
+    <select id="Select_userBaseInfoList"
+            parameterType="com.ibiz.api.model.UserBaseInfoVO"
+            resultType="com.ibiz.api.model.UserBaseInfoVO">
+        SELECT * FROM
+        (
+        SELECT
+        ROWNUM AS ROWNUMBER,
+        T1_T4.*,
+        COUNT(*) OVER() AS TOTAL_CNT
+        FROM
+        (
+        SELECT
+        T1.EMP_ID
+        ,T1.EMP_NM
+        ,T1.SSRG_NO
+        ,T1.BLTO_DEPT_ID
+        ,T2.DEPT_NM AS BLTO_DEPT_ID_NM
+        ,T2.DEPT_FULLNAME
+        ,T1.OFPS_CD
+        ,T1.RECRT_CNTR_TYPE_CD
+        ,(
+        SELECT
+        TT2.COM_CD_NM
+        FROM ACOM020T TT1
+        INNER JOIN ACOM010T TT2
+        ON TT1.COM_GRP_CD = TT2.COM_GRP_CD
+        WHERE CLMN_NM = 'OFPS_CD'
+        AND TT2.COM_CD = T1.OFPS_CD
+        ) AS OFPS_CD_NM
+        ,T1.OFPS_YRVC_COUNT
+        ,T1.RESO_CD
+        ,(
+        SELECT
+        TT2.COM_CD_NM
+        FROM ACOM020T TT1
+        INNER JOIN ACOM010T TT2
+        ON TT1.COM_GRP_CD = TT2.COM_GRP_CD
+        WHERE CLMN_NM = 'RESO_CD'
+        AND TT2.COM_CD = T1.RESO_CD
+        ) AS RESO_CD_NM
+        ,T1.COMP_ENCM_DATE
+        ,T1.GRP_ENCM_DATE
+        ,T1.RET_DATE
+        ,T1.RECRT_DST_CD
+        ,(
+        SELECT
+        TT2.COM_CD_NM
+        FROM ACOM020T TT1
+        INNER JOIN ACOM010T TT2
+        ON TT1.COM_GRP_CD = TT2.COM_GRP_CD
+        WHERE CLMN_NM = 'RECRT_DST_CD'
+        AND TT2.COM_CD = T1.RECRT_DST_CD
+        ) AS RECRT_DST_CD_NM
+        ,T1.CNTR_START_DATE
+        ,T1.CNTR_END_DATE
+        ,T1.HDOC_STAT_CD
+        ,(
+        SELECT
+        TT2.COM_CD_NM
+        FROM ACOM020T TT1
+        INNER JOIN ACOM010T TT2
+        ON TT1.COM_GRP_CD = TT2.COM_GRP_CD
+        WHERE CLMN_NM = 'HDOC_STAT_CD'
+        AND TT2.COM_CD = T1.HDOC_STAT_CD
+        ) AS HDOC_STAT_CD_NM
+        , T1.LVAB_START_DATE
+        , T1.LVAB_END_DATE
+        , T4.COMP_TEL_NO
+        , T4.MBPH_NO
+        , T4.EML_ADRS
+        FROM HMST300T T1
+        LEFT OUTER JOIN (
+        SELECT
+        TT2.DEPT_ID
+        , TT2.DEPT_NM
+        , TT2.HGRK_DEPT_ID
+        , LTRIM (SYS_CONNECT_BY_PATH (TT2.DEPT_ID, ' > '), ' > ') AS DEPT_FULLNAME
+        FROM HMST100T TT2
+        START WITH TT2.HGRK_DEPT_ID IS NULL
+        CONNECT BY PRIOR TT2.DEPT_ID=TT2.HGRK_DEPT_ID
+        ) T2
+        ON T1.BLTO_DEPT_ID = T2.DEPT_ID
+        LEFT OUTER JOIN CMST010T T3
+        ON T1.EMP_ID = T3.EMP_ID AND CUST_ROLE_CLSF_CD = 'C' AND CUST_ROLE_DTL_CLSF_CD = 'C01'
+        LEFT OUTER JOIN (
+        SELECT
+        CUST_ID, MAX(COMP_TEL_NO) AS COMP_TEL_NO, MAX(MBPH_NO) AS MBPH_NO, MAX(EML_ADRS) AS EML_ADRS
+        FROM (
+        SELECT
+        CASE WHEN CNPL_DST_CD = 'A' THEN TEL_NO ELSE '' END COMP_TEL_NO
+        ,CASE WHEN CNPL_DST_CD = 'B' THEN TEL_NO ELSE '' END MBPH_NO
+        ,CASE WHEN CNPL_DST_CD = 'E' THEN EML_ADRS ELSE '' END EML_ADRS
+        ,CUST_ID
+        FROM CMST031T TT1
+        ) TT2
+        GROUP BY CUST_ID
+        ) T4
+        ON T3.CUST_ID = T4.CUST_ID
+        WHERE 1=1
+        <if test="bltoDeptId != null and bltoDeptId !=''">
+            AND UPPER(T2.DEPT_FULLNAME) LIKE '%' || UPPER(#{bltoDeptId}) || '%'
+        </if>
+        <if test="empNm != null and empNm !=''">
+            AND UPPER(T1.EMP_NM) LIKE '%' || UPPER(#{empNm}) || '%'
+        </if>
+        ORDER BY T2.DEPT_FULLNAME ASC, T1.OFPS_CD ASC, T1.EMP_NM ASC
+        )T1_T4
+        )
+        WHERE
+        ROWNUMBER BETWEEN #{pageSize} * (#{pageNumber} - 1) + 1
+        AND #{pageSize} * (#{pageNumber} - 1) + #{pageSize}
+    </select>
+
+    <!-- 임직원 기본정보 조회 리스트 카운트 -->
+    <select id="Select_userBaseInfoListCount"
+            parameterType="com.ibiz.api.model.UserBaseInfoVO"
+            resultType="java.lang.Integer">
+        SELECT
+        COUNT(*)
+        FROM HMST300T T1
+        LEFT OUTER JOIN (
+        SELECT
+        TT2.DEPT_ID
+        , TT2.DEPT_NM
+        , TT2.HGRK_DEPT_ID
+        , LTRIM (SYS_CONNECT_BY_PATH (TT2.DEPT_ID, ' > '), ' > ') AS DEPT_FULLNAME
+        FROM HMST100T TT2
+        START WITH TT2.HGRK_DEPT_ID IS NULL
+        CONNECT BY PRIOR TT2.DEPT_ID=TT2.HGRK_DEPT_ID
+        ) T2
+        ON T1.BLTO_DEPT_ID = T2.DEPT_ID
+        LEFT OUTER JOIN CMST010T T3
+        ON T1.EMP_ID = T3.EMP_ID AND CUST_ROLE_CLSF_CD = 'C' AND CUST_ROLE_DTL_CLSF_CD = 'C01'
+        LEFT OUTER JOIN (
+        SELECT
+        CUST_ID, MAX(COMP_TEL_NO) AS COMP_TEL_NO, MAX(MBPH_NO) AS MBPH_NO, MAX(EML_ADRS) AS EML_ADRS
+        FROM (
+        SELECT
+        CASE WHEN CNPL_DST_CD = 'A' THEN TEL_NO ELSE '' END COMP_TEL_NO
+        ,CASE WHEN CNPL_DST_CD = 'B' THEN TEL_NO ELSE '' END MBPH_NO
+        ,CASE WHEN CNPL_DST_CD = 'E' THEN EML_ADRS ELSE '' END EML_ADRS
+        ,CUST_ID
+        FROM CMST031T TT1
+        ) TT2
+        GROUP BY CUST_ID
+        ) T4
+        ON T3.CUST_ID = T4.CUST_ID
+        WHERE 1=1
+        <if test="bltoDeptId != null and bltoDeptId !=''">
+            AND UPPER(T2.DEPT_FULLNAME) LIKE '%' || UPPER(#{bltoDeptId}) || '%'
+        </if>
+        <if test="empNm != null and empNm !=''">
+            AND UPPER(T1.EMP_NM) LIKE '%' || UPPER(#{empNm}) || '%'
+        </if>
+    </select>
+
+    <!--   &lt;!&ndash; 임직원기본정보 조회(엑셀)&ndash;&gt;
+       <select id="Select_userExcelBaseInfoList"
+               parameterType="com.inzent.ibiz.legacy.hr.model.UserBaseInfoVO"
+               resultType="com.inzent.ibiz.legacy.excel.model.ExcelUserBaseInfoVO">
+
+           SELECT
+           ROWNUM AS ROWNUMBER,
+           T1_T4.*,
+           COUNT(*) OVER() AS TOTAL_CNT
+           FROM
+           (
+           SELECT
+           T1.EMP_ID
+           ,T1.EMP_NM
+           ,T1.SSRG_NO
+           ,T1.BLTO_DEPT_ID
+           ,T2.DEPT_NM AS BLTO_DEPT_ID_NM
+           ,T2.DEPT_FULLNAME
+           ,T1.OFPS_CD
+           ,T1.RECRT_CNTR_TYPE_CD
+           ,(
+           SELECT
+           TT2.COM_CD_NM
+           FROM ACOM020T TT1
+           INNER JOIN ACOM010T TT2
+           ON TT1.COM_GRP_CD = TT2.COM_GRP_CD
+           WHERE CLMN_NM = 'OFPS_CD'
+           AND TT2.COM_CD = T1.OFPS_CD
+           ) AS OFPS_CD_NM
+           ,T1.OFPS_YRVC_COUNT
+           ,T1.RESO_CD
+           ,(
+           SELECT
+           TT2.COM_CD_NM
+           FROM ACOM020T TT1
+           INNER JOIN ACOM010T TT2
+           ON TT1.COM_GRP_CD = TT2.COM_GRP_CD
+           WHERE CLMN_NM = 'RESO_CD'
+           AND TT2.COM_CD = T1.RESO_CD
+           ) AS RESO_CD_NM
+           ,T1.COMP_ENCM_DATE
+           ,T1.GRP_ENCM_DATE
+           ,T1.RET_DATE
+           ,T1.RECRT_DST_CD
+           ,(
+           SELECT
+           TT2.COM_CD_NM
+           FROM ACOM020T TT1
+           INNER JOIN ACOM010T TT2
+           ON TT1.COM_GRP_CD = TT2.COM_GRP_CD
+           WHERE CLMN_NM = 'RECRT_DST_CD'
+           AND TT2.COM_CD = T1.RECRT_DST_CD
+           ) AS RECRT_DST_CD_NM
+           ,T1.CNTR_START_DATE
+           ,T1.CNTR_END_DATE
+           ,T1.HDOC_STAT_CD
+           ,(
+           SELECT
+           TT2.COM_CD_NM
+           FROM ACOM020T TT1
+           INNER JOIN ACOM010T TT2
+           ON TT1.COM_GRP_CD = TT2.COM_GRP_CD
+           WHERE CLMN_NM = 'HDOC_STAT_CD'
+           AND TT2.COM_CD = T1.HDOC_STAT_CD
+           ) AS HDOC_STAT_CD_NM
+           , T1.LVAB_START_DATE
+           , T1.LVAB_END_DATE
+           , T4.COMP_TEL_NO
+           , T4.MBPH_NO
+           , T4.EML_ADRS
+           FROM HMST300T T1
+           LEFT OUTER JOIN (
+           SELECT
+           TT2.DEPT_ID
+           , TT2.DEPT_NM
+           , TT2.HGRK_DEPT_ID
+           , LTRIM (SYS_CONNECT_BY_PATH (TT2.DEPT_ID, ' > '), ' > ') AS DEPT_FULLNAME
+           FROM HMST100T TT2
+           START WITH TT2.HGRK_DEPT_ID IS NULL
+           CONNECT BY PRIOR TT2.DEPT_ID=TT2.HGRK_DEPT_ID
+           ) T2
+           ON T1.BLTO_DEPT_ID = T2.DEPT_ID
+           LEFT OUTER JOIN CMST010T T3
+           ON T1.EMP_ID = T3.EMP_ID AND CUST_ROLE_CLSF_CD = 'C' AND CUST_ROLE_DTL_CLSF_CD = 'C01'
+           LEFT OUTER JOIN (
+           SELECT
+           CUST_ID, MAX(COMP_TEL_NO) AS COMP_TEL_NO, MAX(MBPH_NO) AS MBPH_NO, MAX(EML_ADRS) AS EML_ADRS
+           FROM (
+           SELECT
+           CASE WHEN CNPL_DST_CD = 'A' THEN TEL_NO ELSE '' END COMP_TEL_NO
+           ,CASE WHEN CNPL_DST_CD = 'B' THEN TEL_NO ELSE '' END MBPH_NO
+           ,CASE WHEN CNPL_DST_CD = 'E' THEN EML_ADRS ELSE '' END EML_ADRS
+           ,CUST_ID
+           FROM CMST031T TT1
+           ) TT2
+           GROUP BY CUST_ID
+           ) T4
+           ON T3.CUST_ID = T4.CUST_ID
+           WHERE 1=1
+           <if test="bltoDeptId != null and bltoDeptId !=''">
+               AND UPPER(T2.DEPT_FULLNAME) LIKE '%' || UPPER(#{bltoDeptId}) || '%'
+           </if>
+           <if test="empNm != null and empNm !=''">
+               AND UPPER(T1.EMP_NM) LIKE '%' || UPPER(#{empNm}) || '%'
+           </if>
+           ORDER BY T2.DEPT_FULLNAME ASC, T1.OFPS_CD ASC, T1.EMP_NM ASC
+           )T1_T4
+       </select>-->
+
+    <select id="Select_bltcDeptInfoList"
+            parameterType="com.ibiz.api.model.DeptChgHisVO"
+            resultType="com.ibiz.api.model.DeptChgHisVO">
+
+		SELECT
+		    DEPT_ID
+		    , DEPT_NM
+		    , HGRK_DEPT_ID
+		FROM (
+		    SELECT
+		        TT2.DEPT_ID
+		        , TT2.DEPT_NM
+		        , TT2.HGRK_DEPT_ID
+		        , LTRIM (SYS_CONNECT_BY_PATH (TT2.DEPT_ID, ' > '), ' > ') AS DEPT_FULLNAME
+		    FROM HMST100T TT2
+		    START WITH TT2.HGRK_DEPT_ID iS NULL
+		    CONNECT BY PRIOR TT2.DEPT_ID=TT2.HGRK_DEPT_ID
+		)
+		WHERE 1=1
+		ORDER BY DEPT_FULLNAME
+	</select>
+
+    <!--
+
+        insert
+
+    -->
+
+    <!--
+
+        update
+
+    -->
+
+    <!--
+
+        delete
+
+    -->
+</mapper>

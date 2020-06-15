@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2098b1a8-96bd-4fa9-8c5b-1caceed05ec5" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/springbundle-master(hr)">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/springbundle-master(hr)">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="api" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="api" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="api" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="api" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1avb0ldHJlBkms0sGpj1BSkVuzJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="external.system.task.project.file.to.start" value="$PROJECT_DIR$/springbundle-master(hr)" />
+    <property name="findjar.last.used.dir" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../iBiz-project" />
+    <property name="settings.editor.selected.configurable" value="project.validation" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.ibiz.api.exception" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ibiz.api.exception" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\ibiz-hr-svn\springbundle-master(hr)\src\main\java\com\ibiz\api\exception" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.apiservice">
+    <configuration name="apiservice" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.ibiz.api.ApiApplication" />
+      <module name="api.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="springbundle-master(hr) [bootJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/springbundle-master(hr)" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="springbundle-master(hr) [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/springbundle-master(hr)" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootRun" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="springbundle-master(hr) [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/springbundle-master(hr)" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="springbundle-master(hr) [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/springbundle-master(hr)" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.apiservice" />
+      <item itemvalue="Gradle.springbundle-master(hr) [bootRun]" />
+      <item itemvalue="Gradle.springbundle-master(hr) [bootJar]" />
+      <item itemvalue="Gradle.springbundle-master(hr) [clean]" />
+      <item itemvalue="Gradle.springbundle-master(hr) [build]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.springbundle-master(hr) [bootJar]" />
+        <item itemvalue="Gradle.springbundle-master(hr) [build]" />
+        <item itemvalue="Gradle.springbundle-master(hr) [clean]" />
+        <item itemvalue="Gradle.springbundle-master(hr) [bootRun]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\oh\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2098b1a8-96bd-4fa9-8c5b-1caceed05ec5" name="Default Changelist" comment="" />
+      <created>1587618793886</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587618793886</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2646" y="224" key="#Auto_Import" timestamp="1590132612214">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2646" y="224" key="#Auto_Import/73.0.1847.1080/1920.0.1920.1050@1920.0.1920.1050" timestamp="1590132612214" />
+    <state x="2657" y="258" key="#HTTP_Proxy" timestamp="1590131724478">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2657" y="258" key="#HTTP_Proxy/73.0.1847.1080/1920.0.1920.1050@1920.0.1920.1050" timestamp="1590131724478" />
+    <state x="287" y="163" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590385137577">
+      <screen x="73" y="0" width="1847" height="1080" />
+    </state>
+    <state x="2142" y="158" key="#com.intellij.execution.impl.EditConfigurationsDialog/73.0.1847.1080/1920.0.1920.1050@1920.0.1920.1050" timestamp="1589956591167" />
+    <state x="287" y="163" key="#com.intellij.execution.impl.EditConfigurationsDialog/73.0.1847.1080/1920.0.1920.1050@73.0.1847.1080" timestamp="1590385137577" />
+    <state x="2417" y="292" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1589956578394">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2417" y="292" key="#com.intellij.ide.util.TreeClassChooserDialog/73.0.1847.1080/1920.0.1920.1050@1920.0.1920.1050" timestamp="1589956578394" />
+    <state x="2662" y="391" width="435" height="274" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1591248287335">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2662" y="391" width="435" height="274" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/73.0.1847.1080/1920.0.1920.1050@1920.0.1920.1050" timestamp="1591248287335" />
+    <state x="787" y="367" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1591764052959">
+      <screen x="73" y="0" width="1847" height="1080" />
+    </state>
+    <state x="2662" y="357" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/73.0.1847.1080/1920.0.1920.1050@1920.0.1920.1050" timestamp="1591677802064" />
+    <state x="787" y="367" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/73.0.1847.1080/1920.0.1920.1050@73.0.1847.1080" timestamp="1591764052959" />
+    <state width="456" height="454" key="DebuggerActiveHint" timestamp="1591678905858">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state width="456" height="454" key="DebuggerActiveHint/73.0.1847.1080/1920.0.1920.1050@1920.0.1920.1050" timestamp="1591678905858" />
+    <state width="388" height="466" key="DebuggerActiveHint/73.0.1847.1080/1920.0.1920.1050@73.0.1847.1080" timestamp="1590385508040" />
+    <state x="2651" y="272" key="FileChooserDialogImpl" timestamp="1592184256664">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="630" y="224" key="FileChooserDialogImpl/73.0.1463.864@73.0.1463.864" timestamp="1591600464384" />
+    <state x="2651" y="272" key="FileChooserDialogImpl/73.0.1847.1080/1920.0.1920.1050@1920.0.1920.1050" timestamp="1592184256664" />
+    <state x="776" y="280" key="FileChooserDialogImpl/73.0.1847.1080/1920.0.1920.1050@73.0.1847.1080" timestamp="1591856810658" />
+    <state width="938" height="354" key="GridCell.Tab.0.bottom" timestamp="1591935332882">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state width="938" height="354" key="GridCell.Tab.0.bottom/73.0.1847.1080/1920.0.1920.1050@1920.0.1920.1050" timestamp="1591935332882" />
+    <state width="1491" height="354" key="GridCell.Tab.0.bottom/73.0.1847.1080/1920.0.1920.1050@73.0.1847.1080" timestamp="1591856902142" />
+    <state width="938" height="354" key="GridCell.Tab.0.center" timestamp="1591935332882">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state width="938" height="354" key="GridCell.Tab.0.center/73.0.1847.1080/1920.0.1920.1050@1920.0.1920.1050" timestamp="1591935332882" />
+    <state width="1491" height="354" key="GridCell.Tab.0.center/73.0.1847.1080/1920.0.1920.1050@73.0.1847.1080" timestamp="1591856902142" />
+    <state width="938" height="354" key="GridCell.Tab.0.left" timestamp="1591935332882">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state width="938" height="354" key="GridCell.Tab.0.left/73.0.1847.1080/1920.0.1920.1050@1920.0.1920.1050" timestamp="1591935332882" />
+    <state width="1491" height="354" key="GridCell.Tab.0.left/73.0.1847.1080/1920.0.1920.1050@73.0.1847.1080" timestamp="1591856902142" />
+    <state width="938" height="354" key="GridCell.Tab.0.right" timestamp="1591935332882">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state width="938" height="354" key="GridCell.Tab.0.right/73.0.1847.1080/1920.0.1920.1050@1920.0.1920.1050" timestamp="1591935332882" />
+    <state width="1491" height="354" key="GridCell.Tab.0.right/73.0.1847.1080/1920.0.1920.1050@73.0.1847.1080" timestamp="1591856902142" />
+    <state width="1491" height="311" key="GridCell.Tab.1.bottom" timestamp="1591855540198">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1491" height="311" key="GridCell.Tab.1.bottom/73.0.1847.1080/1920.0.1920.1050@1920.0.1920.1050" timestamp="1591855540198" />
+    <state width="1804" height="354" key="GridCell.Tab.1.bottom/73.0.1847.1080/1920.0.1920.1050@73.0.1847.1080" timestamp="1591778224667" />
+    <state width="1491" height="311" key="GridCell.Tab.1.center" timestamp="1591855540198">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1491" height="311" key="GridCell.Tab.1.center/73.0.1847.1080/1920.0.1920.1050@1920.0.1920.1050" timestamp="1591855540198" />
+    <state width="1804" height="354" key="GridCell.Tab.1.center/73.0.1847.1080/1920.0.1920.1050@73.0.1847.1080" timestamp="1591778224667" />
+    <state width="1491" height="311" key="GridCell.Tab.1.left" timestamp="1591855540198">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1491" height="311" key="GridCell.Tab.1.left/73.0.1847.1080/1920.0.1920.1050@1920.0.1920.1050" timestamp="1591855540198" />
+    <state width="1804" height="354" key="GridCell.Tab.1.left/73.0.1847.1080/1920.0.1920.1050@73.0.1847.1080" timestamp="1591778224667" />
+    <state width="1491" height="311" key="GridCell.Tab.1.right" timestamp="1591855540198">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1491" height="311" key="GridCell.Tab.1.right/73.0.1847.1080/1920.0.1920.1050@1920.0.1920.1050" timestamp="1591855540198" />
+    <state width="1804" height="354" key="GridCell.Tab.1.right/73.0.1847.1080/1920.0.1920.1050@73.0.1847.1080" timestamp="1591778224667" />
+    <state x="2361" y="179" key="SettingsEditor" timestamp="1590128116093">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2361" y="179" key="SettingsEditor/73.0.1847.1080/1920.0.1920.1050@1920.0.1920.1050" timestamp="1590128116093" />
+    <state x="497" y="184" key="SettingsEditor/73.0.1847.1080/1920.0.1920.1050@73.0.1847.1080" timestamp="1588911143163" />
+    <state x="812" y="335" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588840958799">
+      <screen x="73" y="0" width="1847" height="1080" />
+    </state>
+    <state x="812" y="335" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/73.0.1847.1080/1920.0.1920.1050@73.0.1847.1080" timestamp="1588840958799" />
+    <state x="767" y="366" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1590459196565">
+      <screen x="73" y="0" width="1847" height="1080" />
+    </state>
+    <state x="767" y="366" key="com.intellij.testIntegration.createTest.CreateTestDialog/73.0.1847.1080/1920.0.1920.1050@73.0.1847.1080" timestamp="1590459196565" />
+    <state x="2123" y="126" width="1519" height="783" maximized="true" key="dock-window-1" timestamp="1591578044696">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2123" y="126" width="1519" height="783" maximized="true" key="dock-window-1/73.0.1847.1080/1920.0.1920.1050@1920.0.1920.1050" timestamp="1591578044696" />
+    <state x="2022" y="167" width="1519" height="783" key="dock-window-1/73.0.1847.1080/1920.0.1920.1050@73.0.1847.1080" timestamp="1591263844286" />
+    <state x="2048" y="110" width="1581" height="789" key="find.popup" timestamp="1591866829804">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="571" y="0" width="555" height="864" key="find.popup/73.0.1463.864@73.0.1463.864" timestamp="1591230663351" />
+    <state x="2048" y="110" width="1581" height="789" key="find.popup/73.0.1847.1080/1920.0.1920.1050@1920.0.1920.1050" timestamp="1591866829804" />
+    <state x="702" y="364" width="586" height="584" key="find.popup/73.0.1847.1080/1920.0.1920.1050@73.0.1847.1080" timestamp="1591748056795" />
+    <state x="2521" y="251" width="700" height="530" key="recent.locations.popup" timestamp="1591866791024">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2521" y="251" width="700" height="530" key="recent.locations.popup/73.0.1847.1080/1920.0.1920.1050@1920.0.1920.1050" timestamp="1591866791024" />
+    <state x="2723" y="280" key="refactoring.ChangeSignatureDialog" timestamp="1590132793562">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2723" y="280" key="refactoring.ChangeSignatureDialog/73.0.1847.1080/1920.0.1920.1050@1920.0.1920.1050" timestamp="1590132793562" />
+    <state x="653" y="250" key="run.anything.popup" timestamp="1590039931350">
+      <screen x="73" y="0" width="1847" height="1080" />
+    </state>
+    <state x="653" y="250" key="run.anything.popup/73.0.1847.1080/1920.0.1920.1050@73.0.1847.1080" timestamp="1590039931350" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/service/CmnService.java</url>
+          <line>166</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/service/CmnService.java</url>
+          <line>148</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/service/CmnService.java</url>
+          <line>123</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/service/CmnService.java</url>
+          <line>103</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/service/CmnService.java</url>
+          <line>85</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/service/DeptChgHisService.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/controller/CmnController.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/controller/CmnController.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/controller/CmnController.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/service/UserBaseInfoService.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/service/CmnService.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/service/CostCenterService.java</url>
+          <line>103</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/controller/DeptChgHisController.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/exception/GlobalExceptionHandler.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/exception/GlobalExceptionHandler.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/exception/ErrorResponse.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo typeName="org.apache.ibatis.logging.slf4j.Slf4jImpl" fieldName="log" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ibiz_hr_svn$apiservice.ic" NAME="apiservice Coverage Results" MODIFIED="1591763861124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

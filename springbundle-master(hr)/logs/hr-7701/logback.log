@@ -1,0 +1,46 @@
+[2020-05-22 16:33:31:1301][Test worker] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$759e6d1d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2020-05-22 16:33:32:1841][Test worker] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/oh/.gradle/caches/modules-2/files-2.1/org.json/json/20180130/26ba2ec0e791a32ea5dfbedfcebf36447ee5b12c/json-20180130.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/oh/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+[2020-05-22 16:33:32:1845][Test worker] INFO  com.ibiz.api.ApiApplicationTests - No active profile set, falling back to default profiles: default
+[2020-05-22 16:33:32:2628][Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2020-05-22 16:33:32:2630][Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[2020-05-22 16:33:32:2651][Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14ms. Found 0 repository interfaces.
+[2020-05-22 16:33:32:2662][Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2020-05-22 16:33:32:2663][Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[2020-05-22 16:33:32:2680][Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+[2020-05-22 16:33:33:2788][Test worker] WARN  o.s.b.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[2020-05-22 16:33:33:2866][Test worker] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.ibiz.api.service, com.ibiz.api]' package. Please check your configuration.
+[2020-05-22 16:33:33:2919][Test worker] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=8b92e256-0025-3420-9d5f-9f8388ca815d
+[2020-05-22 16:33:33:3141][Test worker] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$fe1c2f1f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2020-05-22 16:33:33:3172][Test worker] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[2020-05-22 16:33:33:3195][Test worker] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2020-05-22 16:33:33:3370][Test worker] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$759e6d1d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2020-05-22 16:33:34:3820][Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2020-05-22 16:33:34:4457][Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2020-05-22 16:33:34:4519][Test worker] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2020-05-22 16:33:34:4598][Test worker] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.8.Final}
+[2020-05-22 16:33:35:4736][Test worker] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[2020-05-22 16:33:35:4998][Test worker] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+[2020-05-22 16:33:35:5686][Test worker] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2020-05-22 16:33:35:5693][Test worker] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2020-05-22 16:33:36:6141][Test worker] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2020-05-22 16:33:36:6252][Test worker] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[2020-05-22 16:33:36:6252][Test worker] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[2020-05-22 16:33:36:6269][Test worker] INFO  c.n.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@183358cf
+[2020-05-22 16:33:37:6767][Test worker] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[2020-05-22 16:33:37:6768][Test worker] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[2020-05-22 16:33:39:8722][Test worker] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+[2020-05-22 16:33:39:8836][Test worker] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 18 endpoint(s) beneath base path '/actuator'
+[2020-05-22 16:33:39:8904][Test worker] INFO  com.ibiz.api.ApiApplicationTests - Started ApiApplicationTests in 8.565 seconds (JVM running for 9.998)
+[2020-05-22 16:33:39:9014][SpringContextShutdownHook] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+[2020-05-22 16:33:39:9019][SpringContextShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application IBIZ-HR with eureka with status DOWN
+[2020-05-22 16:33:39:9025][SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2020-05-22 16:33:39:9039][SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2020-05-22 16:33:39:9113][SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

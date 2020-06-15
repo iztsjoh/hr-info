@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="CmnMapper">
+
+    <!--
+
+        부서 관련 CRUD
+
+    -->
+
+    <!-- 임직원 정보 조회-->
+    <select id="Select_EMPInfo"
+            parameterType="com.ibiz.api.model.EmpVO"
+            resultType="com.ibiz.api.model.EmpVO">
+         	SELECT ofps.COM_CD_NM AS OFPSCDNM, reso.COM_CD_NM AS RESOCDNM, dept.DEPT_NM, emp.*
+           , (
+               SELECT CUST_ID
+               FROM CMST010T
+               WHERE CUST_ROLE_CLSF_CD = 'C'
+               AND EMP_ID = emp.EMP_ID
+           ) AS CUST_ID
+		FROM HMST300T emp
+        JOIN HMST100T dept
+        ON emp.BLTO_DEPT_ID = dept.DEPT_ID
+        JOIN (
+                  SELECT cd.* FROM ACOM020T mappinggp
+                  JOIN ACOM010T cd
+                  ON mappinggp.COM_GRP_CD = cd.COM_GRP_CD
+                  WHERE mappinggp.CLMN_NM = 'OFPS_CD'
+        ) ofps
+        ON ofps.COM_CD = emp.OFPS_CD
+        JOIN (
+                  SELECT cd.* FROM ACOM020T mappinggp
+                  JOIN ACOM010T cd
+                  ON mappinggp.COM_GRP_CD = cd.COM_GRP_CD
+                  WHERE mappinggp.CLMN_NM = 'RESO_CD'
+        ) reso
+        ON reso.COM_CD = emp.RESO_CD
+		WHERE 1 = 1
+		AND	HDOC_STAT_CD = 'A'
+		AND emp.EMP_ID = #{empId}
+	</select>
+
+    <!-- 부서명 조회 All-->
+    <select id="Select_AllDeptList"
+            parameterType="com.ibiz.api.model.DeptVO"
+            resultType="com.ibiz.api.model.DeptVO">
+		SELECT DEPT_ID, DEPT_NM, HGRK_DEPT_ID, LEVEL AS DEPTH_LEVEL
+  		FROM HMST100T
+		START WITH HGRK_DEPT_ID IS NULL
+		CONNECT BY PRIOR DEPT_ID = HGRK_DEPT_ID AND ORG_CLOSE_DATE = '99991231' --★현재 살아있는 조직
+		ORDER SIBLINGS BY DEPT_SORT_SEQC
+	</select>
+
+    <!-- 권한별 부서 조회 -->
+    <select id="Select_AuthDeptList"
+            parameterType="com.ibiz.api.model.DeptVO"
+            resultType="com.ibiz.api.model.DeptVO">
+
+        SELECT LEVEL AS DEPTH_LEVEL, DEPT_ID, DEPT_NM
+        FROM (
+        SELECT DISTINCT DEPT_ID, DEPT_NM, HGRK_DEPT_ID, DEPT_LVL_CD, SELL_OCR_YN, DEPT_SORT_SEQC, --★중복권한을 위해 DISTINCT 사용
+        MIN(DEPT_LVL_CD) OVER() MIN_DEPT_LVL_CD  --★START WITH의 시작점을 찾기 위해 DEPT_LVL_CD의 최소값 검색
+        FROM HMST110T A
+        START WITH DEPT_ID IN (SELECT AUTH_DEPT_ID FROM SSYS252T WHERE USER_ID = #{empId} AND USER_GRP_CD = #{userGrpCd}) --★사용자의 권한부서(SSYS252T) 사용자ID, 이길호(344025), 나연정(354010), 송호림(354051)
+        AND CRIT_YEAR = #{critYear} --★조회기준연도
+        CONNECT BY (PRIOR DEPT_ID = HGRK_DEPT_ID
+        <if test='userGrpCd == "BS" or priorUserGrpCd == "BS"'>
+            AND (SELL_OCR_YN = 'Y'
+            OR EXISTS (SELECT 1 FROM HMST110T B   --★하위에 매출부서를 포함하고 있는 조직
+            WHERE SELL_OCR_YN = 'Y'
+            START WITH B.DEPT_ID = A.DEPT_ID
+            AND CRIT_YEAR = #{critYear} --★조회기준연도
+            CONNECT BY PRIOR B.DEPT_ID = B.HGRK_DEPT_ID
+            AND CRIT_YEAR = #{critYear} ) --★조회기준연도
+            )
+            AND CRIT_YEAR = #{critYear}
+            )
+        </if>
+        )
+        START WITH DEPT_LVL_CD = MIN_DEPT_LVL_CD --★검색결과 중 최상위부서에서 START
+        CONNECT BY PRIOR DEPT_ID = HGRK_DEPT_ID
+        ORDER SIBLINGS BY DEPT_SORT_SEQC
+
+    </select>
+
+    <!-- 부서명 검색조건에 따른 조회-->
+    <select id="Select_DeptSearchList"
+            parameterType="com.ibiz.api.model.DeptVO"
+            resultType="com.ibiz.api.model.DeptVO">
+        <if test="deptIds != null and deptIds != ''">
+            SELECT AA.DEPT_NM, AA.DEPT_ID, AA.DEPT_SORT_SEQC, AA.DEPT_LVL_CD, AA.HGRK_DEPT_ID
+            , (SELECT COUNT(*) FROM hmst100t WHERE hgrk_dept_id = AA.dept_id) as LOWER_CNT
+            FROM (
+        </if>
+        SELECT A.DEPT_NM, A.DEPT_ID, A.DEPT_SORT_SEQC, A.DEPT_LVL_CD, A.HGRK_DEPT_ID
+        , (SELECT COUNT(*) FROM hmst100t WHERE hgrk_dept_id = A.dept_id) as LOWER_CNT
+        FROM (
+            SELECT DEPT_ID, DEPT_NM ,  HGRK_DEPT_ID, DEPT_LVL_CD, ORG_CRT_DATE,ORG_CLOSE_DATE, DEPT_SORT_SEQC
+            FROM HMST100T
+            START WITH
+            <if test="deptId != null and deptId != ''">
+                DEPT_ID  = #{deptId}
+            </if>
+            <if test="deptId == null or deptId == ''">
+                HGRK_DEPT_ID  IS NULL
+            </if>
+            CONNECT BY
+                PRIOR  DEPT_ID = HGRK_DEPT_ID
+            ORDER SIBLINGS BY DEPT_SORT_SEQC
+        ) A
+        WHERE 1 = 1
+        <![CDATA[
+	                  AND   ORG_CRT_DATE <= TO_CHAR(SYSDATE, 'YYYYMMDD')
+	                  AND   ORG_CLOSE_DATE >= TO_CHAR(SYSDATE, 'YYYYMMDD')
+	             ]]>
+        <if test="searchValue != null and searchValue != ''">
+            AND   UPPER(DEPT_ID) IN ( SELECT DEPT_ID FROM HMST100T WHERE DEPT_NM LIKE '%'||UPPER(#{searchValue})||'%'  )
+
+        </if>
+        <!-- 하위까지 보여주기
+        <if test="searchValue != null and searchValue != ''">
+            AND  (  DEPT_ID IN ( SELECT DEPT_ID FROM HMST100T WHERE DEPT_NM LIKE '%'||#{searchValue}||'%'  )
+                    OR  HGRK_DEPT_ID IN ( SELECT DEPT_ID FROM HMST100T WHERE DEPT_NM LIKE '%'||#{searchValue}||'%'  )
+                  )
+        </if> -->
+        <if test="deptIds != null and deptIds != ''">
+            AND ( DEPT_ID NOT IN  ( SELECT
+            DEPT_ID
+            FROM HMST100T
+            START WITH
+            HGRK_DEPT_ID  =  #{deptIds}
+            CONNECT BY
+            PRIOR  DEPT_ID = HGRK_DEPT_ID ) )
+            AND HGRK_DEPT_ID NOT IN ( #{deptIds} ) AND  DEPT_ID NOT IN ( #{deptIds} )
+            ) AA
+            START WITH
+            HGRK_DEPT_ID IS NULL
+            CONNECT BY
+            PRIOR  DEPT_ID = HGRK_DEPT_ID
+        </if>
+
+    </select>
+
+    <!-- <select id="Select_AuthDeptList"
+       parameterType="com.inzent.ibiz.infra.cmn.model.DeptVO"
+       resultType="com.inzent.ibiz.infra.cmn.model.DeptVO">
+       SELECT
+              A.DEPT_ID
+             ,DEPT_NM
+             ,HGRK_DEPT_ID
+             ,DEPT_SORT_SEQC
+             ,DEPT_LVL_CD
+             ,b.DEPTH_LEVEL
+       FROM HMST100T A
+       JOIN (
+                SELECT
+                      DEPT_ID
+                      <if test='isAllAuth == "N" ' >
+                      ,max(LEVEL) DEPTH_LEVEL
+                      </if>
+                      <if test='isAllAuth == "Y" ' >
+                      ,LEVEL DEPTH_LEVEL
+                      </if>
+                    FROM HMST100T
+                    WHERE 1 =1
+                    <if test='orgDstCd != null and orgDstCd != "" and isAllAuth == "N" ' >
+                    AND ORG_DST_CD = #{orgDstCd}
+                    </if>
+                   <![CDATA[
+                    AND ORG_CRT_DATE <= TO_CHAR(SYSDATE, 'YYYYMMDD')
+                    AND ORG_CLOSE_DATE >= TO_CHAR(SYSDATE, 'YYYYMMDD')
+                    ]]>
+                    START WITH
+                    <if test='isAllAuth == "N" ' >
+                       DEPT_ID IN (
+                           SELECT AUTH_DEPT_ID
+                               FROM SSYS252T T1
+                               JOIN HMST100T T2
+                               ON T1.AUTH_DEPT_ID = T2.DEPT_ID
+                               WHERE T1.USER_ID = #{empId}
+                               AND   T1.USER_GRP_CD = #{userGrpCd}
+                               <![CDATA[
+                               AND   T1.AVL_START_DATE <= TO_CHAR(SYSDATE, 'YYYYMMDD')
+                               AND   T1.AVL_END_DATE >= TO_CHAR(SYSDATE, 'YYYYMMDD')
+                                ]]>
+                          )
+                    </if>
+                    <if test='isAllAuth == "Y" ' >
+                    DEPT_ID = (
+                       SELECT MAX(DEPT_ID) KEEP(DENSE_RANK first ORDER BY T_LEVEL DESC) DEPT_ID FROM (
+                         SELECT DEPT_ID, LEVEL T_LEVEL FROM HMST100T
+                           START WITH DEPT_ID = #{deptId}
+                           CONNECT BY PRIOR HGRK_DEPT_ID = DEPT_ID
+                              )
+                      )
+                    </if>
+                   CONNECT BY
+                       PRIOR DEPT_ID = HGRK_DEPT_ID
+                    <if test='isAllAuth == "N" ' >
+                       group by dept_id
+                    </if>
+
+               ) B
+               ON A.DEPT_ID = B.DEPT_ID
+   </select>  -->
+    <!-- 현 부서 하위부서 갯수 조회-->
+    <select id="Select_IsLowerDept"
+            parameterType="com.ibiz.api.model.DeptVO"
+            resultType="com.ibiz.api.model.DeptVO">
+		SELECT Count(DEPT_ID) AS cntLowerDeptID,
+	        CASE
+	            WHEN MAX(HGRK_DEPT_ID) IS NOT NULL THEN MAX(HGRK_DEPT_ID)
+	            ELSE #{deptId}
+	        END AS HGRK_DEPT_ID
+		FROM HMST100T
+		WHERE HGRK_DEPT_ID = #{deptId}
+		<![CDATA[
+            AND   ORG_CRT_DATE <= TO_CHAR(SYSDATE, 'YYYYMMDD')
+            AND   ORG_CLOSE_DATE >= TO_CHAR(SYSDATE, 'YYYYMMDD')
+         ]]>
+    </select>
+
+    <!--
+
+        임직원 관련 CRUD
+
+    -->
+
+    <!-- 부서팀장정보조회-->
+    <select id="Select_hddpEmp"
+            parameterType="com.ibiz.api.model.DeptVO"
+            resultType="com.ibiz.api.model.EmpVO">
+
+			SELECT
+			    T300.EMP_ID, T300.EMP_NM,
+			    T300.RESO_CD, IBIZ_COM_CD_NM('RESO_CD', T300.RESO_CD) AS RESO_NM,
+			    T300.OFPS_CD, IBIZ_COM_CD_NM('OFPS_CD', T300.OFPS_CD) AS OFPS_NM
+			FROM
+			    HMST100T T100
+			    INNER JOIN HMST300T T300 ON T100.HDDP_EMP_ID = T300.EMP_ID
+			WHERE
+			    T100.DEPT_ID = #{deptId}
+
+	</select>
+
+    <!-- 임직원 조건별 조회-->
+    <select id="Select_EMPSearchList"
+            parameterType="com.ibiz.api.model.EmpVO"
+            resultType="com.ibiz.api.model.EmpVO">
+
+        SELECT *
+        FROM
+        (
+        SELECT ROWNUM as ROWNUMBER, ofps.COM_CD_NM AS OFPSCDNM, reso.COM_CD_NM AS RESOCDNM, dept.DEPT_NM, emp.*, IBIZ_COM_CD_NM('HDOC_STAT_CD', HDOC_STAT_CD) AS HDOC_STAT_NM,
+        COUNT(*) OVER() AS TOTAL_CNT
+        , (
+        SELECT CUST_ID
+        FROM CMST010T
+        WHERE CUST_ROLE_CLSF_CD = 'C'
+        AND EMP_ID = emp.EMP_ID
+        AND ROLE_SEQ = (
+        SELECT
+        MIN(ROLE_SEQ)
+        FROM
+        CMST010T
+        WHERE
+        CUST_ROLE_CLSF_CD = 'C'
+        AND EMP_ID = emp.EMP_ID
+        )
+        ) AS CUST_ID,
+        (
+        SELECT BLTO_COMP_NM
+        FROM CMST000T
+        WHERE CUST_ID = (
+        SELECT CUST_ID
+        FROM CMST010T
+        WHERE CUST_ROLE_CLSF_CD = 'C'
+        AND EMP_ID = emp.EMP_ID
+        AND ROLE_SEQ = (
+        SELECT
+        MIN(ROLE_SEQ)
+        FROM
+        CMST010T
+        WHERE
+        CUST_ROLE_CLSF_CD = 'C'
+        AND EMP_ID = emp.EMP_ID
+        )
+        )
+        ) AS COMP_NM
+        FROM HMST300T emp
+        JOIN HMST100T dept
+        ON emp.BLTO_DEPT_ID = dept.DEPT_ID
+        JOIN (
+        SELECT cd.* FROM ACOM020T mappinggp
+        JOIN ACOM010T cd
+        ON mappinggp.COM_GRP_CD = cd.COM_GRP_CD
+        WHERE mappinggp.CLMN_NM = 'OFPS_CD'
+        ) ofps
+        ON ofps.COM_CD = emp.OFPS_CD
+        JOIN (
+        SELECT cd.* FROM ACOM020T mappinggp
+        JOIN ACOM010T cd
+        ON mappinggp.COM_GRP_CD = cd.COM_GRP_CD
+        WHERE mappinggp.CLMN_NM = 'RESO_CD'
+        ) reso
+        ON reso.COM_CD = emp.RESO_CD
+        WHERE 1 = 1
+        <!-- <choose>
+           <when test='hdocStatCd == ""'>
+               AND	HDOC_STAT_CD = 'A'
+           </when>
+           <otherwise>
+
+           </otherwise>
+       </choose> -->
+        <if test="hdocStatCd  != null and hdocStatCd != ''">
+            AND	HDOC_STAT_CD = #{hdocStatCd}
+        </if>
+        <if test="empNm != null and empNm != ''">
+            AND  UPPER(EMP_NM) LIKE '%'||UPPER(#{empNm})||'%'
+        </if>
+        <if test="bltoDeptId != null and bltoDeptId != ''">
+            AND  (BLTO_DEPT_ID IN
+            (
+            SELECT  DEPT_ID
+            FROM HMST100T
+            START WITH
+            HGRK_DEPT_ID = #{bltoDeptId}
+            CONNECT BY
+            PRIOR  DEPT_ID = HGRK_DEPT_ID
+            )   OR BLTO_DEPT_ID = #{bltoDeptId}  )
+        </if>
+        )
+        WHERE
+        ROWNUMBER BETWEEN #{pageSize} * (#{pageNumber} - 1) + 1
+        AND #{pageSize} * (#{pageNumber} - 1) + #{pageSize}
+    </select>
+
+    <!-- 임직원 조건별 조회 카운트-->
+    <!-- <select id="Select_EMPSearchListCount"
+        parameterType="com.inzent.ibiz.infra.cmn.model.EmpVO"
+        resultType="com.inzent.ibiz.infra.cmn.model.EmpVO">
+
+            SELECT Count(*) AS TotalSize
+            FROM HMST300T emp
+            JOIN HMST100T dept
+            ON emp.BLTO_DEPT_ID = dept.DEPT_ID
+            JOIN (
+                      SELECT cd.* FROM ACOM020T mappinggp
+                      JOIN ACOM010T cd
+                      ON mappinggp.COM_GRP_CD = cd.COM_GRP_CD
+                      WHERE mappinggp.CLMN_NM = 'OFPS_CD'
+            ) ofps
+            ON ofps.COM_CD = emp.OFPS_CD
+            JOIN (
+                      SELECT cd.* FROM ACOM020T mappinggp
+                      JOIN ACOM010T cd
+                      ON mappinggp.COM_GRP_CD = cd.COM_GRP_CD
+                      WHERE mappinggp.CLMN_NM = 'RESO_CD'
+            ) reso
+            ON reso.COM_CD = emp.RESO_CD
+            WHERE 1 = 1
+            <if test='hdocStatCd == ""'>
+                AND	HDOC_STAT_CD = 'A'
+            </if>
+            <if test="empNm != null and empNm != ''">
+                AND  UPPER(EMP_NM) LIKE '%'||UPPER(#{empNm})||'%'
+            </if>
+            <if test="bltoDeptId != null and bltoDeptId != ''">
+                    AND  (BLTO_DEPT_ID IN
+                    (
+                         SELECT  DEPT_ID
+                            FROM HMST100T
+                            START WITH
+                                HGRK_DEPT_ID = #{bltoDeptId}
+                            CONNECT BY
+                                PRIOR  DEPT_ID = HGRK_DEPT_ID
+                    )   OR BLTO_DEPT_ID = #{bltoDeptId}  )
+            </if>
+    </select> -->
+
+
+
+    <!--
+
+        UPDATE
+
+     -->
+    <!-- 영업대표에 따른 수정삭제권한체크-->
+    <select id="Select_IsAuthBySlsEmp"
+            parameterType="com.ibiz.api.model.DeptVO"
+            resultType="com.ibiz.api.model.DeptVO">
+        SELECT
+        COUNT(*) AS TotalSize
+        FROM
+        (
+        SELECT
+        SLST.DEPT_ID
+        ,SLST.DEPT_NM
+        ,SLST.HGRK_DEPT_ID
+        ,SLST.DEPT_SORT_SEQC
+        ,LTRIM (SYS_CONNECT_BY_PATH (SLST.DEPT_ID, ' > '), ' > ') AS DEPT_FULLNAME
+        ,LEVEL AS DEPTH_LEVEL
+        FROM HMST100T SLST
+        WHERE 1 = 1
+        <![CDATA[
+		                 AND   ORG_CRT_DATE <= TO_CHAR(SYSDATE, 'YYYYMMDD')
+		                 AND   ORG_CLOSE_DATE >= TO_CHAR(SYSDATE, 'YYYYMMDD')
+		            	]]>
+        START WITH
+        DEPT_ID =
+        (
+        SELECT BLTO_DEPT_ID
+        FROM HMST300T
+        WHERE EMP_ID = #{slsEmpId}
+        )
+        CONNECT BY PRIOR SLST.DEPT_ID=SLST.HGRK_DEPT_ID
+        )
+        WHERE DEPT_ID in
+        (
+        SELECT
+        USERT.DEPT_ID
+        FROM HMST100T USERT
+        WHERE 1 = 1
+        <![CDATA[
+		                 AND   ORG_CRT_DATE <= TO_CHAR(SYSDATE, 'YYYYMMDD')
+		                 AND   ORG_CLOSE_DATE >= TO_CHAR(SYSDATE, 'YYYYMMDD')
+		            	]]>
+        START WITH
+        DEPT_ID = #{deptId}
+        CONNECT BY PRIOR USERT.DEPT_ID=USERT.HGRK_DEPT_ID
+        )
+        OR DEPT_ID IN
+        (
+        SELECT
+        DEPT_ID
+        FROM
+        HMST100T
+        START WITH
+        HGRK_DEPT_ID IN (
+        SELECT
+        AUTH_DEPT_ID
+        FROM
+        SSYS252T
+        WHERE
+        USER_ID = #{empId}
+        <![CDATA[
+                        AND   AVL_START_DATE <= TO_CHAR(SYSDATE, 'YYYYMMDD')
+                        AND   AVL_END_DATE >= TO_CHAR(SYSDATE, 'YYYYMMDD')
+                    	]]>
+        <if test="userGrpCd != null and userGrpCd !=''">
+            AND   USER_GRP_CD = #{userGrpCd}
+        </if>
+        )
+        CONNECT BY
+        PRIOR DEPT_ID = HGRK_DEPT_ID
+        )
+    </select>
+    <!-- 최상위 부서정보조회 -->
+    <select id="Select_HTRKDeptInfo"
+            resultType="com.ibiz.api.model.DeptVO">
+		SELECT * FROM HMST100T WHERE HGRK_DEPT_ID IS NULL
+	</select>
+
+</mapper>
