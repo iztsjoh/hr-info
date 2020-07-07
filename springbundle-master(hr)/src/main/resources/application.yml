@@ -3,13 +3,13 @@ server:
 
 spring:
   application:
-    name: ibiz-hr
+    name: ibiz-hr-info
   redis:
     host: localhost
     port: 6379
     #password: operation0307
 #    password: staging1216
-    #password: dev5791
+    password: dev5791
 
   datasource:
     driver-class-name: oracle.jdbc.OracleDriver #net.sf.log4jdbc.sql.jdbcapi.DriverSpy # oracle.jdbc.OracleDriver
@@ -37,7 +37,7 @@ logging:
 
 eureka:
   instance:
-    instance-id: hr-7700
+    instance-id: hr-info-7700
   client:
     service-url:
       defaultZone: http://127.0.0.1:8761/eureka/
