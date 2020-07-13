@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="DeptMapper">
+    <!--
+		Select
+	-->
+
+    <!-- 조회 : 기준일자 기준 조직트리-->
+    <select id="selectDeptTree"
+            parameterType="com.ibiz.api.model.DeptHistoryVO"
+            resultType="com.ibiz.api.model.DeptHistoryVO">
+
+		SELECT
+		    DEPT_ID
+		    , DEPT_NM || '(' || DEPT_ID || ')' AS DEPT_NM
+		    , HGRK_DEPT_ID
+		    , DEPT_SORT_SEQC
+		    , DEPTH_LEVEL
+		FROM (
+		    SELECT
+		        T2.DEPT_ID
+		        ,T2.DEPT_NM
+		        ,T2.HGRK_DEPT_ID
+		        ,T2.DEPT_SORT_SEQC
+		        ,LTRIM (SYS_CONNECT_BY_PATH (T2.DEPT_ID, ' > '), ' > ') AS DEPT_FULLNAME
+		        ,LEVEL AS DEPTH_LEVEL
+		    FROM (
+		        SELECT
+		            T1.DEPT_ID
+		            ,T1.DEPT_NM
+		            ,T1.HGRK_DEPT_ID
+		            ,T1.DEPT_SORT_SEQC
+		        FROM HMST101T T1
+		        WHERE <![CDATA[  T1.AVL_START_DATE <= ]]> #{stadDate}
+		        	AND <![CDATA[ T1.AVL_END_DATE >= ]]>  #{stadDate}
+		        ORDER BY T1.DEPT_ID
+		    ) T2
+		    START WITH T2.HGRK_DEPT_ID IS NULL
+		    CONNECT BY PRIOR T2.DEPT_ID=T2.HGRK_DEPT_ID
+		    ORDER SIBLINGS BY TO_NUMBER(T2.DEPT_SORT_SEQC)
+		)
+
+	</select>
+
+    <!-- 조회 : 특정조직의 등록가능한 상위조직 조회-->
+    <select id="selectHighDeptTree"
+            parameterType="com.ibiz.api.model.DeptHistoryVO"
+            resultType="com.ibiz.api.model.DeptHistoryVO">
+
+        SELECT
+        DEPT_ID
+        , DEPT_NM
+        , HGRK_DEPT_ID
+        , DEPT_SORT_SEQC
+        , DEPTH_LEVEL
+        FROM (
+        SELECT
+        T1.DEPT_ID
+        ,T1.DEPT_NM
+        ,T1.HGRK_DEPT_ID
+        ,T1.DEPT_SORT_SEQC
+        ,LTRIM (SYS_CONNECT_BY_PATH (T1.DEPT_ID, ' > '), ' > ') AS DEPT_FULLNAME
+        ,LEVEL AS DEPTH_LEVEL
+        FROM HMST100T T1
+        WHERE <![CDATA[  T1.ORG_CRT_DATE <= ]]> #{stadDate}
+        AND <![CDATA[ T1.ORG_CLOSE_DATE >= ]]>  #{stadDate}
+        START WITH T1.HGRK_DEPT_ID IS NULL
+        CONNECT BY PRIOR T1.DEPT_ID=T1.HGRK_DEPT_ID
+        )
+        <if test="deptId != null and deptId !=''">
+            WHERE DEPT_FULLNAME NOT LIKE '%' || #{deptId} || '%'
+        </if>
+        ORDER BY DEPT_FULLNAME
+
+    </select>
+
+    <!-- 왼쪽 조직트리 선택 :  특정 부서변경이력리스트-->
+    <select id="selectDeptHistoryList"
+            parameterType="com.ibiz.api.model.DeptHistoryVO"
+            resultType="com.ibiz.api.model.DeptHistoryVO">
+
+		SELECT
+			*
+		FROM (
+			SELECT
+			     T1.DEPT_ID
+			    ,T1.DEPT_NM
+			    ,T1.HGRK_DEPT_ID
+                ,IBIZ_DEPT_NM(T1.HGRK_DEPT_ID) AS HGRK_DEPT_NM
+			    ,T1.DEPT_SORT_SEQC
+			    ,T1.DEPT_LVL_CD
+                ,IBIZ_COM_CD_NM('DEPT_LVL_CD', DEPT_LVL_CD) AS DEPT_LVL_CD_NM
+			     ,T1.HDDP_EMP_ID
+			     ,T2.EMP_NM AS HDDP_EMP_NM
+			     ,T1.SELL_OCR_YN
+			     ,T1.ORG_CRT_DATE
+			     ,T1.ORG_CLOSE_DATE
+			     ,T1.AVL_START_DATE
+			     ,T1.AVL_END_DATE
+			     ,ROW_NUMBER() OVER(ORDER BY T1.AVL_END_DATE DESC)  AS ROWNUMBER
+			     ,T1.ORG_DST_CD
+                 ,IBIZ_COM_CD_NM('ORG_DST_CD', ORG_DST_CD) AS ORG_DST_CD_NM
+			FROM HMST101T T1
+			    LEFT OUTER JOIN HMST300T T2
+			    ON T1.HDDP_EMP_ID = T2.EMP_ID
+			WHERE T1.DEPT_ID = #{deptId}
+		)
+		WHERE ROWNUMBER BETWEEN #{pageSize} * (#{pageNumber} - 1) + 1 AND #{pageSize} * (#{pageNumber} - 1) + #{pageSize}
+	</select>
+
+    <!-- 마지막 이력 -->
+    <select id="selectLastDeptHistoryList"
+            parameterType="com.ibiz.api.model.DeptHistoryVO"
+            resultType="com.ibiz.api.model.DeptHistoryVO">
+		SELECT
+    		*
+	    FROM (
+	        SELECT
+	            T1.DEPT_ID
+				,T1.DEPT_NM
+				,T1.HGRK_DEPT_ID
+				,(
+	                SELECT
+	                    TT2.DEPT_NM AS HGRK_DEPT_NM
+				    FROM
+	                    HMST101T TT2
+	                    WHERE (TT2.AVL_START_DATE BETWEEN T1.AVL_START_DATE AND T1.AVL_END_DATE
+				        OR TT2.AVL_END_DATE BETWEEN T1.AVL_START_DATE AND T1.AVL_END_DATE
+	                    OR (TT2.AVL_START_DATE <![CDATA[ <= ]]> T1.AVL_START_DATE AND TT2.AVL_END_DATE <![CDATA[ >= ]]> T1.AVL_END_DATE)
+	            )
+	            AND TT2.DEPT_ID = T1.HGRK_DEPT_ID
+	            AND TT2.AVL_END_DATE =
+	            (
+	                SELECT
+	                    MAX(AVL_END_DATE)
+	                FROM
+	                    HMST101T TT2
+	                WHERE
+	                    (
+	                        TT2.AVL_START_DATE BETWEEN T1.AVL_START_DATE AND T1.AVL_END_DATE
+	                        OR TT2.AVL_END_DATE BETWEEN T1.AVL_START_DATE AND T1.AVL_END_DATE
+	                        OR (TT2.AVL_START_DATE <![CDATA[ <= ]]> T1.AVL_START_DATE AND TT2.AVL_END_DATE <![CDATA[ >= ]]> T1.AVL_END_DATE)
+	                    )
+	                    AND TT2.DEPT_ID = T1.HGRK_DEPT_ID
+	            )
+			) AS HGRK_DEPT_NM
+	            ,T1.DEPT_SORT_SEQC
+				,T1.DEPT_LVL_CD
+				,IBIZ_COM_CD_NM('DEPT_LVL_CD', DEPT_LVL_CD) AS DEPT_LVL_CD_NM
+				     ,T1.HDDP_EMP_ID
+				     ,T2.EMP_NM AS HDDP_EMP_NM
+				     ,T1.SELL_OCR_YN
+				     ,T1.ORG_CRT_DATE
+				     ,T1.ORG_CLOSE_DATE
+				     ,T1.AVL_START_DATE
+				     ,T1.AVL_END_DATE
+				     ,ROW_NUMBER() OVER(ORDER BY T1.AVL_END_DATE DESC)  AS ROWNUMBER
+				     ,T1.ORG_DST_CD
+				     ,(
+			            SELECT
+			                TT2.COM_CD_NM
+			            FROM ACOM020T TT1
+			                INNER JOIN ACOM010T TT2
+			                ON TT1.COM_GRP_CD = TT2.COM_GRP_CD
+			            WHERE CLMN_NM = 'ORG_DST_CD'
+			                AND TT2.COM_CD = T1.ORG_DST_CD
+			         ) AS ORG_DST_CD_NM
+				FROM HMST101T T1
+				    LEFT OUTER JOIN HMST300T T2
+				    ON T1.HDDP_EMP_ID = T2.EMP_ID
+				WHERE T1.DEPT_ID = #{deptId}
+			)
+		WHERE ROWNUMBER = 1
+	</select>
+
+    <!-- 왼쪽 조직트리 선택 : 특정 부서변경이력카운트-->
+    <select id="selectDeptHistoryCnt"
+            parameterType="com.ibiz.api.model.DeptHistoryVO"
+            resultType="com.ibiz.api.model.DeptHistoryVO">
+
+		SELECT
+		    COUNT(T1.DEPT_ID) AS LIST_CNT
+		FROM HMST101T T1
+		    LEFT OUTER JOIN HMST100T T2
+		    ON T1.HGRK_DEPT_ID = T2.DEPT_ID
+		WHERE T1.DEPT_ID = #{deptId, jdbcType=VARCHAR}
+	</select>
+
+
+    <!-- 추가 : 최신 변경이력 조직정보 가져오기-->
+    <select id="selectDeptLastChgHistory"
+            parameterType="com.ibiz.api.model.DeptHistoryVO"
+            resultType="com.ibiz.api.model.DeptHistoryVO">
+		SELECT
+		    T1.DEPT_ID
+		    ,T1.DEPT_NM
+		    ,T1.HGRK_DEPT_ID
+		    ,T1.DEPT_SORT_SEQC
+		    ,T1.DEPT_LVL_CD
+		    ,T1.SELL_OCR_YN
+		    ,T1.HDDP_EMP_ID
+		    ,T2.EMP_NM AS HDDP_EMP_NM
+		    ,T2.OFPS_CD
+            ,IBIZ_COM_CD_NM('OFPS_CD', OFPS_CD) AS OFPS_CD_NM
+		    ,T2.EMP_NM AS HDDP_EMP_NM
+		    ,(
+		    	SELECT
+		    		MIN(ORG_CRT_DATE)
+		    	FROM HMST101T TT1
+		    	WHERE TT1.DEPT_ID = #{deptId}
+		    ) AS ORG_CRT_DATE
+		    ,'99991231' AS ORG_CLOSE_DATE
+		    ,TO_CHAR(SYSDATE, 'YYYYMMDD') AS AVL_START_DATE
+		    ,'99991231' AS AVL_END_DATE
+		    ,T1.ORG_DST_CD
+		    ,T1.CHG_EMP_ID
+		FROM HMST101T T1
+		    LEFT OUTER JOIN HMST300T T2
+		    ON T1.HDDP_EMP_ID = T2.EMP_ID
+		WHERE T1.DEPT_ID = #{deptId}
+		    AND T1.AVL_START_DATE = (
+		                                SELECT MAX(AVL_START_DATE)
+		                                FROM HMST101T TT1
+		                                WHERE TT1.DEPT_ID = #{deptId}
+		                             )
+	</select>
+
+    <!-- 저장 : 등록 유효기간 적합성 판단-->
+    <select id="selectIsValidDept"
+            parameterType="com.ibiz.api.model.DeptHistoryVO"
+            resultType="com.ibiz.api.model.DeptHistoryVO">
+
+		SELECT
+		    CASE WHEN SUM(T1_VAL_CHK_01) IS NULL THEN 'S'    -- 신규등록
+		         WHEN SUM(T1_VAL_CHK_01) = 0 AND #{avlEndDate} <![CDATA[ > ]]> MAX(AVL_END_DATE)
+		         		AND #{avlStartDate} <![CDATA[ > ]]> MAX(AVL_START_DATE) THEN  'LN'--최신 이력 추가 성공
+		         WHEN SUM(T1_VAL_CHK_01) = 0 AND #{avlEndDate} <![CDATA[ >= ]]> MAX(AVL_END_DATE)
+		         		AND #{avlStartDate} <![CDATA[ <= ]]> MAX(AVL_START_DATE) THEN 'LNE' --최신 이력 추가 실패 (2중중첩 이력)
+		         WHEN SUM(T1_VAL_CHK_01) = 0 AND #{avlEndDate} <![CDATA[ < ]]> MAX(AVL_END_DATE)
+		                AND (SUM(T1_VAL_CHK_02) + SUM(T1_VAL_CHK_03)) = 0 THEN 'MN'  --중간 이력 추가 성공
+		         WHEN SUM(T1_VAL_CHK_01) = 0 AND #{avlEndDate} <![CDATA[ < ]]> MAX(AVL_END_DATE)
+		                AND (SUM(T1_VAL_CHK_02) + SUM(T1_VAL_CHK_03)) <![CDATA[ > ]]> 0 THEN 'MLE'   --중간 이력 추가 실패 (중첩기간 존재)
+		         WHEN SUM(T1_VAL_CHK_01) > 0 AND #{avlEndDate} <![CDATA[ >= ]]> MAX(AVL_END_DATE)
+		                AND (SUM(T1_VAL_CHK_04) + SUM(T1_VAL_CHK_05)) = 0 THEN 'LU'  --최신 이력 변경 성공
+		         WHEN SUM(T1_VAL_CHK_01) > 0 AND #{avlEndDate} <![CDATA[ >= ]]> MAX(AVL_END_DATE)
+		                AND (SUM(T1_VAL_CHK_04) + SUM(T1_VAL_CHK_05)) <![CDATA[ > ]]> 0 THEN 'LUE'   --최신 이력 변경 실패 (중첩기간 존재)
+		         WHEN SUM(T1_VAL_CHK_01) > 0 AND #{avlEndDate} <![CDATA[ < ]]> MAX(AVL_END_DATE)
+		                AND (SUM(T1_VAL_CHK_04) + SUM(T1_VAL_CHK_05)) = 0 THEN 'MU'  --중간 이력 변경 성공
+		         WHEN SUM(T1_VAL_CHK_01) > 0 AND #{avlEndDate} <![CDATA[ < ]]> MAX(AVL_END_DATE)
+		                AND (SUM(T1_VAL_CHK_04) + SUM(T1_VAL_CHK_05)) <![CDATA[ > ]]> 0 THEN 'MUE'  --중간 이력 변경 실패 (중첩기간 존재)
+		         ELSE 'E'
+		    END VAL_CHK
+		FROM (
+		    SELECT
+		        CASE WHEN #{avlStartDate} = T1.AVL_START_DATE THEN 1 ELSE 0 END T1_VAL_CHK_01
+		        ,CASE WHEN #{avlStartDate} BETWEEN T1.AVL_START_DATE AND T1.AVL_END_DATE THEN 1 ELSE 0 END T1_VAL_CHK_02
+		        ,CASE WHEN #{avlEndDate} BETWEEN T1.AVL_START_DATE AND T1.AVL_END_DATE THEN 1 ELSE 0 END T1_VAL_CHK_03
+		        ,CASE WHEN T1.AVL_START_DATE <![CDATA[ <> ]]> #{avlStartDate} AND #{avlStartDate} BETWEEN T1.AVL_START_DATE AND T1.AVL_END_DATE THEN 1 ELSE 0 END T1_VAL_CHK_04
+		        ,CASE WHEN T1.AVL_START_DATE <![CDATA[ <> ]]> #{avlStartDate} AND #{avlEndDate} BETWEEN T1.AVL_START_DATE AND T1.AVL_END_DATE THEN 1 ELSE 0 END T1_VAL_CHK_05
+		        , T1.AVL_END_DATE
+		        , T1.AVL_START_DATE
+		    FROM HMST101T T1
+		    WHERE DEPT_ID = #{deptId}
+		)
+	</select>
+
+
+    <!-- 8/6 -->
+    <!-- 조직 신규등록시, 상위조직 SelectBox 콤보 가져오기. -->
+    <select id="selectHgrkDeptFromAvlDateList"
+            parameterType="com.ibiz.api.model.DeptHistoryVO"
+            resultType="com.ibiz.api.model.DeptHistoryVO">
+		SELECT
+			DEPT_ID, DEPT_NM, HGRK_DEPT_ID, LEVEL AS DEPTH_LEVEL
+	  	FROM
+	  		HMST101T
+		START WITH
+			HGRK_DEPT_ID IS NULL
+		CONNECT BY
+			PRIOR DEPT_ID = HGRK_DEPT_ID AND #{avlStartDate} BETWEEN AVL_START_DATE AND AVL_END_DATE
+		ORDER SIBLINGS BY DEPT_SORT_SEQC
+	</select>
+
+    <!-- 조직이력 등록시, 상위조직 SelectBox 콤보 가져오기 (해당 조직은 콤보에 나타나지 않음.) -->
+    <select id="selectDeptListWhenAddRecord"
+            parameterType="com.ibiz.api.model.DeptHistoryVO"
+            resultType="com.ibiz.api.model.DeptHistoryVO">
+		<![CDATA[
+		SELECT
+			DEPT_ID, DEPT_NM, HGRK_DEPT_ID, LEVEL AS DEPTH_LEVEL
+		FROM (
+	        SELECT DISTINCT DEPT_ID, DEPT_NM, HGRK_DEPT_ID, DEPT_SORT_SEQC
+				FROM HMST101T
+			WHERE (#{avlStartDate} <= AVL_END_DATE AND #{avlEndDate} >= AVL_START_DATE)
+        )
+        WHERE NOT #{deptId} IN DEPT_ID
+		START WITH HGRK_DEPT_ID IS NULL
+		CONNECT BY PRIOR DEPT_ID = HGRK_DEPT_ID
+		ORDER SIBLINGS BY DEPT_SORT_SEQC
+		]]>
+	</select>
+
+    <!-- 조직이력 등록시, 상위조직 SelectBox 콤보 가져오기 (해당 조직은 콤보에 나타남.) -->
+    <select id="selectHgrkDeptWhenAddRecordList"
+            parameterType="com.ibiz.api.model.DeptHistoryVO"
+            resultType="com.ibiz.api.model.DeptHistoryVO">
+		<![CDATA[
+		SELECT
+			DEPT_ID, DEPT_NM, HGRK_DEPT_ID, LEVEL AS DEPTH_LEVEL
+		FROM (
+	        SELECT DISTINCT DEPT_ID, DEPT_NM, HGRK_DEPT_ID, DEPT_SORT_SEQC
+				FROM HMST101T
+			WHERE (#{avlStartDate} <= AVL_END_DATE AND #{avlEndDate} >= AVL_START_DATE)
+        )
+		START WITH HGRK_DEPT_ID IS NULL
+		CONNECT BY PRIOR DEPT_ID = HGRK_DEPT_ID
+		ORDER SIBLINGS BY DEPT_SORT_SEQC
+		]]>
+	</select>
+
+    <!--
+
+        insert
+
+    -->
+    <!-- 저장 : 부서변경이력 추가-->
+    <insert id="insertDeptChgHistory"
+            parameterType="com.ibiz.api.model.DeptHistoryVO">
+        INSERT INTO HMST101T
+        (
+        DEPT_ID
+        ,AVL_START_DATE
+        ,AVL_END_DATE
+        ,DEPT_NM
+        <if test="hgrkDeptId != null and hgrkDeptId !=''">
+            ,HGRK_DEPT_ID
+        </if>
+        <if test="deptSortSeqc != null and deptSortSeqc !=''">
+            ,DEPT_SORT_SEQC
+        </if>
+        ,DEPT_LVL_CD
+        <if test="hddpEmpId != null and hddpEmpId !=''">
+            ,HDDP_EMP_ID
+        </if>
+        ,SELL_OCR_YN
+        ,ORG_CRT_DATE
+        ,ORG_CLOSE_DATE
+        <if test="orgDstCd != null and orgDstCd !=''">
+            ,ORG_DST_CD
+        </if>
+        <if test="chgEmpId != null and chgEmpId !=''">
+            ,CHG_EMP_ID
+        </if>
+        ,CHG_DT
+        )
+        VALUES
+        (
+        #{deptId}
+        ,#{avlStartDate}
+        ,#{avlEndDate}
+        ,#{deptNm}
+        <if test="hgrkDeptId != null and hgrkDeptId !=''">
+            ,#{hgrkDeptId}
+        </if>
+        <if test="deptSortSeqc != null and deptSortSeqc !=''">
+            ,#{deptSortSeqc}
+        </if>
+        ,#{deptLvlCd}
+        <if test="hddpEmpId != null and hddpEmpId !=''">
+            ,#{hddpEmpId}
+        </if>
+        ,#{sellOcrYn}
+        ,#{orgCrtDate}
+        ,#{orgCloseDate}
+        <if test="orgDstCd != null and orgDstCd !=''">
+            ,#{orgDstCd}
+        </if>
+        <if test="chgEmpId != null and chgEmpId !=''">
+            ,#{chgEmpId}
+        </if>
+        ,SYSDATE
+        )
+
+    </insert>
+
+    <!-- 저장 : 부서정보 추가-->
+    <insert id="insertDeptInfo"
+            parameterType="com.ibiz.api.model.DeptHistoryVO">
+        INSERT INTO HMST100T
+        (
+        DEPT_ID
+        ,DEPT_NM
+        <if test="hgrkDeptId != null and hgrkDeptId !=''">
+            ,HGRK_DEPT_ID
+        </if>
+        <if test="deptSortSeqc != null and deptSortSeqc !=''">
+            ,DEPT_SORT_SEQC
+        </if>
+        ,DEPT_LVL_CD
+        <if test="hddpEmpId != null and hddpEmpId !=''">
+            ,HDDP_EMP_ID
+        </if>
+        ,SELL_OCR_YN
+        ,ORG_CRT_DATE
+        ,ORG_CLOSE_DATE
+        <if test="orgDstCd != null and orgDstCd !=''">
+            ,ORG_DST_CD
+        </if>
+        <if test="chgEmpId != null and chgEmpId !=''">
+            ,CHG_EMP_ID
+        </if>
+        ,CHG_DT
+        )
+        VALUES
+        (
+        #{deptId}
+        ,#{deptNm}
+        <if test="hgrkDeptId != null and hgrkDeptId !=''">
+            ,#{hgrkDeptId}
+        </if>
+        <if test="deptSortSeqc != null and deptSortSeqc !=''">
+            ,#{deptSortSeqc}
+        </if>
+        ,#{deptLvlCd}
+        <if test="hddpEmpId != null and hddpEmpId !=''">
+            ,#{hddpEmpId}
+        </if>
+        ,#{sellOcrYn}
+        ,#{orgCrtDate}
+        ,#{orgCloseDate}
+        <if test="orgDstCd != null and orgDstCd !=''">
+            ,#{orgDstCd}
+        </if>
+        <if test="chgEmpId != null and chgEmpId !=''">
+            ,#{chgEmpId}
+        </if>
+        ,SYSDATE
+        )
+
+    </insert>
+
+
+    <!--
+
+        update
+
+    -->
+    <!-- 저장 : 부서이력 변경-->
+    <update id="updateDeptChgHistory"
+            parameterType="com.ibiz.api.model.DeptHistoryVO">
+
+		UPDATE HMST101T
+		SET AVL_END_DATE = #{avlEndDate, jdbcType=VARCHAR}
+			, DEPT_NM = #{deptNm, jdbcType=VARCHAR}
+			, HGRK_DEPT_ID = #{hgrkDeptId, jdbcType=VARCHAR}
+			, DEPT_SORT_SEQC = #{deptSortSeqc, jdbcType=VARCHAR}
+			, DEPT_LVL_CD = #{deptLvlCd, jdbcType=VARCHAR}
+			, HDDP_EMP_ID = #{hddpEmpId, jdbcType=VARCHAR}
+			, SELL_OCR_YN = #{sellOcrYn, jdbcType=VARCHAR}
+			, ORG_CRT_DATE = #{orgCrtDate, jdbcType=VARCHAR}
+			, ORG_CLOSE_DATE = #{orgCloseDate, jdbcType=VARCHAR}
+		    , ORG_DST_CD = #{orgDstCd, jdbcType=VARCHAR}
+			, CHG_EMP_ID = #{chgEmpId, jdbcType=VARCHAR}
+			, CHG_DT = SYSDATE
+		WHERE DEPT_ID = #{deptId} AND AVL_START_DATE = #{avlStartDate, jdbcType=VARCHAR}
+	</update>
+
+    <!-- 저장 : 부서정보 변경-->
+    <update id="updateDeptInfo"
+            parameterType="com.ibiz.api.model.DeptHistoryVO">
+
+		UPDATE HMST100T
+		SET DEPT_NM = #{deptNm, jdbcType=VARCHAR}
+			, HGRK_DEPT_ID = #{hgrkDeptId, jdbcType=VARCHAR}
+			, DEPT_SORT_SEQC = #{deptSortSeqc, jdbcType=VARCHAR}
+			, DEPT_LVL_CD = #{deptLvlCd, jdbcType=VARCHAR}
+			, HDDP_EMP_ID = #{hddpEmpId, jdbcType=VARCHAR}
+			, SELL_OCR_YN = #{sellOcrYn, jdbcType=VARCHAR}
+			, ORG_CRT_DATE = #{orgCrtDate, jdbcType=VARCHAR}
+			, ORG_CLOSE_DATE = #{orgCloseDate, jdbcType=VARCHAR}
+		    , ORG_DST_CD = #{orgDstCd, jdbcType=VARCHAR}
+			, CHG_EMP_ID = #{chgEmpId, jdbcType=VARCHAR}
+			, CHG_DT = SYSDATE
+		WHERE DEPT_ID = #{deptId, jdbcType=VARCHAR}
+	</update>
+
+    <!-- 저장 : 최신정보의 이력유효기간 종료일 변경 -->
+    <update id="updateDeptLastAvlEndDate"
+            parameterType="com.ibiz.api.model.DeptHistoryVO">
+
+		UPDATE HMST101T
+		SET AVL_END_DATE = CASE WHEN #{avlEndDate, jdbcType=VARCHAR} = '99991231' THEN TO_CHAR(TO_DATE(#{avlStartDate, jdbcType=VARCHAR}) -1, 'YYYYMMDD')
+							    ELSE AVL_END_DATE END
+		WHERE DEPT_ID = #{deptId, jdbcType=VARCHAR}
+			AND AVL_START_DATE = (
+				SELECT MAX(AVL_START_DATE)
+				FROM HMST101T
+				WHERE DEPT_ID = #{deptId, jdbcType=VARCHAR}
+			 )
+	</update>
+
+
+    <!--
+
+        delete
+    -->
+
+    <!-- 삭제 : 부서변경이력 삭제-->
+    <delete id="deleteDeptChgHistory"
+            parameterType="com.ibiz.api.model.DeptHistoryVO">
+		DELETE HMST101T WHERE DEPT_ID = #{deptId} AND AVL_START_DATE = #{avlStartDate}
+	</delete>
+
+    <!-- 삭제 : 부서정보 삭제-->
+    <delete id="deleteDeptInfo"
+            parameterType="com.ibiz.api.model.DeptHistoryVO">
+		DELETE
+		FROM
+    		hmst100t
+		WHERE
+			dept_id = #{deptId}
+			AND 0 = (
+	    		SELECT COUNT(BLTO_DEPT_ID) FROM HMST300T WHERE BLTO_DEPT_ID = #{deptId}
+			)
+	</delete>
+
+    <!-- 2019/08-14 추가 -->
+
+    <!-- 조직의 종료일자 조회 -->
+    <select id="selectDeptCloseDate"
+            parameterType="com.ibiz.api.model.DeptHistoryVO"
+            resultType="com.ibiz.api.model.DeptHistoryVO">
+		SELECT
+			org_close_date
+		FROM
+			hmst100t
+		WHERE
+			dept_id = #{deptId}
+	</select>
+
+    <!-- 조직의 종료일자를 입력받은 이력유효기간으로 변경 -->
+    <update id="updateDeptCloseDate"
+            parameterType="com.ibiz.api.model.DeptHistoryVO">
+		UPDATE
+			HMST100T
+		SET
+			ORG_CLOSE_DATE = #{avlEndDate}
+		WHERE
+			DEPT_ID = #{deptId}
+	</update>
+
+    <!-- 해당 조직에 속한 임직원 숫자 조회 -->
+    <select id="selectDeptEmployeeCnt"
+            parameterType="com.ibiz.api.model.DeptHistoryVO"
+            resultType="java.lang.Integer">
+		SELECT COUNT(*) FROM HMST300T WHERE BLTO_DEPT_ID = #{deptId}
+	</select>
+
+    <!-- 신규등록하기 전 중복 체크 -->
+    <select id="selectIsDuplicateDept"
+            parameterType="com.ibiz.api.model.DeptHistoryVO"
+            resultType="java.lang.Integer">
+		SELECT COUNT(*) FROM HMST100T WHERE DEPT_ID = #{deptId}
+	</select>
+
+    <!-- 조직의 최종 변경이력의 유효종료일자 select -->
+    <select id="selectLastAvlEndDate"
+            parameterType="com.ibiz.api.model.DeptHistoryVO"
+            resultType="java.lang.String">
+	    SELECT * FROM (
+	    	SELECT
+	    		AVL_END_DATE
+    		FROM
+    			HMST101T
+   			WHERE
+   				DEPT_ID = #{deptId}
+			ORDER BY CHG_DT DESC
+		) WHERE ROWNUM = 1
+	</select>
+
+
+	<!-- 부서명 조회 All-->
+	<select id="selectAllDeptList"
+			parameterType="com.ibiz.api.model.DeptVO"
+			resultType="com.ibiz.api.model.DeptVO">
+		SELECT DEPT_ID, DEPT_NM, HGRK_DEPT_ID, LEVEL AS DEPTH_LEVEL
+		FROM HMST100T
+		START WITH HGRK_DEPT_ID IS NULL
+		CONNECT BY PRIOR DEPT_ID = HGRK_DEPT_ID AND ORG_CLOSE_DATE = '99991231' --★현재 살아있는 조직
+		ORDER SIBLINGS BY DEPT_SORT_SEQC
+	</select>
+
+	<!-- 권한별 부서 조회 -->
+	<select id="selectAuthDeptList"
+			parameterType="com.ibiz.api.model.DeptVO"
+			resultType="com.ibiz.api.model.DeptVO">
+
+		SELECT LEVEL AS DEPTH_LEVEL, DEPT_ID, DEPT_NM
+		FROM (
+		SELECT DISTINCT DEPT_ID, DEPT_NM, HGRK_DEPT_ID, DEPT_LVL_CD, SELL_OCR_YN, DEPT_SORT_SEQC, --★중복권한을 위해 DISTINCT 사용
+		MIN(DEPT_LVL_CD) OVER() MIN_DEPT_LVL_CD  --★START WITH의 시작점을 찾기 위해 DEPT_LVL_CD의 최소값 검색
+		FROM HMST110T A
+		START WITH DEPT_ID IN (SELECT AUTH_DEPT_ID FROM SSYS252T WHERE USER_ID = #{empId} AND USER_GRP_CD = #{userGrpCd}) --★사용자의 권한부서(SSYS252T) 사용자ID, 이길호(344025), 나연정(354010), 송호림(354051)
+		AND CRIT_YEAR = #{critYear} --★조회기준연도
+		CONNECT BY (PRIOR DEPT_ID = HGRK_DEPT_ID
+		<if test='userGrpCd == "BS" or priorUserGrpCd == "BS"'>
+			AND (SELL_OCR_YN = 'Y'
+			OR EXISTS (SELECT 1 FROM HMST110T B   --★하위에 매출부서를 포함하고 있는 조직
+			WHERE SELL_OCR_YN = 'Y'
+			START WITH B.DEPT_ID = A.DEPT_ID
+			AND CRIT_YEAR = #{critYear} --★조회기준연도
+			CONNECT BY PRIOR B.DEPT_ID = B.HGRK_DEPT_ID
+			AND CRIT_YEAR = #{critYear} ) --★조회기준연도
+			)
+			AND CRIT_YEAR = #{critYear}
+			)
+		</if>
+		)
+		START WITH DEPT_LVL_CD = MIN_DEPT_LVL_CD --★검색결과 중 최상위부서에서 START
+		CONNECT BY PRIOR DEPT_ID = HGRK_DEPT_ID
+		ORDER SIBLINGS BY DEPT_SORT_SEQC
+
+	</select>
+
+	<!-- 부서명 검색조건에 따른 조회-->
+	<select id="selectDeptSearchList"
+			parameterType="com.ibiz.api.model.DeptVO"
+			resultType="com.ibiz.api.model.DeptVO">
+		<if test="deptIds != null and deptIds != ''">
+			SELECT AA.DEPT_NM, AA.DEPT_ID, AA.DEPT_SORT_SEQC, AA.DEPT_LVL_CD, AA.HGRK_DEPT_ID
+			, (SELECT COUNT(*) FROM hmst100t WHERE hgrk_dept_id = AA.dept_id) as LOWER_CNT
+			FROM (
+		</if>
+		SELECT A.DEPT_NM, A.DEPT_ID, A.DEPT_SORT_SEQC, A.DEPT_LVL_CD, A.HGRK_DEPT_ID
+		, (SELECT COUNT(*) FROM hmst100t WHERE hgrk_dept_id = A.dept_id) as LOWER_CNT
+		FROM (
+		SELECT DEPT_ID, DEPT_NM ,  HGRK_DEPT_ID, DEPT_LVL_CD, ORG_CRT_DATE,ORG_CLOSE_DATE, DEPT_SORT_SEQC
+		FROM HMST100T
+		START WITH
+		<if test="deptId != null and deptId != ''">
+			DEPT_ID  = #{deptId}
+		</if>
+		<if test="deptId == null or deptId == ''">
+			HGRK_DEPT_ID  IS NULL
+		</if>
+		CONNECT BY
+		PRIOR  DEPT_ID = HGRK_DEPT_ID
+		ORDER SIBLINGS BY DEPT_SORT_SEQC
+		) A
+		WHERE 1 = 1
+		<![CDATA[
+	                  AND   ORG_CRT_DATE <= TO_CHAR(SYSDATE, 'YYYYMMDD')
+	                  AND   ORG_CLOSE_DATE >= TO_CHAR(SYSDATE, 'YYYYMMDD')
+	             ]]>
+		<if test="searchValue != null and searchValue != ''">
+			AND   UPPER(DEPT_ID) IN ( SELECT DEPT_ID FROM HMST100T WHERE DEPT_NM LIKE '%'||UPPER(#{searchValue})||'%'  )
+
+		</if>
+		<!-- 하위까지 보여주기
+        <if test="searchValue != null and searchValue != ''">
+            AND  (  DEPT_ID IN ( SELECT DEPT_ID FROM HMST100T WHERE DEPT_NM LIKE '%'||#{searchValue}||'%'  )
+                    OR  HGRK_DEPT_ID IN ( SELECT DEPT_ID FROM HMST100T WHERE DEPT_NM LIKE '%'||#{searchValue}||'%'  )
+                  )
+        </if> -->
+		<if test="deptIds != null and deptIds != ''">
+			AND ( DEPT_ID NOT IN  ( SELECT
+			DEPT_ID
+			FROM HMST100T
+			START WITH
+			HGRK_DEPT_ID  =  #{deptIds}
+			CONNECT BY
+			PRIOR  DEPT_ID = HGRK_DEPT_ID ) )
+			AND HGRK_DEPT_ID NOT IN ( #{deptIds} ) AND  DEPT_ID NOT IN ( #{deptIds} )
+			) AA
+			START WITH
+			HGRK_DEPT_ID IS NULL
+			CONNECT BY
+			PRIOR  DEPT_ID = HGRK_DEPT_ID
+		</if>
+
+	</select>
+
+	<!-- 영업대표에 따른 수정삭제권한체크-->
+	<select id="selectIsAuthBySlsEmp"
+			parameterType="com.ibiz.api.model.DeptVO"
+			resultType="com.ibiz.api.model.DeptVO">
+		SELECT
+		COUNT(*) AS TotalSize
+		FROM
+		(
+		SELECT
+		SLST.DEPT_ID
+		,SLST.DEPT_NM
+		,SLST.HGRK_DEPT_ID
+		,SLST.DEPT_SORT_SEQC
+		,LTRIM (SYS_CONNECT_BY_PATH (SLST.DEPT_ID, ' > '), ' > ') AS DEPT_FULLNAME
+		,LEVEL AS DEPTH_LEVEL
+		FROM HMST100T SLST
+		WHERE 1 = 1
+		<![CDATA[
+		                 AND   ORG_CRT_DATE <= TO_CHAR(SYSDATE, 'YYYYMMDD')
+		                 AND   ORG_CLOSE_DATE >= TO_CHAR(SYSDATE, 'YYYYMMDD')
+		            	]]>
+		START WITH
+		DEPT_ID =
+		(
+		SELECT BLTO_DEPT_ID
+		FROM HMST300T
+		WHERE EMP_ID = #{slsEmpId}
+		)
+		CONNECT BY PRIOR SLST.DEPT_ID=SLST.HGRK_DEPT_ID
+		)
+		WHERE DEPT_ID in
+		(
+		SELECT
+		USERT.DEPT_ID
+		FROM HMST100T USERT
+		WHERE 1 = 1
+		<![CDATA[
+		                 AND   ORG_CRT_DATE <= TO_CHAR(SYSDATE, 'YYYYMMDD')
+		                 AND   ORG_CLOSE_DATE >= TO_CHAR(SYSDATE, 'YYYYMMDD')
+		            	]]>
+		START WITH
+		DEPT_ID = #{deptId}
+		CONNECT BY PRIOR USERT.DEPT_ID=USERT.HGRK_DEPT_ID
+		)
+		OR DEPT_ID IN
+		(
+		SELECT
+		DEPT_ID
+		FROM
+		HMST100T
+		START WITH
+		HGRK_DEPT_ID IN (
+		SELECT
+		AUTH_DEPT_ID
+		FROM
+		SSYS252T
+		WHERE
+		USER_ID = #{empId}
+		<![CDATA[
+                        AND   AVL_START_DATE <= TO_CHAR(SYSDATE, 'YYYYMMDD')
+                        AND   AVL_END_DATE >= TO_CHAR(SYSDATE, 'YYYYMMDD')
+                    	]]>
+		<if test="userGrpCd != null and userGrpCd !=''">
+			AND   USER_GRP_CD = #{userGrpCd}
+		</if>
+		)
+		CONNECT BY
+		PRIOR DEPT_ID = HGRK_DEPT_ID
+		)
+	</select>
+</mapper>

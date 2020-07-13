@@ -1,13 +1,10 @@
 package com.ibiz.api.service;
 
-import com.ibiz.api.cmnUtil.IndexUtils;
-import com.ibiz.api.dao.CostCenterChgHisDao;
-import com.ibiz.api.exception.ExceptionCode;
+import com.ibiz.api.dao.CostCenterDAO;
 import com.ibiz.api.model.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.transaction.interceptor.TransactionAspectSupport;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -15,22 +12,22 @@ import java.util.List;
 @Service
 @Slf4j
 public class CostCenterService {
-    @Resource(name = "costCenterChgHisDao")
-    private CostCenterChgHisDao costCenterChgHisDao;
+    @Resource(name = "costCenterDAO")
+    private CostCenterDAO costCenterDAO;
 
     @Transactional
-    public JsonObject<List<CostCenterChgHisVO>, Object> selectCostCenterTree(Payload<CostCenterChgHisVO> requestPayload) {
+    public JsonObject<List<CostCenterVO>, Object> selectCostCenterTree(Payload<CostCenterVO> requestPayload) {
         log.info("call Service : " + this.getClass().getName() + ".selectBoardList");
 
         //단순 리스트 조회. 좌측 트리를 조회하는 쿼리를 실행
-        JsonObject<List<CostCenterChgHisVO>, Object> jsonObject = new JsonObject<>();
+        JsonObject<List<CostCenterVO>, Object> jsonObject = new JsonObject<>();
         AccountVO accountVO = requestPayload.getAccountVO();
-        CostCenterChgHisVO costCenterChgHisVO = requestPayload.getDto();
+        CostCenterVO costCenterVO = requestPayload.getDto();
 
         log.info("Paramater : " + accountVO);
-        log.info("Paramater : " + costCenterChgHisVO);
+        log.info("Paramater : " + costCenterVO);
 
-        List<CostCenterChgHisVO>costCenterList = costCenterChgHisDao.selectCostCenterTree(costCenterChgHisVO);
+        List<CostCenterVO>costCenterList = costCenterDAO.selectCostCenterTree(costCenterVO);
         jsonObject.Data = costCenterList;
         jsonObject.IsSucceed = true;
 
@@ -38,37 +35,37 @@ public class CostCenterService {
     }
 
     @Transactional
-    public JsonObject<List<CostCenterChgHisVO>, Object> selectCostCenterHisList(Payload<CostCenterChgHisVO> requestPayload) {
+    public JsonObject<List<CostCenterVO>, Object> selectCostCenterHisList(Payload<CostCenterVO> requestPayload) {
         log.info("call Service : " + this.getClass().getName() + ".selectCostCenterHisList");
 
         //단순 리스트 조회. 조직의 변경이력을 조회하는 쿼리를 실행
-        JsonObject<List<CostCenterChgHisVO>, Object> jsonObject = new JsonObject<>();
+        JsonObject<List<CostCenterVO>, Object> jsonObject = new JsonObject<>();
         AccountVO accountVO = requestPayload.getAccountVO();
-        CostCenterChgHisVO costCenterChgHisVO = requestPayload.getDto();
+        CostCenterVO costCenterVO = requestPayload.getDto();
 
         log.info("Paramater : " + accountVO);
-        log.info("Paramater : " + costCenterChgHisVO);
+        log.info("Paramater : " + costCenterVO);
 
-        List<CostCenterChgHisVO>costCenterList = costCenterChgHisDao.selectCostCenterHisList(costCenterChgHisVO);
+        List<CostCenterVO>costCenterList = costCenterDAO.selectCostCenterHistoryList(costCenterVO);
         jsonObject.Data = costCenterList;
-        jsonObject.TotalSize = costCenterChgHisDao.selectCostCenterHisCnt(costCenterChgHisVO).getListCnt();
+        jsonObject.TotalSize = costCenterDAO.selectCostCenterHistoryCnt(costCenterVO).getListCnt();
         jsonObject.IsSucceed = true;
 
         return jsonObject;
     }
 
     @Transactional
-    public JsonObject<CostCenterChgHisVO, Object> selectCostCenterlastestChgHis(Payload<CostCenterChgHisVO> requestPayload) {
+    public JsonObject<CostCenterVO, Object> selectCostCenterlastestChgHis(Payload<CostCenterVO> requestPayload) {
         log.info("call Service : " + this.getClass().getName() + ".selectCostCenterlastestChgHis");
 
         //단순 조회. 조직의 최신(마지막) 이력을 조회
-        JsonObject<CostCenterChgHisVO, Object> jsonObject = new JsonObject<>();
+        JsonObject<CostCenterVO, Object> jsonObject = new JsonObject<>();
         AccountVO accountVO = requestPayload.getAccountVO();
-        CostCenterChgHisVO costCenterChgHisVO = requestPayload.getDto();
-        CostCenterChgHisVO costCenter = costCenterChgHisDao.selectCostCenterLastestChgHis(costCenterChgHisVO);
+        CostCenterVO costCenterVO = requestPayload.getDto();
+        CostCenterVO costCenter = costCenterDAO.selectCostCenterLastChgHistory(costCenterVO);
 
         log.info("Paramater : " + accountVO);
-        log.info("Paramater : " + costCenterChgHisVO);
+        log.info("Paramater : " + costCenterVO);
 
         jsonObject.Data = costCenter;
         jsonObject.IsSucceed = true;
@@ -77,18 +74,18 @@ public class CostCenterService {
     }
 
     @Transactional
-    public JsonObject<List<CostCenterChgHisVO>, Object> selectHighCostCenterTree(Payload<CostCenterChgHisVO> requestPayload) {
+    public JsonObject<List<CostCenterVO>, Object> selectHighCostCenterTree(Payload<CostCenterVO> requestPayload) {
         log.info("call Service : " + this.getClass().getName() + ".selectHighCostCenterTree");
 
         //단순 리스트조회. 상위 부서 조회
-       JsonObject<List<CostCenterChgHisVO>, Object> jsonObject = new JsonObject<>();
+       JsonObject<List<CostCenterVO>, Object> jsonObject = new JsonObject<>();
         AccountVO accountVO = requestPayload.getAccountVO();
-        CostCenterChgHisVO costCenterChgHisVO = requestPayload.getDto();
+        CostCenterVO costCenterVO = requestPayload.getDto();
 
-        List<CostCenterChgHisVO> list = costCenterChgHisDao.selectHighCostCenterTree(costCenterChgHisVO);
+        List<CostCenterVO> list = costCenterDAO.selectHighCostCenterTree(costCenterVO);
 
         log.info("Paramater : " + accountVO);
-        log.info("Paramater : " + costCenterChgHisVO);
+        log.info("Paramater : " + costCenterVO);
 
         jsonObject.Data = list;
         jsonObject.IsSucceed = true;
@@ -97,75 +94,75 @@ public class CostCenterService {
     }
 
     @Transactional
-    public JsonObject<Object, Object> updateCostCenter(Payload<CostCenterChgHisVO> requestPayload) throws Exception {
+    public JsonObject<Object, Object> updateCostCenter(Payload<CostCenterVO> requestPayload) throws Exception {
         log.info("call Service : " + this.getClass().getName() + ".updateCostCenter");
 
         //업데이트 로직
         JsonObject<Object, Object> jsonObject = new JsonObject<>();
         AccountVO accountVO = requestPayload.getAccountVO();
-        CostCenterChgHisVO costCenterChgHisVO = requestPayload.getDto();
+        CostCenterVO costCenterChgVO = requestPayload.getDto();
 
         log.info("Paramater : " + accountVO);
-        log.info("Paramater : " + costCenterChgHisVO);
+        log.info("Paramater : " + costCenterChgVO);
 
         //상위CCID, 정렬순서, 변경자정보 입력
-        costCenterChgHisVO.setHgrkCcId(costCenterChgHisVO.getHgrkCcId() != null && costCenterChgHisVO.getHgrkCcId().length() > 0 ? costCenterChgHisVO.getHgrkCcId() : "");
-        costCenterChgHisVO.setDeptSortSeqc(costCenterChgHisVO.getDeptSortSeqc() != null && costCenterChgHisVO.getDeptSortSeqc().length() > 0 ? costCenterChgHisVO.getDeptSortSeqc() : "0");
-        costCenterChgHisVO.setChgEmpId(costCenterChgHisVO.getChgEmpId() != null && costCenterChgHisVO.getChgEmpId().length() > 0 ? costCenterChgHisVO.getChgEmpId() : "");
+        costCenterChgVO.setHgrkCcId(costCenterChgVO.getHgrkCcId() != null && costCenterChgVO.getHgrkCcId().length() > 0 ? costCenterChgVO.getHgrkCcId() : "");
+        costCenterChgVO.setDeptSortSeqc(costCenterChgVO.getDeptSortSeqc() != null && costCenterChgVO.getDeptSortSeqc().length() > 0 ? costCenterChgVO.getDeptSortSeqc() : "0");
+        costCenterChgVO.setChgEmpId(costCenterChgVO.getChgEmpId() != null && costCenterChgVO.getChgEmpId().length() > 0 ? costCenterChgVO.getChgEmpId() : "");
 
         //이력을 추가하는 경우
-        Boolean isAddRecord = Boolean.valueOf(costCenterChgHisVO.getAddRecord());
+        Boolean isAddRecord = Boolean.valueOf(costCenterChgVO.getAddRecord());
 
 //        try
 //        {
 
             //신규 등록 CASE1 : 자동부서코드 모드
-            if(costCenterChgHisVO.getCcId() == "" || costCenterChgHisVO.getCcId() == null)
+            if(costCenterChgVO.getCcId() == "" || costCenterChgVO.getCcId() == null)
             {
-                CostCenterChgHisVO costCenterVO = costCenterChgHisDao.selectCostCenterNextId();
+                CostCenterVO costCenterVO = costCenterDAO.selectCostCenterNextId();
                 costCenterVO.setChgEmpId("");
 
-                costCenterChgHisVO.setCcId(costCenterVO.getCcId());
-                costCenterChgHisDao.insertCostCenterInfoNew(costCenterChgHisVO);
-                costCenterChgHisDao.insertCostCenterChgHisNew(costCenterChgHisVO);
+                costCenterChgVO.setCcId(costCenterVO.getCcId());
+                costCenterDAO.insertCostCenterInfo(costCenterChgVO);
+                costCenterDAO.insertCostCenterChgHistory(costCenterChgVO);
 
                 jsonObject.IsSucceed = true;
             }
             else
             {
-                CostCenterChgHisVO costtmp = costCenterChgHisDao.selectCostCenterValidationCheck(costCenterChgHisVO);
+                CostCenterVO costtmp = costCenterDAO.selectIsValidCostCenter(costCenterChgVO);
 
 
                 if(costtmp.getValChk().trim().equals("S")) //신규
                 {
-                    costCenterChgHisDao.insertCostCenterInfoNew(costCenterChgHisVO);
-                    costCenterChgHisDao.insertCostCenterChgHisNew(costCenterChgHisVO);
+                    costCenterDAO.insertCostCenterInfo(costCenterChgVO);
+                    costCenterDAO.insertCostCenterChgHistory(costCenterChgVO);
 
                     jsonObject.IsSucceed = true;
                 }
                 else if ((costtmp.getValChk().trim().equals("LN") || costtmp.getValChk().trim().equals("MN")))  //추가
                 {
                     if(costtmp.getValChk().trim().equals("LN") || isAddRecord == true) {
-                        String ccCloseDate = costCenterChgHisDao.selectCcCloseDate(costCenterChgHisVO).getOrgCloseDate();
+                        String ccCloseDate = costCenterDAO.selectCcCloseDate(costCenterChgVO).getOrgCloseDate();
 
-                        if(Integer.parseInt(ccCloseDate) < Integer.parseInt(costCenterChgHisVO.getAvlEndDate())) {
-                            costCenterChgHisDao.updateCcCloseDate(costCenterChgHisVO);
+                        if(Integer.parseInt(ccCloseDate) < Integer.parseInt(costCenterChgVO.getAvlEndDate())) {
+                            costCenterDAO.updateCcCloseDate(costCenterChgVO);
                         }
 
-                        costCenterChgHisDao.updateCostCenterInfo(costCenterChgHisVO);
-                        costCenterChgHisDao.updateCostCenterLastesAvlEndDate(costCenterChgHisVO);
+                        costCenterDAO.updateCostCenterInfo(costCenterChgVO);
+                        costCenterDAO.updateCostCenterLastAvlEndDate(costCenterChgVO);
                     }
 
-                    costCenterChgHisDao.insertCostCenterChgHisNew(costCenterChgHisVO);
+                    costCenterDAO.insertCostCenterChgHistory(costCenterChgVO);
 
                     jsonObject.IsSucceed = true;
                 }
                 else if (costtmp.getValChk().trim().equals("LU") || costtmp.getValChk().trim().equals("MU"))  //변경
                 {
-                    costCenterChgHisDao.updateCostCenterChgHis(costCenterChgHisVO);
+                    costCenterDAO.updateCostCenterChgHistory(costCenterChgVO);
 
                     if(costtmp.getValChk().trim().equals("LU"))
-                        costCenterChgHisDao.updateCostCenterInfo(costCenterChgHisVO);
+                        costCenterDAO.updateCostCenterInfo(costCenterChgVO);
 
                     jsonObject.IsSucceed = true;
                 }
@@ -195,28 +192,28 @@ public class CostCenterService {
     }
 
     @Transactional
-    public JsonObject<CostCenterChgHisVO, Object> deleteCostCenterHis(Payload<CostCenterChgHisVO> requestPayload) {
+    public JsonObject<CostCenterVO, Object> deleteCostCenterHis(Payload<CostCenterVO> requestPayload) {
         log.info("call Service : " + this.getClass().getName() + ".deleteCostCenterHis");
 
         //코스트센터 조직 삭제
-        JsonObject<CostCenterChgHisVO, Object> jsonObject = new JsonObject<>();
+        JsonObject<CostCenterVO, Object> jsonObject = new JsonObject<>();
         AccountVO accountVO = requestPayload.getAccountVO();
-        CostCenterChgHisVO costCenterChgHisVO = requestPayload.getDto();
+        CostCenterVO costCenterVO = requestPayload.getDto();
 
         log.info("Paramater : " + accountVO);
-        log.info("Paramater : " + costCenterChgHisVO);
+        log.info("Paramater : " + costCenterVO);
 
 
         int nResult = 0;
 
-        nResult = costCenterChgHisDao.deleteCostCenterChgHis(costCenterChgHisVO);
+        nResult = costCenterDAO.deleteCostCenterChgHistory(costCenterVO);
 
         if(nResult > 0) {
-            costCenterChgHisDao.deleteCostCenterInfo(costCenterChgHisVO);
+            costCenterDAO.deleteCostCenterInfo(costCenterVO);
 
-            CostCenterChgHisVO costCenter = costCenterChgHisDao.selectCostCenterLastestChgHis(costCenterChgHisVO);
+            CostCenterVO costCenter = costCenterDAO.selectCostCenterLastChgHistory(costCenterVO);
             if(costCenter != null) {
-                costCenterChgHisDao.updateCostCenterInfo(costCenter);
+                costCenterDAO.updateCostCenterInfo(costCenter);
             }
             jsonObject.IsSucceed = true;
         }
@@ -229,19 +226,19 @@ public class CostCenterService {
     }
 
     @Transactional
-    public JsonObject<List<CostCenterChgHisVO>, Object> selectCostCenterAvl(Payload<CostCenterChgHisVO> requestPayload) {
+    public JsonObject<List<CostCenterVO>, Object> selectCostCenterAvl(Payload<CostCenterVO> requestPayload) {
         log.info("call Service : " + this.getClass().getName() + ".selectCostCenterAvl");
 
         //유효기간에 따른 코스트센터 리스트 조회
-        JsonObject<List<CostCenterChgHisVO>, Object> jsonObject = new JsonObject<>();
+        JsonObject<List<CostCenterVO>, Object> jsonObject = new JsonObject<>();
         AccountVO accountVO = requestPayload.getAccountVO();
-        CostCenterChgHisVO costCenterChgHisVO = requestPayload.getDto();
+        CostCenterVO costCenterVO = requestPayload.getDto();
 
         log.info("Paramater : " + accountVO);
-        log.info("Paramater : " + costCenterChgHisVO);
+        log.info("Paramater : " + costCenterVO);
 
 
-        List<CostCenterChgHisVO> list = costCenterChgHisDao.selectHighCostCenterToAvl(costCenterChgHisVO);
+        List<CostCenterVO> list = costCenterDAO.selectHighCostCenterToAvl(costCenterVO);
 
         jsonObject.Data = list;
         jsonObject.IsSucceed = true;
@@ -250,18 +247,18 @@ public class CostCenterService {
     }
 
     @Transactional
-    public JsonObject<List<CostCenterChgHisVO>, Object> selectHighCostCenterDeptCombo(Payload<CostCenterChgHisVO> requestPayload) {
+    public JsonObject<List<CostCenterVO>, Object> selectHighCostCenterDept(Payload<CostCenterVO> requestPayload) {
         log.info("call Service : " + this.getClass().getName() + ".deleteCostCenterHis");
 
         //상위조직 콤보 조회
-        JsonObject<List<CostCenterChgHisVO>, Object> jsonObject = new JsonObject<>();
+        JsonObject<List<CostCenterVO>, Object> jsonObject = new JsonObject<>();
         AccountVO accountVO = requestPayload.getAccountVO();
-        CostCenterChgHisVO costCenterChgHisVO = requestPayload.getDto();
+        CostCenterVO costCenterVO = requestPayload.getDto();
 
         log.info("Paramater : " + accountVO);
-        log.info("Paramater : " + costCenterChgHisVO);
+        log.info("Paramater : " + costCenterVO);
 
-        List<CostCenterChgHisVO> list = costCenterChgHisDao.selectHighCostCenterDeptCombo(costCenterChgHisVO);
+        List<CostCenterVO> list = costCenterDAO.selectHighCostCenterDept(costCenterVO);
 
         jsonObject.Data = list;
         jsonObject.IsSucceed = true;

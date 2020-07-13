@@ -9,7 +9,7 @@ spring:
     port: 6379
     #password: operation0307
 #    password: staging1216
-    password: dev5791
+#    password: dev5791
 
   datasource:
     driver-class-name: oracle.jdbc.OracleDriver #net.sf.log4jdbc.sql.jdbcapi.DriverSpy # oracle.jdbc.OracleDriver
