@@ -152,6 +152,7 @@ public class DeptVO {
      */
     private String critYear;
 
+
     public String getDeptId() {
         return deptId;
     }
@@ -401,16 +402,4 @@ public class DeptVO {
         this.critYear = critYear;
     }
 
-    @Override
-    public String toString() {
-        return "DeptVO [deptId=" + deptId + ", deptNm=" + deptNm + ", ccCd=" + ccCd + ", orgDstCd="
-                + orgDstCd + ", orgDstCdNm=" + orgDstCdNm + ", hgrkDeptId=" + hgrkDeptId + ", deptSortSeqc="
-                + deptSortSeqc + ", bltcCd=" + bltcCd + ", deptLvlCd=" + deptLvlCd + ", hddpEmpId=" + hddpEmpId
-                + ", crtDate=" + crtDate + ", closeDate=" + closeDate + ", sellOcrYn=" + sellOcrYn
-                + ", regEmpId=" + regEmpId + ", regDt=" + regDt + ", chgEmpId=" + chgEmpId  + ", chgDt ="
-                + chgDt + ", gridStatus=" + gridStatus + ", searchValue=" + searchValue + ", deptIds=" + deptIds + ", cntLowerDeptID="
-                + cntLowerDeptID + ", depthLevel=" + depthLevel + ", lowerCnt=" + lowerCnt + ", hgrkDeptNm=" + hgrkDeptNm
-                + ", slsEmpId=" + slsEmpId + ", empId=" + empId + ", userGrpCd=" + userGrpCd
-                + ", totalSize=" + totalSize + ", isAllAuth=" + isAllAuth + ", priorUserGrpCd=" + priorUserGrpCd+ ", critYear=" + critYear + "]";
-    }
 }

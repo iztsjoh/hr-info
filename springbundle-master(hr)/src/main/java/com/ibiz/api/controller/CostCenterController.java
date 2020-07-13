@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/hr")
+@RequestMapping("/costCenter")
 public class CostCenterController extends BaseController {
 
     private static final Logger log = LoggerFactory.getLogger(CostCenterController.class);
@@ -35,20 +35,20 @@ public class CostCenterController extends BaseController {
         return super.composePayload(new Payload<JsonObject<List<CostCenterVO>, Object>>(costCenterService.selectCostCenterTree(requestPayload)));
     }
 
-    @PostMapping("/selectCostCenterHisList")
-    public ResponseEntity<String> selectCostCenterHisList(@RequestParam("payload") String payload) throws Exception {
-        log.info("Call Controller : " + this.getClass().getName() + ".selectCostCenterHisList");
+    @PostMapping("/selectCostCenterHistoryList")
+    public ResponseEntity<String> selectCostCenterHistoryList(@RequestParam("payload") String payload) throws Exception {
+        log.info("Call Controller : " + this.getClass().getName() + ".selectCostCenterHistoryList");
         Payload requestPayload = super.parsePayload(payload, new TypeToken<Payload<CostCenterVO>>(){});
 
-        return super.composePayload(new Payload<JsonObject<List<CostCenterVO>, Object>>(costCenterService.selectCostCenterHisList(requestPayload)));
+        return super.composePayload(new Payload<JsonObject<List<CostCenterVO>, Object>>(costCenterService.selectCostCenterHistoryList(requestPayload)));
     }
 
-    @PostMapping("/selectCostCenterlastestChgHis")
-    public ResponseEntity<String> selectCostCenterlastestChgHis(@RequestParam("payload") String payload) throws Exception {
-        log.info("Call Controller : " + this.getClass().getName() + ".selectCostCenterlastestChgHis");
+    @PostMapping("/selectCostCenterlastHistory")
+    public ResponseEntity<String> selectCostCenterlastHistory(@RequestParam("payload") String payload) throws Exception {
+        log.info("Call Controller : " + this.getClass().getName() + ".selectCostCenterlastHistory");
         Payload requestPayload = super.parsePayload(payload, new TypeToken<Payload<CostCenterVO>>(){});
 
-        return super.composePayload(new Payload<JsonObject<CostCenterVO, Object>>(costCenterService.selectCostCenterlastestChgHis(requestPayload)));
+        return super.composePayload(new Payload<JsonObject<CostCenterVO, Object>>(costCenterService.selectCostCenterlastHistory(requestPayload)));
     }
 
     @PostMapping("/selectHighCostCenterTree")
@@ -67,12 +67,12 @@ public class CostCenterController extends BaseController {
         return super.composePayload(new Payload<JsonObject<Object, Object>>(costCenterService.updateCostCenter(requestPayload)));
     }
 
-    @PostMapping("/deleteCostCenterHis")
-    public ResponseEntity<String> deleteCostCenterHis(@RequestParam("payload") String payload) throws Exception {
-        log.info("Call Controller : " + this.getClass().getName() + ".deleteCostCenterHis");
+    @PostMapping("/deleteCostCenterHistory")
+    public ResponseEntity<String> deleteCostCenterHistory(@RequestParam("payload") String payload) throws Exception {
+        log.info("Call Controller : " + this.getClass().getName() + ".deleteCostCenterHistory");
         Payload requestPayload = super.parsePayload(payload, new TypeToken<Payload<CostCenterVO>>(){});
 
-        return super.composePayload(new Payload<JsonObject<Object, Object>>(costCenterService.deleteCostCenterHis(requestPayload)));
+        return super.composePayload(new Payload<JsonObject<Object, Object>>(costCenterService.deleteCostCenterHistory(requestPayload)));
     }
 
     @PostMapping("/selectCostCenterAvl")
@@ -83,12 +83,12 @@ public class CostCenterController extends BaseController {
         return super.composePayload(new Payload<JsonObject<List<CostCenterVO>, Object>>(costCenterService.selectCostCenterAvl(requestPayload)));
     }
 
-    @PostMapping("/selectHighCostCenterDept")
-    public ResponseEntity<String> selectHighCostCenterDept(@RequestParam("payload") String payload) throws Exception {
-        log.info("Call Controller : " + this.getClass().getName() + ".selectHighCostCenterDept");
+    @PostMapping("/selectHighCostCenterDeptList")
+    public ResponseEntity<String> selectHighCostCenterDeptList(@RequestParam("payload") String payload) throws Exception {
+        log.info("Call Controller : " + this.getClass().getName() + ".selectHighCostCenterDeptList");
         Payload requestPayload = super.parsePayload(payload, new TypeToken<Payload<CostCenterVO>>(){});
 
-        return super.composePayload(new Payload<JsonObject<List<CostCenterVO>, Object>>(costCenterService.selectHighCostCenterDept(requestPayload)));
+        return super.composePayload(new Payload<JsonObject<List<CostCenterVO>, Object>>(costCenterService.selectHighCostCenterDeptList(requestPayload)));
     }
 
     // excel 엑셀

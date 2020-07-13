@@ -36,8 +36,8 @@ public class CostCenterService {
     }
 
     @Transactional
-    public JsonObject<List<CostCenterVO>, Object> selectCostCenterHisList(Payload<CostCenterVO> requestPayload) {
-        log.info("call Service : " + this.getClass().getName() + ".selectCostCenterHisList");
+    public JsonObject<List<CostCenterVO>, Object> selectCostCenterHistoryList(Payload<CostCenterVO> requestPayload) {
+        log.info("call Service : " + this.getClass().getName() + ".selectCostCenterHistoryList");
 
         //단순 리스트 조회. 조직의 변경이력을 조회하는 쿼리를 실행
         JsonObject<List<CostCenterVO>, Object> jsonObject = new JsonObject<>();
@@ -56,8 +56,8 @@ public class CostCenterService {
     }
 
     @Transactional
-    public JsonObject<CostCenterVO, Object> selectCostCenterlastestChgHis(Payload<CostCenterVO> requestPayload) {
-        log.info("call Service : " + this.getClass().getName() + ".selectCostCenterlastestChgHis");
+    public JsonObject<CostCenterVO, Object> selectCostCenterlastHistory(Payload<CostCenterVO> requestPayload) {
+        log.info("call Service : " + this.getClass().getName() + ".selectCostCenterlastHistory");
 
         //단순 조회. 조직의 최신(마지막) 이력을 조회
         JsonObject<CostCenterVO, Object> jsonObject = new JsonObject<>();
@@ -193,8 +193,8 @@ public class CostCenterService {
     }
 
     @Transactional
-    public JsonObject<CostCenterVO, Object> deleteCostCenterHis(Payload<CostCenterVO> requestPayload) {
-        log.info("call Service : " + this.getClass().getName() + ".deleteCostCenterHis");
+    public JsonObject<CostCenterVO, Object> deleteCostCenterHistory(Payload<CostCenterVO> requestPayload) {
+        log.info("call Service : " + this.getClass().getName() + ".deleteCostCenterHistory");
 
         //코스트센터 조직 삭제
         JsonObject<CostCenterVO, Object> jsonObject = new JsonObject<>();
@@ -248,8 +248,8 @@ public class CostCenterService {
     }
 
     @Transactional
-    public JsonObject<List<CostCenterVO>, Object> selectHighCostCenterDept(Payload<CostCenterVO> requestPayload) {
-        log.info("call Service : " + this.getClass().getName() + ".deleteCostCenterHis");
+    public JsonObject<List<CostCenterVO>, Object> selectHighCostCenterDeptList(Payload<CostCenterVO> requestPayload) {
+        log.info("call Service : " + this.getClass().getName() + ".selectHighCostCenterDeptList");
 
         //상위조직 콤보 조회
         JsonObject<List<CostCenterVO>, Object> jsonObject = new JsonObject<>();
@@ -259,7 +259,7 @@ public class CostCenterService {
         log.info("Paramater : " + accountVO);
         log.info("Paramater : " + costCenterVO);
 
-        List<CostCenterVO> list = costCenterDAO.selectHighCostCenterDept(costCenterVO);
+        List<CostCenterVO> list = costCenterDAO.selectHighCostCenterDeptList(costCenterVO);
 
         jsonObject.Data = list;
         jsonObject.IsSucceed = true;

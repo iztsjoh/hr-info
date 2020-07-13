@@ -82,45 +82,6 @@ public class DeptService {
         return jsonObject;
     }
 
-    @Transactional
-    public JsonObject<DeptHistoryVO, Object> selectDeptlastestChgHis(Payload<DeptHistoryVO> requestPayload) throws DeptStateException{
-        log.info("call Service : " + this.getClass().getName() + ".selectDeptlastestChgHis");
-
-        //조직의 최신 이력 조회
-        JsonObject<DeptHistoryVO, Object> jsonObject = new JsonObject<>();
-        AccountVO accountVO = requestPayload.getAccountVO();
-        DeptHistoryVO deptHistoryVO = requestPayload.getDto();
-
-        log.info("Paramater : " + accountVO);
-        log.info("Paramater : " + deptHistoryVO);
-
-        DeptHistoryVO dept = deptDAO.selectDeptLastChgHistory(deptHistoryVO);
-
-        jsonObject.Data = dept;
-        jsonObject.IsSucceed = true;
-
-        return jsonObject;
-    }
-
-    @Transactional
-    public JsonObject<List<DeptHistoryVO>, Object> selectHighDeptTree(Payload<DeptHistoryVO> requestPayload) throws DeptStateException{
-        log.info("call Service : " + this.getClass().getName() + ".selectHighDeptTree");
-
-        //상위조직 조회
-        JsonObject<List<DeptHistoryVO>, Object> jsonObject = new JsonObject<>();
-        AccountVO accountVO = requestPayload.getAccountVO();
-        DeptHistoryVO deptHistoryVO = requestPayload.getDto();
-
-        log.info("Paramater : " + accountVO);
-        log.info("Paramater : " + deptHistoryVO);
-
-        List<DeptHistoryVO> list = deptDAO.selectHighDeptTree(deptHistoryVO);
-
-        jsonObject.Data = list;
-        jsonObject.IsSucceed = true;
-
-        return jsonObject;
-    }
 
     @Transactional
     public JsonObject<Object, Object> updateDept(Payload<DeptHistoryVO> requestPayload) throws DeptStateException,CodeOverlapException, DateOverlapException, CodeOverlapException {
@@ -231,8 +192,8 @@ public class DeptService {
     }
 
     @Transactional
-    public JsonObject<Object, Object> deleteDeptHis(Payload<DeptHistoryVO> requestPayload) throws DeptStateException {
-        log.info("call Service : " + this.getClass().getName() + ".deleteDeptHis");
+    public JsonObject<Object, Object> deleteDeptHistory(Payload<DeptHistoryVO> requestPayload) throws DeptStateException {
+        log.info("call Service : " + this.getClass().getName() + ".deleteDeptHistory");
 
         //조직 삭제
         JsonObject<Object, Object> jsonObject = new JsonObject<>();
@@ -390,8 +351,8 @@ public class DeptService {
     }
 
     @Transactional
-    public JsonObject<Object, Object> updateMasterDate(Payload<DeptHistoryVO> requestPayload) throws DeptStateException {
-        log.info("call Service : " + this.getClass().getName() + ".updateMasterDate");
+    public JsonObject<Object, Object> updateDeptHistoryAvlDate(Payload<DeptHistoryVO> requestPayload) throws DeptStateException {
+        log.info("call Service : " + this.getClass().getName() + ".updateDeptHistoryAvlDate");
 
         //조직의 마스터데이터 수정
         JsonObject<Object, Object> jsonObject = new JsonObject<>();

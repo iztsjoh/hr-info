@@ -122,8 +122,8 @@ public class CostCenterDAO {
     /*
      * SELECT : 이력유효기간에 따른 해당조직을 제외한 상위조직 검색
      */
-    public List<CostCenterVO> selectHighCostCenterDept(CostCenterVO costCenterVO) {
-        return mybatis.selectList("CostCenterMapper.selectHighCostCenterDept", costCenterVO);
+    public List<CostCenterVO> selectHighCostCenterDeptList(CostCenterVO costCenterVO) {
+        return mybatis.selectList("CostCenterMapper.selectHighCostCenterDeptList", costCenterVO);
     }
 
     /* 선택한 부서 자체의 종료일자 조회 */

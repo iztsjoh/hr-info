@@ -416,7 +416,7 @@
     </select>
 
 	<!-- 이력유효기간 시작/종료일에 따른 해당조직을 제외한 상위조직 불러오기 -->
-	<select id="selectHighCostCenterDept"
+	<select id="selectHighCostCenterDeptList"
 			parameterType="com.ibiz.api.model.CostCenterVO"
 			resultType="com.ibiz.api.model.CostCenterVO">
 		<![CDATA[

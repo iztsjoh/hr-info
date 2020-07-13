@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/hr")
+@RequestMapping("/employee")
 public class EmployeeController extends BaseController {
 
     private static final Logger log = LoggerFactory.getLogger(EmployeeController.class);
@@ -26,7 +26,7 @@ public class EmployeeController extends BaseController {
 
     @PostMapping("/selectEmployeeInfo")
     public ResponseEntity<String> selectEmployeeInfo(@RequestParam("payload") String payload) throws Exception {
-        log.info("Call Controller : " + this.getClass().getName() + ".selectDeptTree");
+        log.info("Call Controller : " + this.getClass().getName() + ".selectEmployeeInfo");
         Payload requestPayload = super.parsePayload(payload, new TypeToken<Payload<EmployeeVO>>(){});
 
         return super.composePayload(new Payload<JsonObject<List<EmployeeVO>, Object>>(employeeService.selectEmployeeInfo(requestPayload)));

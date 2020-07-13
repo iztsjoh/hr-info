@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/hr")
+@RequestMapping("/dept")
 public class DeptController extends BaseController {
 
     private static final Logger log = LoggerFactory.getLogger(DeptController.class);
@@ -48,21 +48,6 @@ public class DeptController extends BaseController {
         return super.composePayload(new Payload<JsonObject<DeptHistoryVO, Object>>(deptService.selectLastDeptHistoryList(requestPayload)));
     }
 
-    @PostMapping("/selectDeptlastestChgHis")
-    public ResponseEntity<String> selectDeptlastestChgHis(@RequestParam("payload") String payload) throws Exception {
-        log.info("Call Controller : " + this.getClass().getName() + ".selectDeptlastestChgHis");
-        Payload requestPayload = super.parsePayload(payload, new TypeToken<Payload<DeptHistoryVO>>(){});
-
-        return super.composePayload(new Payload<JsonObject<DeptHistoryVO, Object>>(deptService.selectDeptlastestChgHis(requestPayload)));
-    }
-
-    @PostMapping("/selectHighDeptTree")
-    public ResponseEntity<String> selectHighDeptTree(@RequestParam("payload") String payload) throws Exception {
-        log.info("Call Controller : " + this.getClass().getName() + ".selectHighDeptTree");
-        Payload requestPayload = super.parsePayload(payload, new TypeToken<Payload<DeptHistoryVO>>(){});
-
-        return super.composePayload(new Payload<JsonObject<DeptHistoryVO, Object>>(deptService.selectHighDeptTree(requestPayload)));
-    }
 
     @PostMapping("/updateDept")
     public ResponseEntity<String> updateDept(@RequestParam("payload") String payload) throws Exception {
@@ -72,12 +57,12 @@ public class DeptController extends BaseController {
         return super.composePayload(new Payload<JsonObject<Object, Object>>(deptService.updateDept(requestPayload)));
     }
 
-    @PostMapping("/deleteDeptHis")
-    public ResponseEntity<String> deleteDeptHis(@RequestParam("payload") String payload) throws Exception {
-        log.info("Call Controller : " + this.getClass().getName() + ".deleteDeptHis");
+    @PostMapping("/deleteDeptHistory")
+    public ResponseEntity<String> deleteDeptHistory(@RequestParam("payload") String payload) throws Exception {
+        log.info("Call Controller : " + this.getClass().getName() + ".deleteDeptHistory");
         Payload requestPayload = super.parsePayload(payload, new TypeToken<Payload<DeptHistoryVO>>(){});
 
-        return super.composePayload(new Payload<JsonObject<Object, Object>>(deptService.deleteDeptHis(requestPayload)));
+        return super.composePayload(new Payload<JsonObject<Object, Object>>(deptService.deleteDeptHistory(requestPayload)));
     }
 
     @PostMapping("/selectHgrkDeptFromAvlDateList")
@@ -125,7 +110,7 @@ public class DeptController extends BaseController {
         log.info("Call Controller : " + this.getClass().getName() + ".updateMasterDate");
         Payload requestPayload = super.parsePayload(payload, new TypeToken<Payload<DeptHistoryVO>>(){});
 
-        return super.composePayload(new Payload<JsonObject<Object, Object>>(deptService.updateMasterDate(requestPayload)));
+        return super.composePayload(new Payload<JsonObject<Object, Object>>(deptService.updateDeptHistoryAvlDate(requestPayload)));
     }
 
     @PostMapping("/selectLastAvlEndDate")

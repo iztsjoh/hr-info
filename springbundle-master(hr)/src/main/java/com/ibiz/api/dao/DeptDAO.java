@@ -56,12 +56,6 @@ public class DeptDAO {
         return mybatis.selectOne("DeptMapper.selectDeptHistoryCnt", deptHistoryVO);
     }
 
-    /*
-     * SELECT : 상위 조직조회
-     */
-    public List<DeptHistoryVO> selectHighDeptTree(DeptHistoryVO deptHistoryVO) {
-        return mybatis.selectList("DeptMapper.selectHighDeptTree", deptHistoryVO);
-    }
 
     /*
      * INSERT : 부서정보 추가

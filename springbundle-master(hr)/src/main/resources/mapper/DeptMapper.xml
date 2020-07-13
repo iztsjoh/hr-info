@@ -44,37 +44,6 @@
 
 	</select>
 
-    <!-- 조회 : 특정조직의 등록가능한 상위조직 조회-->
-    <select id="selectHighDeptTree"
-            parameterType="com.ibiz.api.model.DeptHistoryVO"
-            resultType="com.ibiz.api.model.DeptHistoryVO">
-
-        SELECT
-        DEPT_ID
-        , DEPT_NM
-        , HGRK_DEPT_ID
-        , DEPT_SORT_SEQC
-        , DEPTH_LEVEL
-        FROM (
-        SELECT
-        T1.DEPT_ID
-        ,T1.DEPT_NM
-        ,T1.HGRK_DEPT_ID
-        ,T1.DEPT_SORT_SEQC
-        ,LTRIM (SYS_CONNECT_BY_PATH (T1.DEPT_ID, ' > '), ' > ') AS DEPT_FULLNAME
-        ,LEVEL AS DEPTH_LEVEL
-        FROM HMST100T T1
-        WHERE <![CDATA[  T1.ORG_CRT_DATE <= ]]> #{stadDate}
-        AND <![CDATA[ T1.ORG_CLOSE_DATE >= ]]>  #{stadDate}
-        START WITH T1.HGRK_DEPT_ID IS NULL
-        CONNECT BY PRIOR T1.DEPT_ID=T1.HGRK_DEPT_ID
-        )
-        <if test="deptId != null and deptId !=''">
-            WHERE DEPT_FULLNAME NOT LIKE '%' || #{deptId} || '%'
-        </if>
-        ORDER BY DEPT_FULLNAME
-
-    </select>
 
     <!-- 왼쪽 조직트리 선택 :  특정 부서변경이력리스트-->
     <select id="selectDeptHistoryList"
