@@ -170,4 +170,26 @@ public class DeptController extends BaseController {
         return super.composePayload(new Payload<String>(deptService.selectIsAuthBySlsEmp(requestPayload)));
     }
 
+
+    // excel 엑셀
+
+    // 조직정보 엑셀 다운로드
+    @PostMapping("/selectExcelDwnlDeptList")
+    public ResponseEntity<String> selectExcelDwnlDeptList(@RequestParam("payload") String payload) throws Exception {
+        log.info("Call Controller : " + this.getClass().getName() + ".selectExcelDwnlDeptList");
+        Payload requestPayload = super.parsePayload(payload, new TypeToken<Payload<DeptVO>>(){});
+
+        return super.composePayload(new Payload<List>(deptService.selectExcelDwnlDeptList(requestPayload)));
+    }
+
+    // 조직이력정보 엑셀 다운로드
+    @PostMapping("/selectExcelDwnlDeptHistoryList")
+    public ResponseEntity<String> selectExcelDwnlDeptHistoryList(@RequestParam("payload") String payload) throws Exception {
+        log.info("Call Controller : " + this.getClass().getName() + ".selectExcelDwnlDeptHistoryList");
+        Payload requestPayload = super.parsePayload(payload, new TypeToken<Payload<DeptVO>>(){});
+
+        return super.composePayload(new Payload<List>(deptService.selectExcelDwnlDeptHistoryList(requestPayload)));
+    }
+
+
 }

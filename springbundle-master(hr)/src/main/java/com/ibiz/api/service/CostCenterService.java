@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
+import java.text.SimpleDateFormat;
 import java.util.List;
 
 @Service
@@ -264,5 +265,80 @@ public class CostCenterService {
         jsonObject.IsSucceed = true;
 
         return jsonObject;
+    }
+
+
+    // Excel
+    @Transactional
+    public List<ExcelCostCenterVO> selectExcelDwnlCostCenterList(Payload<CostCenterVO> requestPayload) throws Exception {
+        log.info("Call Service : " + this.getClass().getName() + ".selectExcelDwnlCostCenterList");
+        CostCenterVO costCenterVO = requestPayload.getDto();
+
+        List<ExcelCostCenterVO> list = costCenterDAO.selectExcelDwnlCostCenterList(costCenterVO);
+
+        //날짜 포맷변환
+        SimpleDateFormat beforeFormat = new SimpleDateFormat("yyyyMMdd");
+        SimpleDateFormat afterFormat = new SimpleDateFormat("yyyy-MM-dd");
+
+        for(int i = 0 ; i < list.size(); i++) {
+            if (list.get(i).getAvlStartDate() != null && list.get(i).getAvlStartDate() != "") {
+                String avlStartDate = list.get(i).getAvlStartDate();
+                avlStartDate = afterFormat.format(beforeFormat.parse(avlStartDate));
+                list.get(i).setAvlStartDate(avlStartDate);
+            }
+            if(list.get(i).getAvlEndDate() != null && list.get(i).getAvlEndDate() != "") {
+                String avlEndDate = list.get(i).getAvlEndDate();
+                avlEndDate = afterFormat.format(beforeFormat.parse(avlEndDate));
+                list.get(i).setAvlEndDate(avlEndDate);
+            }
+            if(list.get(i).getOrgCrtDate() != null && list.get(i).getOrgCrtDate() != "") {
+                String orgCrtDate = list.get(i).getOrgCrtDate();
+                orgCrtDate = afterFormat.format(beforeFormat.parse(orgCrtDate));
+                list.get(i).setOrgCrtDate(orgCrtDate);
+            }
+            if(list.get(i).getOrgCloseDate() != null && list.get(i).getOrgCloseDate() != "") {
+                String orgCloseDate = list.get(i).getOrgCloseDate();
+                orgCloseDate = afterFormat.format(beforeFormat.parse(orgCloseDate));
+                list.get(i).setOrgCloseDate(orgCloseDate);
+            }
+        }
+        return list;
+    }
+
+    @Transactional
+    public List<ExcelCostCenterHistoryVO> selectExcelDwnlCostCenterHistoryList(Payload<CostCenterVO> requestPayload) throws Exception {
+        log.info("Call Service : " + this.getClass().getName() + ".selectExcelDwnlCostCenterHistoryList");
+        CostCenterVO costCenterVO = requestPayload.getDto();
+
+        List<ExcelCostCenterHistoryVO> list = costCenterDAO.selectExcelDwnlCostCenterHistoryList(costCenterVO);
+
+        //날짜 포맷변환
+        SimpleDateFormat beforeFormat = new SimpleDateFormat("yyyyMMdd");
+        SimpleDateFormat afterFormat = new SimpleDateFormat("yyyy-MM-dd");
+
+        for(int i = 0 ; i < list.size(); i++) {
+            if (list.get(i).getAvlStartDate() != null && list.get(i).getAvlStartDate() != "") {
+                String avlStartDate = list.get(i).getAvlStartDate();
+                avlStartDate = afterFormat.format(beforeFormat.parse(avlStartDate));
+                list.get(i).setAvlStartDate(avlStartDate);
+            }
+            if(list.get(i).getAvlEndDate() != null && list.get(i).getAvlEndDate() != "") {
+                String avlEndDate = list.get(i).getAvlEndDate();
+                avlEndDate = afterFormat.format(beforeFormat.parse(avlEndDate));
+                list.get(i).setAvlEndDate(avlEndDate);
+            }
+            if(list.get(i).getOrgCrtDate() != null && list.get(i).getOrgCrtDate() != "") {
+                String orgCrtDate = list.get(i).getOrgCrtDate();
+                orgCrtDate = afterFormat.format(beforeFormat.parse(orgCrtDate));
+                list.get(i).setOrgCrtDate(orgCrtDate);
+            }
+            if(list.get(i).getOrgCloseDate() != null && list.get(i).getOrgCloseDate() != "") {
+                String orgCloseDate = list.get(i).getOrgCloseDate();
+                orgCloseDate = afterFormat.format(beforeFormat.parse(orgCloseDate));
+                list.get(i).setOrgCloseDate(orgCloseDate);
+            }
+        }
+
+        return list;
     }
 }

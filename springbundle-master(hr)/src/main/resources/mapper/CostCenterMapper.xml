@@ -472,5 +472,102 @@
 		WHERE
 			CC_ID = #{ccId}
 	</update>
+
+
+	<!-- 코스트센터다운로드 : 코스트센터정보다운로드-->
+	<select id="selectExcelDwnlCostCenterList"
+			parameterType="com.ibiz.api.model.CostCenterVO"
+			resultType="com.ibiz.api.model.ExcelCostCenterVO">
+
+		SELECT
+		MAIN.CC_ID
+		, MAIN.CC_NM
+		, MAIN.HGRK_CC_ID
+		, MAIN.HGRK_CC_NM
+		, MAIN.DEPT_SORT_SEQC
+		, MAIN.ORG_CRT_DATE
+		, MAIN.ORG_CLOSE_DATE
+		, MAIN.AVL_START_DATE
+		, MAIN.AVL_END_DATE
+		FROM (
+		SELECT
+		T1.CC_ID
+		,T1.CC_NM
+		,T1.HGRK_CC_ID
+		,T2.CC_NM AS HGRK_CC_NM
+		,T1.DEPT_SORT_SEQC
+		,T1.ORG_CRT_DATE
+		,T1.ORG_CLOSE_DATE
+		,T1.AVL_START_DATE
+		,T1.AVL_END_DATE
+		FROM HMST201T T1
+		LEFT OUTER JOIN HMST201T T2
+		ON T1.HGRK_CC_ID = T2.CC_ID AND T2.AVL_START_DATE <![CDATA[ <= ]]> #{stadDate}  AND T2.AVL_END_DATE <![CDATA[ >= ]]> #{stadDate}
+		WHERE T1.AVL_START_DATE <![CDATA[ <= ]]> #{stadDate}
+		AND T1.AVL_END_DATE <![CDATA[ >= ]]> #{stadDate}
+		) MAIN
+		START WITH MAIN.HGRK_CC_ID IS NULL
+		CONNECT BY PRIOR MAIN.CC_ID = MAIN.HGRK_CC_ID
+		ORDER SIBLINGS BY TO_NUMBER(MAIN.DEPT_SORT_SEQC)
+
+	</select>
+
+	<!-- 코스트센터이력 다운로드 : 코스트센터이력다운로드-->
+	<select id="selectExcelDwnlCostCenterHistoryList"
+			parameterType="com.ibiz.api.model.CostCenterVO"
+			resultType="com.ibiz.api.model.ExcelCostCenterHistoryVO">
+
+		SELECT
+		MAIN.CC_ID
+		, MAIN.CC_NM
+		, MAIN.HGRK_CC_ID
+		, MAIN.HGRK_CC_NM
+		, MAIN.DEPT_SORT_SEQC
+		, MAIN.ORG_CRT_DATE
+		, MAIN.ORG_CLOSE_DATE
+		, MAIN.AVL_START_DATE
+		, MAIN.AVL_END_DATE
+		FROM (
+		SELECT
+		T1.CC_ID
+		,T1.CC_NM
+		,T1.HGRK_CC_ID
+		,T2.CC_NM AS HGRK_CC_NM
+		,T1.DEPT_SORT_SEQC
+		,T1.ORG_CRT_DATE
+		,T1.ORG_CLOSE_DATE
+		,T1.AVL_START_DATE
+		,T1.AVL_END_DATE
+		FROM HMST201T T1
+		LEFT OUTER JOIN HMST201T T2
+		ON T1.HGRK_CC_ID = T2.CC_ID AND T2.AVL_START_DATE <![CDATA[ <= ]]> T1.AVL_START_DATE AND T2.AVL_END_DATE <![CDATA[ >= ]]> T1.AVL_START_DATE
+		WHERE T1.AVL_START_DATE  BETWEEN #{avlStartDate} AND #{avlEndDate}
+		OR T1.AVL_END_DATE  BETWEEN #{avlStartDate} AND #{avlEndDate}
+		OR ( T1.AVL_START_DATE <![CDATA[ <= ]]> #{avlStartDate} AND T1.AVL_END_DATE <![CDATA[ >= ]]> #{avlEndDate} )
+		) MAIN
+		LEFT OUTER JOIN
+		(
+		SELECT
+		CC_ID
+		, MAX(DEPT_FULLNAME) AS DEPT_FULLNAME
+		FROM (
+		SELECT
+		T1.CC_ID
+		, LTRIM (SYS_CONNECT_BY_PATH (T1.DEPT_SORT_SEQC || T1.CC_ID, ' > '), ' > ') AS DEPT_FULLNAME
+		FROM HMST201T T1
+		WHERE T1.AVL_START_DATE  BETWEEN #{avlStartDate} AND #{avlEndDate}
+		OR T1.AVL_END_DATE  BETWEEN #{avlStartDate} AND #{avlEndDate}
+		OR ( T1.AVL_START_DATE <![CDATA[ <= ]]> #{avlStartDate} AND T1.AVL_END_DATE <![CDATA[ >= ]]>  #{avlEndDate} )
+		START WITH T1.HGRK_CC_ID IS NULL
+		CONNECT BY PRIOR T1.CC_ID = T1.HGRK_CC_ID
+		) SUB
+		GROUP BY CC_ID
+		) MAIN2
+		ON MAIN.CC_ID = MAIN2.CC_ID
+		ORDER BY MAIN2.DEPT_FULLNAME, MAIN.DEPT_SORT_SEQC
+
+	</select>
+
+
 </mapper>
 

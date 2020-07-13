@@ -1110,4 +1110,63 @@ public class EmployeeService {
     }
 
 
+    // Excel
+    @Transactional
+    public List<ExcelEmployeeVO> selectExcelDwnlEmployeeList(Payload<EmployeeVO> requestPayload) throws Exception {
+        log.info("Call Service : " + this.getClass().getName() + ".selectExcelDwnlEmployeeList");
+        EmployeeVO employeeVO = requestPayload.getDto();
+
+        List<ExcelEmployeeVO> list = employeeDAO.selectExcelDwnlEmployeeList(employeeVO);
+
+        //날짜 포맷변환
+        SimpleDateFormat beforeFormat = new SimpleDateFormat("yyyyMMdd");
+        SimpleDateFormat afterFormat = new SimpleDateFormat("yyyy-MM-dd");
+
+        for(int i = 0 ; i < list.size(); i++) {
+            if (list.get(i).getCompEncmDate() != null && list.get(i).getCompEncmDate() != "") {
+                String compEncmDate = list.get(i).getCompEncmDate();
+                compEncmDate = afterFormat.format(beforeFormat.parse(compEncmDate));
+                list.get(i).setCompEncmDate(compEncmDate);
+            }
+            if(list.get(i).getGrpEncmDate() != null && list.get(i).getGrpEncmDate() != "") {
+                String grpEncmDate = list.get(i).getGrpEncmDate();
+                grpEncmDate = afterFormat.format(beforeFormat.parse(grpEncmDate));
+                list.get(i).setGrpEncmDate(grpEncmDate);
+            }
+            if(list.get(i).getRetDate() != null && list.get(i).getRetDate() != "") {
+                String retDate = list.get(i).getRetDate();
+                retDate = afterFormat.format(beforeFormat.parse(retDate));
+                list.get(i).setRetDate(retDate);
+            }
+            if(list.get(i).getCntrDate() != null && list.get(i).getCntrDate() != "") {
+                String cntrDate = list.get(i).getCntrDate();
+                if(cntrDate.equals(" ~ ")) {
+                    cntrDate = "";
+                }else {
+                    String[] array = cntrDate.split(" ~ ");
+                    for(int j = 0 ; j < array.length; j++) {
+                        array[j] = afterFormat.format(beforeFormat.parse(array[j]));
+                    }
+                    cntrDate = array[0] + " ~ " + array[1];
+                }
+                list.get(i).setCntrDate(cntrDate);
+            }
+            if(list.get(i).getLvabDate() != null && list.get(i).getLvabDate() != "") {
+                String lvabDate = list.get(i).getLvabDate();
+                if(lvabDate.equals(" ~ ")) {
+                    lvabDate = "";
+                }else {
+                    String[] array = lvabDate.split(" ~ ");
+                    for(int j = 0 ; j < array.length; j++) {
+                        array[j] = afterFormat.format(beforeFormat.parse(array[j]));
+                    }
+                    lvabDate = array[0] + " ~ " + array[1];
+                }
+                list.get(i).setLvabDate(lvabDate);
+            }
+        }
+
+        return list;
+    }
+
 }

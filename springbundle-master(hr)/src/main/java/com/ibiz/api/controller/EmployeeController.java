@@ -49,4 +49,14 @@ public class EmployeeController extends BaseController {
         return super.composePayload(new Payload<JsonObject<List<EmployeeVO>, Object>>(employeeService.selectEmployeeSearchList(requestPayload)));
     }
 
+    // excel 엑셀
+
+    // 임직원 엑셀 다운로드
+    @PostMapping("/selectExcelDwnlEmployeeList")
+    public ResponseEntity<String> selectExcelDwnlEmployeeList(@RequestParam("payload") String payload) throws Exception {
+        log.info("Call Controller : " + this.getClass().getName() + ".selectExcelDwnlEmployeeList");
+        Payload requestPayload = super.parsePayload(payload, new TypeToken<Payload<EmployeeVO>>(){});
+
+        return super.composePayload(new Payload<List>(employeeService.selectExcelDwnlEmployeeList(requestPayload)));
+    }
 }

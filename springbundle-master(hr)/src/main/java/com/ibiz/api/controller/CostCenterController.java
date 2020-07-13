@@ -2,6 +2,7 @@ package com.ibiz.api.controller;
 
 import com.google.gson.reflect.TypeToken;
 import com.ibiz.api.model.CostCenterVO;
+import com.ibiz.api.model.EmployeeVO;
 import com.ibiz.api.model.JsonObject;
 import com.ibiz.api.model.Payload;
 import com.ibiz.api.service.CostCenterService;
@@ -89,4 +90,25 @@ public class CostCenterController extends BaseController {
 
         return super.composePayload(new Payload<JsonObject<List<CostCenterVO>, Object>>(costCenterService.selectHighCostCenterDept(requestPayload)));
     }
+
+    // excel 엑셀
+
+    // 코스트센터 엑셀 다운로드
+    @PostMapping("/selectExcelDwnlCostCenterList")
+    public ResponseEntity<String> selectExcelDwnlCostCenterList(@RequestParam("payload") String payload) throws Exception {
+        log.info("Call Controller : " + this.getClass().getName() + ".selectExcelDwnlCostCenterList");
+        Payload requestPayload = super.parsePayload(payload, new TypeToken<Payload<CostCenterVO>>(){});
+
+        return super.composePayload(new Payload<List>(costCenterService.selectExcelDwnlCostCenterList(requestPayload)));
+    }
+
+    // 코스트센터 변경이력 엑셀 다운로드
+    @PostMapping("/selectExcelDwnlCostCenterHistoryList")
+    public ResponseEntity<String> selectExcelDwnlCostCenterHistoryList(@RequestParam("payload") String payload) throws Exception {
+        log.info("Call Controller : " + this.getClass().getName() + ".selectExcelDwnlCostCenterHistoryList");
+        Payload requestPayload = super.parsePayload(payload, new TypeToken<Payload<CostCenterVO>>(){});
+
+        return super.composePayload(new Payload<List>(costCenterService.selectExcelDwnlCostCenterHistoryList(requestPayload)));
+    }
+
 }

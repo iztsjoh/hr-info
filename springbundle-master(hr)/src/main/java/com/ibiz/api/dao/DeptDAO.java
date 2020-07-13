@@ -1,7 +1,6 @@
 package com.ibiz.api.dao;
 
-import com.ibiz.api.model.DeptHistoryVO;
-import com.ibiz.api.model.DeptVO;
+import com.ibiz.api.model.*;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -196,5 +195,17 @@ public class DeptDAO {
     public DeptVO selectIsAuthBySlsEmp(DeptVO deptVO) throws Exception{
         return mybatis.selectOne("DeptMapper.selectIsAuthBySlsEmp",deptVO);
     }
+
+
+    /* 조직 정보 조회 엑셀 */
+    public List<ExcelDeptVO> selectExcelDwnlDeptList(DeptVO deptVO) throws Exception {
+        return mybatis.selectList("DeptMapper.selectExcelDwnlDeptList", deptVO);
+    }
+
+    /* 조직이력 이력 정보 조회 엑셀 */
+    public List<ExcelDeptHistoryVO> selectExcelDwnlDeptHistoryList(DeptVO deptVO) throws Exception {
+        return mybatis.selectList("DeptMapper.selectExcelDwnlDeptHistoryList", deptVO);
+    }
+
 
 }

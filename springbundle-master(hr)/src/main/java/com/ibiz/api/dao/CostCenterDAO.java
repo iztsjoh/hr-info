@@ -135,4 +135,15 @@ public class CostCenterDAO {
     public int updateCcCloseDate(CostCenterVO costCenterVO) {
         return mybatis.update("CostCenterMapper.updateCcCloseDate", costCenterVO);
     }
+
+    /* 코스트센터 정보 조회 엑셀 */
+    public List<ExcelCostCenterVO> selectExcelDwnlCostCenterList(CostCenterVO costCenterVO) throws Exception {
+        return mybatis.selectList("CostCenterMapper.selectExcelDwnlCostCenterList", costCenterVO);
+    }
+
+    /* 코스트센터 이력 정보 조회 엑셀 */
+    public List<ExcelCostCenterHistoryVO> selectExcelDwnlCostCenterHistoryList(CostCenterVO costCenterVO) throws Exception {
+        return mybatis.selectList("CostCenterMapper.selectExcelDwnlCostCenterHistoryList", costCenterVO);
+    }
+
 }
