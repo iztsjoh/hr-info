@@ -1,55 +1,177 @@
 package com.ibiz.api.model;
 
+import com.ibiz.api.exception.ExceptionCode;
+import org.springframework.format.annotation.DateTimeFormat;
+
+import javax.validation.constraints.Size;
+
 public class DeptVO {
     /**
-     * 부서 아이디
+     * 붓서ID
      */
+    @Size(min=1,max=8, message= ExceptionCode.OUTOFSIZE_EXCEPTION+" 부서아이디는 8자리이하" + ExceptionCode.OUTOFSIZE_EXCEPTION_MESSAGE)
     private String deptId;
 
     /**
-     * 부서명
+     * 붓서명
      */
     private String deptNm;
 
     /**
-     * Cost Center 코드
-     */
-    private String ccCd;
-
-    /**
-     * 부서분류 코드
-     */
-    private String orgDstCd;
-
-    /**
-     * 부서분류 코드명
-     */
-    private String orgDstCdNm;
-
-    /**
-     * 상위부서 아이디
+     * 상위부서id
      */
     private String hgrkDeptId;
 
     /**
-     * 부서 정렬 순서
+     * 상위부서명
+     */
+    private String hgrkDeptNm;
+
+    /**
+     * 부서정렬순서
      */
     private String deptSortSeqc;
+
+    /**
+     * 부서레벨
+     */
+    private String deptLvlCd;
+
+    /**
+     * 부서레벨명
+     */
+    private String deptLvlCdNm;
+
+    /**
+     * 브사징ID
+     */
+    private String hddpEmpId;
+
+    /**
+     * 부서장명
+     */
+    private String hddpEmpNm;
+
+    /**
+     * 메츨브사
+     */
+
+    private String sellOcrYn;
+
+    /**
+     * 조직생성일
+     */
+    private String orgCrtDate;
+
+    /**
+     * 조직폐쇄일
+     */
+    private String orgCloseDate;
+
+    /**
+     * 이력시작일
+     */
+    @DateTimeFormat
+    private String avlStartDate;
+
+    /**
+     * 이력종료일
+     */
+    @DateTimeFormat
+    private String avlEndDate;
+
+    /**
+     * 부서장직위명
+     */
+    private String ofpsCdNm;
+
+    /**
+     * 부서장직위코드
+     */
+    private String ofpsCd;
+
+    /**
+     * 기준일자
+     */
+    private String stadDate;
+
+    /**
+     * 추가 또는 변경 가능 여부
+     */
+    private String valChk;
+
+    /**
+     * 추가 변경 사용자 ID
+     */
+    private String chgEmpId;
+
+    /**
+     * list Count
+     */
+    private Integer listCnt;
+
+    /**
+     * 페이지사이즈
+     */
+    private Integer pageSize;
+
+    /**
+     * 페이지넘버
+     */
+    private Integer pageNumber;
+
+    /**
+     * rowNumber
+     */
+    private Integer rowNumber;
+
+    /**
+     * depthLevel
+     */
+    private Integer depthLevel;
+
+    /**
+     * orgDstCd
+     */
+    private String orgDstCd;
+
+    /**
+     * orgDstCdNm
+     */
+    private String orgDstCdNm;
+
+    /**
+     * 기준일자
+     */
+    private String standardDate;
+
+    /**
+     * 이력추가 여부
+     * */
+    private String isAddRecord;
+
+
+    /**
+     * 신규등록 여부
+     */
+    private String isCreating;
+
+
+    /**
+     * 사용자그룹(권한체크를 위해 추가됨)
+     */
+    private String userGrpCd;
+
+    /**
+     * 기준연도(권한체크를 위해 추가됨)
+     */
+    private String critYear;
 
     /**
      * 소속사 코드 (인젠트, 콤텍)
      */
     private String bltcCd;
 
-    /**
-     * 부서 레벨 코드
-     */
-    private String deptLvlCd;
-
-    /**
-     * 부서장 사원 ID
-     */
-    private String hddpEmpId;
     /**
      * 부서 생성일자
      */
@@ -59,11 +181,6 @@ public class DeptVO {
      * 부서 폐쇄 일자
      */
     private String closeDate;
-
-    /**
-     * 매출발생부서여부
-     */
-    private String sellOcrYn;
 
     /**
      * 등록사원 ID
@@ -76,19 +193,9 @@ public class DeptVO {
     private String regDt;
 
     /**
-     * 변경사원 ID
-     */
-    private String chgEmpId;
-
-    /**
      * 변경일시
      */
     private String chgDt;
-
-    /**
-     * 그리드의 입력(C) 수정(U) 삭제(D) 상태
-     */
-    private String gridStatus;
 
     /**
      * 검색값
@@ -106,19 +213,9 @@ public class DeptVO {
     private Integer cntLowerDeptID;
 
     /**
-     * 부서 레벨(정렬)
-     */
-    private Integer depthLevel;
-
-    /**
      * 하위부서(자식) 갯수
      */
     private Integer lowerCnt;
-
-    /**
-     * 상위부서명
-     */
-    private String hgrkDeptNm;
 
     /**
      * 영업대표(권한체크를 위해 추가됨)
@@ -131,11 +228,6 @@ public class DeptVO {
     private String empId;
 
     /**
-     * 사용자그룹(권한체크를 위해 추가됨)
-     */
-    private String userGrpCd;
-
-    /**
      * 토탈사이즈(권한체크를 위해 추가됨)
      */
     private Integer totalSize;
@@ -146,11 +238,6 @@ public class DeptVO {
      * userGrpCd를 기준으로 부서를 조회하나 우선 적용될 userGrpCd가 필요할 시에 사용
      */
     private String priorUserGrpCd;
-
-    /**
-     * 기준연도
-     */
-    private String critYear;
 
 
     public String getDeptId() {
@@ -169,20 +256,20 @@ public class DeptVO {
         this.deptNm = deptNm;
     }
 
-    public String getCcCd() {
-        return ccCd;
-    }
-
-    public void setCcCd(String ccCd) {
-        this.ccCd = ccCd;
-    }
-
     public String getHgrkDeptId() {
         return hgrkDeptId;
     }
 
     public void setHgrkDeptId(String hgrkDeptId) {
         this.hgrkDeptId = hgrkDeptId;
+    }
+
+    public String getHgrkDeptNm() {
+        return hgrkDeptNm;
+    }
+
+    public void setHgrkDeptNm(String hgrkDeptNm) {
+        this.hgrkDeptNm = hgrkDeptNm;
     }
 
     public String getDeptSortSeqc() {
@@ -193,20 +280,20 @@ public class DeptVO {
         this.deptSortSeqc = deptSortSeqc;
     }
 
-    public String getBltcCd() {
-        return bltcCd;
-    }
-
-    public void setBltcCd(String bltcCd) {
-        this.bltcCd = bltcCd;
-    }
-
     public String getDeptLvlCd() {
         return deptLvlCd;
     }
 
     public void setDeptLvlCd(String deptLvlCd) {
         this.deptLvlCd = deptLvlCd;
+    }
+
+    public String getDeptLvlCdNm() {
+        return deptLvlCdNm;
+    }
+
+    public void setDeptLvlCdNm(String deptLvlCdNm) {
+        this.deptLvlCdNm = deptLvlCdNm;
     }
 
     public String getHddpEmpId() {
@@ -217,22 +304,13 @@ public class DeptVO {
         this.hddpEmpId = hddpEmpId;
     }
 
-    public String getCrtDate() {
-        return crtDate;
+    public String getHddpEmpNm() {
+        return hddpEmpNm;
     }
 
-    public void setCrtDate(String crtDate) {
-        this.crtDate = crtDate;
+    public void setHddpEmpNm(String hddpEmpNm) {
+        this.hddpEmpNm = hddpEmpNm;
     }
-
-    public String getCloseDate() {
-        return closeDate;
-    }
-
-    public void setCloseDate(String closeDate) {
-        this.closeDate = closeDate;
-    }
-
 
     public String getSellOcrYn() {
         return sellOcrYn;
@@ -242,20 +320,68 @@ public class DeptVO {
         this.sellOcrYn = sellOcrYn;
     }
 
-    public String getRegEmpId() {
-        return regEmpId;
+    public String getOrgCrtDate() {
+        return orgCrtDate;
     }
 
-    public void setRegEmpId(String regEmpId) {
-        this.regEmpId = regEmpId;
+    public void setOrgCrtDate(String orgCrtDate) {
+        this.orgCrtDate = orgCrtDate;
     }
 
-    public String getRegDt() {
-        return regDt;
+    public String getOrgCloseDate() {
+        return orgCloseDate;
     }
 
-    public void setRegDt(String regDt) {
-        this.regDt = regDt;
+    public void setOrgCloseDate(String orgCloseDate) {
+        this.orgCloseDate = orgCloseDate;
+    }
+
+    public String getAvlStartDate() {
+        return avlStartDate;
+    }
+
+    public void setAvlStartDate(String avlStartDate) {
+        this.avlStartDate = avlStartDate;
+    }
+
+    public String getAvlEndDate() {
+        return avlEndDate;
+    }
+
+    public void setAvlEndDate(String avlEndDate) {
+        this.avlEndDate = avlEndDate;
+    }
+
+    public String getOfpsCdNm() {
+        return ofpsCdNm;
+    }
+
+    public void setOfpsCdNm(String ofpsCdNm) {
+        this.ofpsCdNm = ofpsCdNm;
+    }
+
+    public String getOfpsCd() {
+        return ofpsCd;
+    }
+
+    public void setOfpsCd(String ofpsCd) {
+        this.ofpsCd = ofpsCd;
+    }
+
+    public String getStadDate() {
+        return stadDate;
+    }
+
+    public void setStadDate(String stadDate) {
+        this.stadDate = stadDate;
+    }
+
+    public String getValChk() {
+        return valChk;
+    }
+
+    public void setValChk(String valChk) {
+        this.valChk = valChk;
     }
 
     public String getChgEmpId() {
@@ -266,44 +392,36 @@ public class DeptVO {
         this.chgEmpId = chgEmpId;
     }
 
-    public String getChgDt() {
-        return chgDt;
+    public Integer getListCnt() {
+        return listCnt;
     }
 
-    public void setChgDt(String chgDt) {
-        this.chgDt = chgDt;
+    public void setListCnt(Integer listCnt) {
+        this.listCnt = listCnt;
     }
 
-    public String getGridStatus() {
-        return gridStatus;
+    public Integer getPageSize() {
+        return pageSize;
     }
 
-    public void setGridStatus(String gridStatus) {
-        this.gridStatus = gridStatus;
+    public void setPageSize(Integer pageSize) {
+        this.pageSize = pageSize;
     }
 
-    public String getSearchValue() {
-        return searchValue;
+    public Integer getPageNumber() {
+        return pageNumber;
     }
 
-    public void setSearchValue(String searchValue) {
-        this.searchValue = searchValue;
+    public void setPageNumber(Integer pageNumber) {
+        this.pageNumber = pageNumber;
     }
 
-    public String getDeptIds() {
-        return deptIds;
+    public Integer getRowNumber() {
+        return rowNumber;
     }
 
-    public void setDeptIds(String deptIds) {
-        this.deptIds = deptIds;
-    }
-
-    public Integer getCntLowerDeptID() {
-        return cntLowerDeptID;
-    }
-
-    public void setCntLowerDeptID(Integer cntLowerDeptID) {
-        this.cntLowerDeptID = cntLowerDeptID;
+    public void setRowNumber(Integer rowNumber) {
+        this.rowNumber = rowNumber;
     }
 
     public Integer getDepthLevel() {
@@ -330,20 +448,124 @@ public class DeptVO {
         this.orgDstCdNm = orgDstCdNm;
     }
 
+    public String getStandardDate() {
+        return standardDate;
+    }
+
+    public void setStandardDate(String standardDate) {
+        this.standardDate = standardDate;
+    }
+
+    public String getIsAddRecord() {
+        return isAddRecord;
+    }
+
+    public void setIsAddRecord(String isAddRecord) {
+        this.isAddRecord = isAddRecord;
+    }
+
+    public String getIsCreating() {
+        return isCreating;
+    }
+
+    public void setIsCreating(String isCreating) {
+        this.isCreating = isCreating;
+    }
+
+    public String getUserGrpCd() {
+        return userGrpCd;
+    }
+
+    public void setUserGrpCd(String userGrpCd) {
+        this.userGrpCd = userGrpCd;
+    }
+
+    public String getCritYear() {
+        return critYear;
+    }
+
+    public void setCritYear(String critYear) {
+        this.critYear = critYear;
+    }
+
+    public String getBltcCd() {
+        return bltcCd;
+    }
+
+    public void setBltcCd(String bltcCd) {
+        this.bltcCd = bltcCd;
+    }
+
+    public String getCrtDate() {
+        return crtDate;
+    }
+
+    public void setCrtDate(String crtDate) {
+        this.crtDate = crtDate;
+    }
+
+    public String getCloseDate() {
+        return closeDate;
+    }
+
+    public void setCloseDate(String closeDate) {
+        this.closeDate = closeDate;
+    }
+
+    public String getRegEmpId() {
+        return regEmpId;
+    }
+
+    public void setRegEmpId(String regEmpId) {
+        this.regEmpId = regEmpId;
+    }
+
+    public String getRegDt() {
+        return regDt;
+    }
+
+    public void setRegDt(String regDt) {
+        this.regDt = regDt;
+    }
+
+    public String getChgDt() {
+        return chgDt;
+    }
+
+    public void setChgDt(String chgDt) {
+        this.chgDt = chgDt;
+    }
+
+    public String getSearchValue() {
+        return searchValue;
+    }
+
+    public void setSearchValue(String searchValue) {
+        this.searchValue = searchValue;
+    }
+
+    public String getDeptIds() {
+        return deptIds;
+    }
+
+    public void setDeptIds(String deptIds) {
+        this.deptIds = deptIds;
+    }
+
+    public Integer getCntLowerDeptID() {
+        return cntLowerDeptID;
+    }
+
+    public void setCntLowerDeptID(Integer cntLowerDeptID) {
+        this.cntLowerDeptID = cntLowerDeptID;
+    }
+
     public Integer getLowerCnt() {
         return lowerCnt;
     }
 
     public void setLowerCnt(Integer lowerCnt) {
         this.lowerCnt = lowerCnt;
-    }
-
-    public String getHgrkDeptNm() {
-        return hgrkDeptNm;
-    }
-
-    public void setHgrkDeptNm(String hgrkDeptNm) {
-        this.hgrkDeptNm = hgrkDeptNm;
     }
 
     public String getSlsEmpId() {
@@ -354,14 +576,6 @@ public class DeptVO {
         this.slsEmpId = slsEmpId;
     }
 
-    public Integer getTotalSize() {
-        return totalSize;
-    }
-
-    public void setTotalSize(Integer totalSize) {
-        this.totalSize = totalSize;
-    }
-
     public String getEmpId() {
         return empId;
     }
@@ -370,12 +584,12 @@ public class DeptVO {
         this.empId = empId;
     }
 
-    public String getUserGrpCd() {
-        return userGrpCd;
+    public Integer getTotalSize() {
+        return totalSize;
     }
 
-    public void setUserGrpCd(String userGrpCd) {
-        this.userGrpCd = userGrpCd;
+    public void setTotalSize(Integer totalSize) {
+        this.totalSize = totalSize;
     }
 
     public String getIsAllAuth() {
@@ -393,13 +607,4 @@ public class DeptVO {
     public void setPriorUserGrpCd(String priorUserGrpCd) {
         this.priorUserGrpCd = priorUserGrpCd;
     }
-
-    public String getCritYear() {
-        return critYear;
-    }
-
-    public void setCritYear(String critYear) {
-        this.critYear = critYear;
-    }
-
 }
