@@ -10,18 +10,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="417465a2-9e8c-4643-abcf-2a25a350d8f6" name="Default Changelist" comment="용어표준화(엑셀)">
+    <list default="true" id="417465a2-9e8c-4643-abcf-2a25a350d8f6" name="Default Changelist" comment="용어표준화 버그픽스">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/controller/CostCenterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/controller/CostCenterController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/controller/DeptController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/controller/DeptController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/controller/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/dao/CostCenterDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/dao/CostCenterDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/dao/DeptDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/dao/DeptDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/model/DeptVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/model/DeptVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/service/CostCenterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/service/CostCenterService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/service/DeptService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/service/DeptService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbundle-master(hr)/src/main/resources/mapper/CostCenterMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springbundle-master(hr)/src/main/resources/mapper/CostCenterMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/model/EmployeeVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/model/EmployeeVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/model/ExcelEmployeeVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/model/ExcelEmployeeVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/service/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbundle-master(hr)/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springbundle-master(hr)/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springbundle-master(hr)/src/main/resources/mapper/DeptMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springbundle-master(hr)/src/main/resources/mapper/DeptMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbundle-master(hr)/src/main/resources/mapper/EmployeeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springbundle-master(hr)/src/main/resources/mapper/EmployeeMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,12 +33,26 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$/springbundle-master(hr)">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="api" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="api" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="api" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -70,7 +81,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/utils" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
@@ -81,7 +92,7 @@
       <recent name="C:\ibiz-domain(git)\ibiz-hr-info-7700\springbundle-master(hr)\src\main\java\com\ibiz\api\utils" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.ApiApplication">
     <configuration name="ApiApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ibiz.api.ApiApplication" />
       <module name="api.main" />
@@ -95,9 +106,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="springbundle-master(hr) [bootJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/springbundle-master(hr)" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.ApiApplication" />
+        <item itemvalue="Gradle.springbundle-master(hr) [bootJar]" />
       </list>
     </recent_temporary>
   </component>
@@ -126,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594618202347</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="용어표준화 버그픽스">
+      <created>1594631833265</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1594631833265</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -174,17 +212,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="용어표준화(엑셀 제외)" />
     <MESSAGE value="용어표준화(엑셀)" />
-    <option name="LAST_COMMIT_MESSAGE" value="용어표준화(엑셀)" />
+    <MESSAGE value="용어표준화 버그픽스" />
+    <option name="LAST_COMMIT_MESSAGE" value="용어표준화 버그픽스" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2334" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594184295855">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2334" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594184295855" />
-    <state x="2685" y="204" key="#com.intellij.ide.util.MemberChooser" timestamp="1594609035773">
+    <state x="2685" y="204" key="#com.intellij.ide.util.MemberChooser" timestamp="1594692583038">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2685" y="204" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594609035773" />
+    <state x="2685" y="204" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594692583038" />
     <state x="2610" y="309" width="986" height="421" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1594364980068">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -205,46 +244,50 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2659" y="261" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594602215214" />
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1594630059491">
+    <state width="1877" height="290" key="GridCell.Tab.0.bottom" timestamp="1594701667931">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594630059491" />
-    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1594630059491">
+    <state width="1877" height="290" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594701667931" />
+    <state width="1877" height="290" key="GridCell.Tab.0.center" timestamp="1594701667931">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594630059491" />
-    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1594630059490">
+    <state width="1877" height="290" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594701667931" />
+    <state width="1877" height="290" key="GridCell.Tab.0.left" timestamp="1594701667931">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594630059490" />
-    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1594630059601">
+    <state width="1877" height="290" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594701667931" />
+    <state width="1877" height="290" key="GridCell.Tab.0.right" timestamp="1594701667931">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594630059601" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1594630059491">
+    <state width="1877" height="290" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594701667931" />
+    <state width="1877" height="290" key="GridCell.Tab.1.bottom" timestamp="1594701667787">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594630059491" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1594630059491">
+    <state width="1877" height="290" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594701667787" />
+    <state width="1877" height="290" key="GridCell.Tab.1.center" timestamp="1594701667787">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594630059491" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1594630059491">
+    <state width="1877" height="290" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594701667787" />
+    <state width="1877" height="290" key="GridCell.Tab.1.left" timestamp="1594701667787">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594630059491" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1594630059491">
+    <state width="1877" height="290" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594701667787" />
+    <state width="1877" height="290" key="GridCell.Tab.1.right" timestamp="1594701667787">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594630059491" />
+    <state width="1877" height="290" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594701667787" />
     <state x="2381" y="164" key="SettingsEditor" timestamp="1594184402539">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2381" y="164" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594184402539" />
-    <state x="2708" y="199" width="632" height="584" key="find.popup" timestamp="1594630373085">
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1594631848318">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2708" y="199" width="632" height="584" key="find.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594630373085" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594631848318" />
+    <state x="2708" y="199" width="632" height="584" key="find.popup" timestamp="1594692569073">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2708" y="199" width="632" height="584" key="find.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594692569073" />
     <state x="2614" y="307" key="git4idea.merge.GitPullDialog" timestamp="1594363760671">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -259,9 +302,34 @@
     <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594618511976" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/service/DeptService.java</url>
+          <line>525</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/service/DeptService.java</url>
+          <line>496</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/service/DeptService.java</url>
+          <line>499</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/controller/DeptController.java</url>
+          <line>164</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="Remote">
         <watch expression="deptVO.getUserGrpCd()" language="JAVA" />
+        <watch expression="list.get(0).getTotalCnt()" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>

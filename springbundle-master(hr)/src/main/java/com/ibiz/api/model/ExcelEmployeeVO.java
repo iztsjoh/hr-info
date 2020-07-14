@@ -37,7 +37,7 @@ public class ExcelEmployeeVO {
      * 소속부서명
      */
     @ColumnAttribute(Index = 4, Title = "소속부서명",   ColumnWidth = 120, CellStyleMethodName = "Content")
-    private String bltoDeptIdNm;
+    private String bltoDeptNm;
 
     /**
      * 직위명
@@ -181,18 +181,13 @@ public class ExcelEmployeeVO {
     }
 
 
-
-    public String getBltoDeptIdNm() {
-        return bltoDeptIdNm;
+    public String getBltoDeptNm() {
+        return bltoDeptNm;
     }
 
-
-
-    public void setBltoDeptIdNm(String bltoDeptIdNm) {
-        this.bltoDeptIdNm = bltoDeptIdNm;
+    public void setBltoDeptNm(String bltoDeptNm) {
+        this.bltoDeptNm = bltoDeptNm;
     }
-
-
 
     public String getOfpsCdNm() {
         return ofpsCdNm;
@@ -349,17 +344,6 @@ public class ExcelEmployeeVO {
     }
 
 
-
-    @Override
-    public String toString() {
-        return "ExcelUserBaseInfoVO [empID=" + empId + ", empNm=" + empNm + ", ssrgNo=" + ssrgNo
-                + ", bltoDeptId=" + bltoDeptId + ", bltoDeptIdNm=" + bltoDeptIdNm
-                + ", ofpsCdNm=" + ofpsCdNm + ", ofpsYrvcCount=" + ofpsYrvcCount + ", resoCdNm=" + resoCdNm
-                + ", compEncmDate=" + compEncmDate + ", grpEncmDate=" + grpEncmDate + ", retDate=" + retDate
-                + ", recrtDstCdNm=" + recrtDstCdNm + ", hdocStatCdNm=" + hdocStatCdNm + ", cntrDate="+ cntrDate
-                + ", lvabDate=" + lvabDate
-                + ", compTelNo=" + compTelNo + ", mbphNo=" + mbphNo + ", emlAdrs=" + emlAdrs + "]";
-    }
 
 
 }

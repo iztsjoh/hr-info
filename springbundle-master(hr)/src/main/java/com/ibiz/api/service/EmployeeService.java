@@ -1090,12 +1090,12 @@ public class EmployeeService {
 
         JsonObject<List<EmployeeVO>, Object> jsonObject = new JsonObject<>();
         //AccountVO accountVO = requestPayload.getAccountVO();
-        EmployeeVO empVO = requestPayload.getDto();
+        EmployeeVO employeeVO = requestPayload.getDto();
 
-        log.info("Paramater : " + empVO);
+        log.info("Paramater : " + employeeVO);
 
 
-        List<EmployeeVO> list = employeeDAO.selectEmployeeSearchList(empVO);
+        List<EmployeeVO> list = employeeDAO.selectEmployeeSearchList(employeeVO);
 
         jsonObject.IsSucceed = true;
         jsonObject.Data = list;

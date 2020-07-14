@@ -105,9 +105,9 @@ public class DeptController extends BaseController {
         return super.composePayload(new Payload<JsonObject<String, Object>>(deptService.selectDeptEmployeeCnt(requestPayload)));
     }
 
-    @PostMapping("/updateMasterDate")
-    public ResponseEntity<String> updateMasterDate(@RequestParam("payload") String payload) throws Exception {
-        log.info("Call Controller : " + this.getClass().getName() + ".updateMasterDate");
+    @PostMapping("/updateDeptHistoryAvlDate")
+    public ResponseEntity<String> updateDeptHistoryAvlDate(@RequestParam("payload") String payload) throws Exception {
+        log.info("Call Controller : " + this.getClass().getName() + ".updateDeptHistoryAvlDate");
         Payload requestPayload = super.parsePayload(payload, new TypeToken<Payload<DeptHistoryVO>>(){});
 
         return super.composePayload(new Payload<JsonObject<Object, Object>>(deptService.updateDeptHistoryAvlDate(requestPayload)));

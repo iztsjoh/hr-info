@@ -724,7 +724,7 @@
 
 
 	<!-- 조직다운로드 : 조직정보다운로드-->
-	<select id="Select_DeptInfoDownload"
+	<select id="selectExcelDwnlDeptList"
 			parameterType="com.ibiz.api.model.DeptVO"
 			resultType="com.ibiz.api.model.ExcelDeptVO">
 
@@ -779,7 +779,7 @@
 	</select>
 
 	<!-- 조직이력 다운로드 : 조직이력다운로드-->
-	<select id="Select_DeptHisDownload"
+	<select id="selectExcelDwnlDeptHistoryList"
 			parameterType="com.ibiz.api.model.DeptVO"
 			resultType="com.ibiz.api.model.ExcelDeptHistoryVO">
 

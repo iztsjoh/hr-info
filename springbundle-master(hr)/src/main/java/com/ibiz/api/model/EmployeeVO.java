@@ -26,7 +26,7 @@ public class EmployeeVO {
     /**
      * 소속부서명
      */
-    private String bltoDeptIdNm;
+    private String bltoDeptNm;
 
     /**
      * 직위코드
@@ -197,12 +197,12 @@ public class EmployeeVO {
         this.bltoDeptId = bltoDeptId;
     }
 
-    public String getBltoDeptIdNm() {
-        return bltoDeptIdNm;
+    public String getBltoDeptNm() {
+        return bltoDeptNm;
     }
 
-    public void setBltoDeptIdNm(String bltoDeptIdNm) {
-        this.bltoDeptIdNm = bltoDeptIdNm;
+    public void setBltoDeptNm(String bltoDeptNm) {
+        this.bltoDeptNm = bltoDeptNm;
     }
 
     public String getOfpsCd() {
