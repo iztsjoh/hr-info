@@ -165,6 +165,8 @@ public class EmployeeVO {
      */
     private String isPerdExtend;
 
+    private String custId;
+
     public String getEmpId() {
         return empId;
     }
@@ -435,5 +437,13 @@ public class EmployeeVO {
 
     public void setIsPerdExtend(String isPerdExtend) {
         this.isPerdExtend = isPerdExtend;
+    }
+
+    public String getCustId() {
+        return custId;
+    }
+
+    public void setCustId(String custId) {
+        this.custId = custId;
     }
 }
