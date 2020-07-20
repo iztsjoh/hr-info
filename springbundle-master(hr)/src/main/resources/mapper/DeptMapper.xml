@@ -571,10 +571,11 @@
 		SELECT DISTINCT DEPT_ID, DEPT_NM, HGRK_DEPT_ID, DEPT_LVL_CD, SELL_OCR_YN, DEPT_SORT_SEQC, --★중복권한을 위해 DISTINCT 사용
 		MIN(DEPT_LVL_CD) OVER() MIN_DEPT_LVL_CD  --★START WITH의 시작점을 찾기 위해 DEPT_LVL_CD의 최소값 검색
 		FROM HMST110T A
+		WHERE CRIT_YEAR = #{critYear}
+		<if test='userGrpCd == "BS" or priorUserGrpCd == "BS"'>
 		START WITH DEPT_ID IN (SELECT AUTH_DEPT_ID FROM SSYS252T WHERE USER_ID = #{empId} AND USER_GRP_CD = #{userGrpCd}) --★사용자의 권한부서(SSYS252T) 사용자ID, 이길호(344025), 나연정(354010), 송호림(354051)
 		AND CRIT_YEAR = #{critYear} --★조회기준연도
 		CONNECT BY (PRIOR DEPT_ID = HGRK_DEPT_ID
-		<if test='userGrpCd == "BS" or priorUserGrpCd == "BS"'>
 			AND (SELL_OCR_YN = 'Y'
 			OR EXISTS (SELECT 1 FROM HMST110T B   --★하위에 매출부서를 포함하고 있는 조직
 			WHERE SELL_OCR_YN = 'Y'
