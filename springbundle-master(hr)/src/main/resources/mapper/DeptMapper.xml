@@ -572,7 +572,7 @@
 		MIN(DEPT_LVL_CD) OVER() MIN_DEPT_LVL_CD  --★START WITH의 시작점을 찾기 위해 DEPT_LVL_CD의 최소값 검색
 		FROM HMST110T A
 		WHERE CRIT_YEAR = #{critYear}
-		<if test='userGrpCd == "BS" or priorUserGrpCd == "BS"'>
+		<if test='userGrpCd == "BS" or priorUserGrpCd == "BS" or userGrpCd == "BSR" or priorUserGrpCd == "BSR"'>
 		START WITH DEPT_ID IN (SELECT AUTH_DEPT_ID FROM SSYS252T WHERE USER_ID = #{empId} AND USER_GRP_CD = #{userGrpCd}) --★사용자의 권한부서(SSYS252T) 사용자ID, 이길호(344025), 나연정(354010), 송호림(354051)
 		AND CRIT_YEAR = #{critYear} --★조회기준연도
 		CONNECT BY (PRIOR DEPT_ID = HGRK_DEPT_ID
