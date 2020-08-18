@@ -43,6 +43,28 @@ public class DeptService {
     }
 
     @Transactional
+    public JsonObject<List<DeptHistoryVO>, Object> selectDeptYearTree(Payload<DeptHistoryVO> requestPayload) throws DeptStateException {
+        log.info("call Service : " + this.getClass().getName() + ".selectDeptYearTree");
+
+        //좌측 트리 조회
+        JsonObject<List<DeptHistoryVO>, Object> jsonObject = new JsonObject<>();
+        AccountVO accountVO = requestPayload.getAccountVO();
+        DeptHistoryVO deptHistoryVO = requestPayload.getDto();
+
+        log.info("Paramater : " + accountVO);
+        log.info("Paramater : " + deptHistoryVO);
+
+        //if(StringUtils.isEmpty(deptHistoryVO.getDeptId()))
+        //    throw new IllegalArgumentException();
+
+        List<DeptHistoryVO> list = deptDAO.selectDeptYearTree(deptHistoryVO);
+        jsonObject.Data = list;
+        jsonObject.IsSucceed = true;
+
+        return jsonObject;
+    }
+
+    @Transactional
     public JsonObject<List<DeptHistoryVO>, Object> selectDeptHistoryList(Payload<DeptHistoryVO> requestPayload) throws DeptStateException{
         log.info("call Service : " + this.getClass().getName() + ".selectDeptHistoryList");
 
@@ -82,6 +104,54 @@ public class DeptService {
         return jsonObject;
     }
 
+    @Transactional
+    public JsonObject<DeptHistoryVO, Object> selectDeptYearInfo(Payload<DeptHistoryVO> requestPayload) throws DeptStateException{
+        log.info("call Service : " + this.getClass().getName() + ".selectDeptYearInfo");
+
+        //조직의 마지막(최신) 변경 이력 조회
+        JsonObject<DeptHistoryVO, Object> jsonObject = new JsonObject<>();
+        AccountVO accountVO = requestPayload.getAccountVO();
+        DeptHistoryVO deptHistoryVO = requestPayload.getDto();
+
+        log.info("Paramater : " + accountVO);
+        log.info("Paramater : " + deptHistoryVO);
+
+        DeptHistoryVO data = deptDAO.selectDeptYearInfo(deptHistoryVO);
+
+        jsonObject.Data = data;
+        jsonObject.IsSucceed = true;
+
+        return jsonObject;
+    }
+
+    @Transactional
+    public JsonObject<DeptHistoryVO, Object> copyYearDept(Payload<DeptHistoryVO> requestPayload) throws DeptStateException{
+        log.info("call Service : " + this.getClass().getName() + ".selectDeptYearInfo");
+
+
+        JsonObject<DeptHistoryVO, Object> jsonObject = new JsonObject<>();
+        AccountVO accountVO = requestPayload.getAccountVO();
+        DeptHistoryVO deptHistoryVO = requestPayload.getDto();
+
+        log.info("Paramater : " + accountVO);
+        log.info("Paramater : " + deptHistoryVO);
+
+        int preyear = Integer.parseInt(deptHistoryVO.getCritYear())-1;
+
+        deptHistoryVO.setPreYear(Integer.toString((preyear)));
+
+
+
+        deptDAO.deleteYearDept(deptHistoryVO);
+
+        deptDAO.copyYearDept(deptHistoryVO);
+
+
+        jsonObject.IsSucceed = true;
+
+        return jsonObject;
+    }
+
 
     @Transactional
     public JsonObject<Object, Object> updateDept(Payload<DeptHistoryVO> requestPayload) throws DeptStateException,CodeOverlapException, DateOverlapException, CodeOverlapException {
@@ -106,74 +176,74 @@ public class DeptService {
         String deptCloseDate = (deptDAO.selectDeptCloseDate(deptHistoryVO) != null && deptDAO.selectDeptCloseDate(deptHistoryVO).getOrgCloseDate() != null) ? deptDAO.selectDeptCloseDate(deptHistoryVO).getOrgCloseDate() : "99991231";
 
 //        try {
-            //입력한 유효기간이 유효한가 체크 및 신규등록 체크
-            DeptHistoryVO deptTmp = deptDAO.selectIsValidDept(deptHistoryVO);
+        //입력한 유효기간이 유효한가 체크 및 신규등록 체크
+        DeptHistoryVO deptTmp = deptDAO.selectIsValidDept(deptHistoryVO);
+
+        if(Boolean.valueOf(deptHistoryVO.getIsCreating()) == true && deptDAO.selectIsDuplicateDept(deptHistoryVO) > 0) {
+            //jsonObject.IsSucceed = false;
+            //jsonObject.ErrorMessage = "같은 부서ID로 등록된 부서조직이 존재합니다.";
+
+            //return jsonObject;
+            throw new CodeOverlapException("조직");
+        }
+
+        if(deptTmp.getValChk().trim().equals("S")) {
+            //신규
+            try {
+                deptDAO.insertDeptInfo(deptHistoryVO);
+                deptDAO.insertDeptChgHistory(deptHistoryVO);
+
+                if (Integer.parseInt(deptCloseDate) < Integer.parseInt(deptHistoryVO.getAvlEndDate())) {
+                    deptDAO.updateDeptCloseDate(deptHistoryVO);
+                }
+
+                jsonObject.IsSucceed = true;
+            }catch (Exception e){
+                throw new DeptStateException();
+            }
+        } else if (deptTmp.getValChk().trim().equals("LN") || deptTmp.getValChk().trim().equals("MN")) {
+            //추가
+            if(deptTmp.getValChk().trim().equals("LN") && isAddRecord == true) {
+                deptDAO.updateDeptInfo(deptHistoryVO);
+                deptDAO.updateDeptLastAvlEndDate(deptHistoryVO);
+
+            }
+
+            deptDAO.insertDeptChgHistory(deptHistoryVO);
+
+            if(Integer.parseInt(deptCloseDate) < Integer.parseInt(deptHistoryVO.getAvlEndDate())) {
+                deptDAO.updateDeptCloseDate(deptHistoryVO);
+            }
+
+            jsonObject.IsSucceed = true;
+        } else if (deptTmp.getValChk().trim().equals("LU") || deptTmp.getValChk().trim().equals("MU") || totalSize == 1) {
+            //변경
+            deptDAO.updateDeptChgHistory(deptHistoryVO);
 
             if(Boolean.valueOf(deptHistoryVO.getIsCreating()) == true && deptDAO.selectIsDuplicateDept(deptHistoryVO) > 0) {
                 //jsonObject.IsSucceed = false;
                 //jsonObject.ErrorMessage = "같은 부서ID로 등록된 부서조직이 존재합니다.";
 
                 //return jsonObject;
-                throw new CodeOverlapException("조직");
+                throw new CodeOverlapException("부서ID");
             }
 
-            if(deptTmp.getValChk().trim().equals("S")) {
-                //신규
-                try {
-                    deptDAO.insertDeptInfo(deptHistoryVO);
-                    deptDAO.insertDeptChgHistory(deptHistoryVO);
 
-                    if (Integer.parseInt(deptCloseDate) < Integer.parseInt(deptHistoryVO.getAvlEndDate())) {
-                        deptDAO.updateDeptCloseDate(deptHistoryVO);
-                    }
+            if(deptTmp.getValChk().trim().equals("LU"))
+                deptDAO.updateDeptInfo(deptHistoryVO);
 
-                    jsonObject.IsSucceed = true;
-                }catch (Exception e){
-                    throw new DeptStateException();
-                }
-            } else if (deptTmp.getValChk().trim().equals("LN") || deptTmp.getValChk().trim().equals("MN")) {
-                //추가
-                if(deptTmp.getValChk().trim().equals("LN") && isAddRecord == true) {
-                    deptDAO.updateDeptInfo(deptHistoryVO);
-                    deptDAO.updateDeptLastAvlEndDate(deptHistoryVO);
+            //if(Integer.parseInt(deptCloseDate) < Integer.parseInt(deptHistoryVO.getAvlEndDate())) {
+            deptDAO.updateDeptCloseDate(deptHistoryVO);
+            //}
 
-                }
-
-                deptDAO.insertDeptChgHistory(deptHistoryVO);
-
-                if(Integer.parseInt(deptCloseDate) < Integer.parseInt(deptHistoryVO.getAvlEndDate())) {
-                    deptDAO.updateDeptCloseDate(deptHistoryVO);
-                }
-
-                jsonObject.IsSucceed = true;
-            } else if (deptTmp.getValChk().trim().equals("LU") || deptTmp.getValChk().trim().equals("MU") || totalSize == 1) {
-                //변경
-                deptDAO.updateDeptChgHistory(deptHistoryVO);
-
-                if(Boolean.valueOf(deptHistoryVO.getIsCreating()) == true && deptDAO.selectIsDuplicateDept(deptHistoryVO) > 0) {
-                    //jsonObject.IsSucceed = false;
-                    //jsonObject.ErrorMessage = "같은 부서ID로 등록된 부서조직이 존재합니다.";
-
-                    //return jsonObject;
-                    throw new CodeOverlapException("부서ID");
-                }
-
-
-                if(deptTmp.getValChk().trim().equals("LU"))
-                    deptDAO.updateDeptInfo(deptHistoryVO);
-
-                //if(Integer.parseInt(deptCloseDate) < Integer.parseInt(deptHistoryVO.getAvlEndDate())) {
-                    deptDAO.updateDeptCloseDate(deptHistoryVO);
-                //}
-
-                jsonObject.IsSucceed = true;
-            } else {
-                throw new DateOverlapException("유효");
-                //log.info("===============  유효하지 않은 기간으로 등록 ===============");
-                //jsonObject.ErrorMessage = "등록하려는 이력유효기간에 중복기간이 존재합니다.";
-                //jsonObject.IsSucceed = false;
-                //throw new DeptStateException("DateOverlap");
-            }
+            jsonObject.IsSucceed = true;
+        } else {
+            throw new DateOverlapException("유효");
+            //log.info("===============  유효하지 않은 기간으로 등록 ===============");
+            //jsonObject.ErrorMessage = "등록하려는 이력유효기간에 중복기간이 존재합니다.";
+            //jsonObject.IsSucceed = false;
+            //throw new DeptStateException("DateOverlap");
+        }
 
 //        } catch (Exception e) {
 //            log.error(e.toString(), e);
@@ -187,6 +257,61 @@ public class DeptService {
 //        finally {
 //
 //        }
+
+        return jsonObject;
+    }
+
+    @Transactional
+    public JsonObject<Object, Object> updateYearDept(Payload<DeptHistoryVO> requestPayload) throws DeptStateException,CodeOverlapException, DateOverlapException, CodeOverlapException {
+        log.info("call Service : " + this.getClass().getName() + ".updateDept");
+
+        JsonObject<Object, Object> jsonObject = new JsonObject<>();
+        AccountVO accountVO = requestPayload.getAccountVO();
+        DeptHistoryVO deptHistoryVO = requestPayload.getDto();
+
+        log.info("Paramater : " + accountVO);
+        log.info("Paramater : " + deptHistoryVO);
+
+        deptHistoryVO.setHgrkDeptId(deptHistoryVO.getHgrkDeptId() != null && deptHistoryVO.getHgrkDeptId().length() > 0 ? deptHistoryVO.getHgrkDeptId() : "");
+        deptHistoryVO.setHddpEmpId(deptHistoryVO.getHddpEmpId() != null && deptHistoryVO.getHddpEmpId().length() > 0 ? deptHistoryVO.getHddpEmpId() : "");
+        deptHistoryVO.setDeptSortSeqc(deptHistoryVO.getDeptSortSeqc() != null && deptHistoryVO.getDeptSortSeqc().length() > 0 ? deptHistoryVO.getDeptSortSeqc() : "");
+        deptHistoryVO.setOrgDstCd(deptHistoryVO.getOrgDstCd() != null && deptHistoryVO.getOrgDstCd().length() > 0 ? deptHistoryVO.getOrgDstCd() : "");
+
+        deptHistoryVO.setChgEmpId(deptHistoryVO.getChgEmpId() != null && deptHistoryVO.getChgEmpId().length() > 0 ? deptHistoryVO.getChgEmpId() : "");
+
+        Boolean isAddRecord = Boolean.valueOf(deptHistoryVO.getIsAddRecord());
+        int totalSize = deptDAO.selectYearDeptCnt(deptHistoryVO).getListCnt();
+        String deptCloseDate = (deptDAO.selectDeptCloseDate(deptHistoryVO) != null && deptDAO.selectDeptCloseDate(deptHistoryVO).getOrgCloseDate() != null) ? deptDAO.selectDeptCloseDate(deptHistoryVO).getOrgCloseDate() : "99991231";
+
+//        try {
+
+        //입력한 유효기간이 유효한가 체크 및 신규등록 체크
+        //DeptHistoryVO deptTmp = deptDAO.selectIsValidDept(deptHistoryVO);
+
+        if(Boolean.valueOf(deptHistoryVO.getIsCreating()) == true && deptDAO.selectIsDuplicateYearDept(deptHistoryVO) > 0) {
+
+            throw new CodeOverlapException("조직");
+        }
+
+        if(totalSize == 0) {
+            //신규
+            try {
+                deptDAO.insertYearDeptInfo(deptHistoryVO);
+
+                jsonObject.IsSucceed = true;
+            }catch (Exception e){
+                throw new DeptStateException();
+            }
+        } else {
+            //변경
+
+            if (Boolean.valueOf(deptHistoryVO.getIsCreating()) == true && deptDAO.selectIsDuplicateDept(deptHistoryVO) > 0) {
+                throw new CodeOverlapException("부서ID");
+            }
+            deptDAO.updateYearDeptInfo(deptHistoryVO);
+
+            jsonObject.IsSucceed = true;
+        }
 
         return jsonObject;
     }
@@ -235,6 +360,28 @@ public class DeptService {
     }
 
     @Transactional
+    public JsonObject<Object, Object> deleteYearDept(Payload<DeptHistoryVO> requestPayload) throws DeptStateException {
+        log.info("call Service : " + this.getClass().getName() + ".deleteDeptHistory");
+
+        //조직 삭제
+        JsonObject<Object, Object> jsonObject = new JsonObject<>();
+        AccountVO accountVO = requestPayload.getAccountVO();
+        DeptHistoryVO deptHistoryVO = requestPayload.getDto();
+
+        log.info("Paramater : " + accountVO);
+        log.info("Paramater : " + deptHistoryVO);
+
+        deptDAO.deleteYearDeptInfo(deptHistoryVO);
+
+
+        jsonObject.IsSucceed = true;
+
+
+
+        return jsonObject;
+    }
+
+    @Transactional
     public JsonObject<List<DeptHistoryVO>, Object> selectHgrkDeptFromAvlDateList(Payload<DeptHistoryVO> requestPayload) throws DeptStateException {
         log.info("call Service : " + this.getClass().getName() + ".selectHgrkDeptFromAvlDateList");
 
@@ -252,6 +399,29 @@ public class DeptService {
 
         jsonObject.Data = deptList;
         jsonObject.TotalSize = deptDAO.selectDeptHistoryCnt(deptHistoryVO).getListCnt();
+        jsonObject.IsSucceed = true;
+
+        return jsonObject;
+    }
+
+    @Transactional
+    public JsonObject<List<DeptHistoryVO>, Object> selectHgrkDeptFromYearList(Payload<DeptHistoryVO> requestPayload) throws DeptStateException {
+        log.info("call Service : " + this.getClass().getName() + ".selectHgrkDeptFromYearList");
+
+        //조직의 상위조직 조회
+        JsonObject<List<DeptHistoryVO>, Object> jsonObject = new JsonObject<>();
+        AccountVO accountVO = requestPayload.getAccountVO();
+        DeptHistoryVO deptHistoryVO = requestPayload.getDto();
+
+        log.info("Paramater : " + accountVO);
+        log.info("Paramater : " + deptHistoryVO);
+
+        List<DeptHistoryVO> deptList;
+
+        deptList = deptDAO.selectHgrkDeptFromYearList(deptHistoryVO);
+
+        jsonObject.Data = deptList;
+
         jsonObject.IsSucceed = true;
 
         return jsonObject;
@@ -318,6 +488,26 @@ public class DeptService {
         log.info("Paramater : " + deptHistoryVO);
 
         List<DeptHistoryVO> list = deptDAO.selectHgrkDeptWhenAddRecordList(deptHistoryVO);
+
+        jsonObject.Data = list;
+        jsonObject.IsSucceed = true;
+
+        return jsonObject;
+    }
+
+    @Transactional
+    public JsonObject<List<DeptHistoryVO>, Object> selectHgrkDeptYearAddRecordList(Payload<DeptHistoryVO> requestPayload) throws DeptStateException {
+        log.info("call Service : " + this.getClass().getName() + ".selectHgrkDeptYearAddRecordList");
+
+        //상위조직 콤보 조회
+        JsonObject<List<DeptHistoryVO>, Object> jsonObject = new JsonObject<>();
+        AccountVO accountVO = requestPayload.getAccountVO();
+        DeptHistoryVO deptHistoryVO = requestPayload.getDto();
+
+        log.info("Paramater : " + accountVO);
+        log.info("Paramater : " + deptHistoryVO);
+
+        List<DeptHistoryVO> list = deptDAO.selectHgrkDeptYearAddRecordList(deptHistoryVO);
 
         jsonObject.Data = list;
         jsonObject.IsSucceed = true;

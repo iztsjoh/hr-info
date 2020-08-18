@@ -20,6 +20,15 @@ public class DeptDAO {
         return mybatis.selectList("DeptMapper.selectDeptTree", deptHistoryVO);
     }
 
+
+    /*
+     * SELECT : 왼쪽 조직트리 조회
+     */
+    public List<DeptHistoryVO> selectDeptYearTree(DeptHistoryVO deptHistoryVO) {
+        return mybatis.selectList("DeptMapper.selectDeptYearTree", deptHistoryVO);
+    }
+
+
     /*
      * SELECT : 특정조직의 변경이력 조회
      */
@@ -32,6 +41,13 @@ public class DeptDAO {
      */
     public DeptHistoryVO selectLastDeptHistoryList(DeptHistoryVO deptHistoryVO) {
         return mybatis.selectOne("DeptMapper.selectLastDeptHistoryList", deptHistoryVO);
+    }
+
+    /*
+     * SELECT : 연도별 조직관리 조회
+     */
+    public DeptHistoryVO selectDeptYearInfo(DeptHistoryVO deptHistoryVO) {
+        return mybatis.selectOne("DeptMapper.selectDeptYearInfo", deptHistoryVO);
     }
 
     /*
@@ -56,12 +72,26 @@ public class DeptDAO {
         return mybatis.selectOne("DeptMapper.selectDeptHistoryCnt", deptHistoryVO);
     }
 
+    /*
+     * SELECT : 연도별 조직 존재여부
+     */
+    public DeptHistoryVO selectYearDeptCnt(DeptHistoryVO deptHistoryVO) {
+        return mybatis.selectOne("DeptMapper.selectYearDeptCnt", deptHistoryVO);
+    }
 
     /*
      * INSERT : 부서정보 추가
      */
     public int insertDeptInfo(DeptHistoryVO deptHistoryVO) {
         return mybatis.insert("DeptMapper.insertDeptInfo", deptHistoryVO);
+
+    }
+
+    /*
+     * INSERT : 연도별 부서정보 추가
+     */
+    public int insertYearDeptInfo(DeptHistoryVO deptHistoryVO) {
+        return mybatis.insert("DeptMapper.insertYearDeptInfo", deptHistoryVO);
 
     }
 
@@ -79,6 +109,12 @@ public class DeptDAO {
         return mybatis.update("DeptMapper.updateDeptInfo", deptHistoryVO);
     }
 
+    /*
+     * UPDATE : 최신 부서정보로 변경
+     */
+    public int updateYearDeptInfo(DeptHistoryVO deptHistoryVO) {
+        return mybatis.update("DeptMapper.updateYearDeptInfo", deptHistoryVO);
+    }
     /*
      * UPDATE : 부서이력 변경
      */
@@ -101,10 +137,31 @@ public class DeptDAO {
     }
 
     /*
+     * DELETE : 부서정보삭제
+     */
+    public int deleteYearDeptInfo(DeptHistoryVO deptHistoryVO) {
+        return mybatis.delete("DeptMapper.deleteYearDeptInfo", deptHistoryVO);
+    }
+
+    /*
      * DELETE : 부서이력 삭제
      */
     public int deleteDeptChgHistory(DeptHistoryVO deptHistoryVO) {
         return mybatis.delete("DeptMapper.deleteDeptChgHistory", deptHistoryVO);
+    }
+
+    /*
+     * DELETE : 부서정보 복사
+     */
+    public int copyYearDept(DeptHistoryVO deptHistoryVO) {
+        return mybatis.delete("DeptMapper.copyYearDept", deptHistoryVO);
+    }
+
+    /*
+     * DELETE : 연도별조직 전체조직삭제
+     */
+    public int deleteYearDept(DeptHistoryVO deptHistoryVO) {
+        return mybatis.delete("DeptMapper.deleteYearDept", deptHistoryVO);
     }
 
     /**
@@ -119,12 +176,20 @@ public class DeptDAO {
         return mybatis.selectList("DeptMapper.selectHgrkDeptFromAvlDateList", deptHistoryVO);
     }
 
+    public List<DeptHistoryVO> selectHgrkDeptFromYearList(DeptHistoryVO deptHistoryVO) {
+        return mybatis.selectList("DeptMapper.selectHgrkDeptFromYearList", deptHistoryVO);
+    }
+
     public List<DeptHistoryVO> selectDeptListWhenAddRecord(DeptHistoryVO deptHistoryVO) {
         return mybatis.selectList("DeptMapper.selectDeptListWhenAddRecord", deptHistoryVO);
     }
 
     public List<DeptHistoryVO> selectHgrkDeptWhenAddRecordList(DeptHistoryVO deptHistoryVO) {
         return mybatis.selectList("DeptMapper.selectHgrkDeptWhenAddRecordList", deptHistoryVO);
+    }
+
+    public List<DeptHistoryVO> selectHgrkDeptYearAddRecordList(DeptHistoryVO deptHistoryVO) {
+        return mybatis.selectList("DeptMapper.selectHgrkDeptYearAddRecordList", deptHistoryVO);
     }
 
     /* 선택한 부서 자체의 종료일자 조회 */
@@ -145,6 +210,11 @@ public class DeptDAO {
     /* 신규등록하기 전 중복 체크 */
     public int selectIsDuplicateDept(DeptHistoryVO deptHistoryVO) {
         return mybatis.selectOne("DeptMapper.selectIsDuplicateDept", deptHistoryVO);
+    }
+
+    /* 신규등록하기 전 중복 체크 */
+    public int selectIsDuplicateYearDept(DeptHistoryVO deptHistoryVO) {
+        return mybatis.selectOne("DeptMapper.selectIsDuplicateYearDept", deptHistoryVO);
     }
 
     /* 조직 최종이력의  유효종료일자 */

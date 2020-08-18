@@ -23,7 +23,7 @@
         ,T1.EMP_NM
         ,T1.SSRG_NO
         ,T1.BLTO_DEPT_ID
-        ,T2.DEPT_NM AS BLTO_DEPT_ID_NM
+        ,T2.DEPT_NM AS BLTO_DEPT_NM
         ,T2.DEPT_FULLNAME
         ,T1.OFPS_CD
         ,T1.RECRT_CNTR_TYPE_CD
@@ -229,7 +229,7 @@
         ,T1.EMP_NM
         ,T1.SSRG_NO
         ,T1.BLTO_DEPT_ID
-        ,T2.DEPT_NM AS BLTO_DEPT_ID_NM
+        ,T2.DEPT_NM AS BLTO_DEPT_NM
         ,T2.DEPT_FULLNAME
         ,T1.OFPS_CD
         ,T1.RECRT_CNTR_TYPE_CD

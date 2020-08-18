@@ -32,6 +32,14 @@ public class DeptController extends BaseController {
         return super.composePayload(new Payload<JsonObject<List<DeptHistoryVO>, Object>>(deptService.selectDeptTree(requestPayload)));
     }
 
+    @PostMapping("/selectDeptYearTree")
+    public ResponseEntity<String> selectDeptYearTree(@RequestParam("payload") String payload) throws Exception {
+        log.info("Call Controller : " + this.getClass().getName() + ".selectDeptYearTree");
+        Payload requestPayload = super.parsePayload(payload, new TypeToken<Payload<DeptHistoryVO>>(){});
+
+        return super.composePayload(new Payload<JsonObject<List<DeptHistoryVO>, Object>>(deptService.selectDeptYearTree(requestPayload)));
+    }
+
     @PostMapping("/selectDeptHistoryList")
     public ResponseEntity<String> selectDeptHistoryList(@RequestParam("payload") String payload) throws Exception {
         log.info("Call Controller : " + this.getClass().getName() + ".selectDeptHistoryList");
@@ -48,6 +56,13 @@ public class DeptController extends BaseController {
         return super.composePayload(new Payload<JsonObject<DeptHistoryVO, Object>>(deptService.selectLastDeptHistoryList(requestPayload)));
     }
 
+    @PostMapping("/selectDeptYearInfo")
+    public ResponseEntity<String> selectDeptYearInfo(@RequestParam("payload") String payload) throws Exception {
+        log.info("Call Controller : " + this.getClass().getName() + ".selectDeptYearInfo");
+        Payload requestPayload = super.parsePayload(payload, new TypeToken<Payload<DeptHistoryVO>>(){});
+
+        return super.composePayload(new Payload<JsonObject<DeptHistoryVO, Object>>(deptService.selectDeptYearInfo(requestPayload)));
+    }
 
     @PostMapping("/updateDept")
     public ResponseEntity<String> updateDept(@RequestParam("payload") String payload) throws Exception {
@@ -55,6 +70,22 @@ public class DeptController extends BaseController {
         Payload requestPayload = super.parsePayload(payload, new TypeToken<Payload<DeptHistoryVO>>(){});
 
         return super.composePayload(new Payload<JsonObject<Object, Object>>(deptService.updateDept(requestPayload)));
+    }
+
+    @PostMapping("/updateYearDept")
+    public ResponseEntity<String> updateYearDept(@RequestParam("payload") String payload) throws Exception {
+        log.info("Call Controller : " + this.getClass().getName() + ".updateDept");
+        Payload requestPayload = super.parsePayload(payload, new TypeToken<Payload<DeptHistoryVO>>(){});
+
+        return super.composePayload(new Payload<JsonObject<Object, Object>>(deptService.updateYearDept(requestPayload)));
+    }
+
+    @PostMapping("/copyYearDept")
+    public ResponseEntity<String> copyYearDept(@RequestParam("payload") String payload) throws Exception {
+        log.info("Call Controller : " + this.getClass().getName() + ".updateDept");
+        Payload requestPayload = super.parsePayload(payload, new TypeToken<Payload<DeptHistoryVO>>(){});
+
+        return super.composePayload(new Payload<JsonObject<Object, Object>>(deptService.copyYearDept(requestPayload)));
     }
 
     @PostMapping("/deleteDeptHistory")
@@ -65,12 +96,28 @@ public class DeptController extends BaseController {
         return super.composePayload(new Payload<JsonObject<Object, Object>>(deptService.deleteDeptHistory(requestPayload)));
     }
 
+    @PostMapping("/deleteYearDept")
+    public ResponseEntity<String> deleteYearDept(@RequestParam("payload") String payload) throws Exception {
+        log.info("Call Controller : " + this.getClass().getName() + ".deleteDeptHistory");
+        Payload requestPayload = super.parsePayload(payload, new TypeToken<Payload<DeptHistoryVO>>(){});
+
+        return super.composePayload(new Payload<JsonObject<Object, Object>>(deptService.deleteYearDept(requestPayload)));
+    }
+
     @PostMapping("/selectHgrkDeptFromAvlDateList")
     public ResponseEntity<String> selectHgrkDeptFromAvlDateList(@RequestParam("payload") String payload) throws Exception {
         log.info("Call Controller : " + this.getClass().getName() + ".selectHgrkDeptFromAvlDateList");
         Payload requestPayload = super.parsePayload(payload, new TypeToken<Payload<DeptHistoryVO>>(){});
 
         return super.composePayload(new Payload<JsonObject<List<DeptHistoryVO>, Object>>(deptService.selectHgrkDeptFromAvlDateList(requestPayload)));
+    }
+
+    @PostMapping("/selectHgrkDeptFromYearList")
+    public ResponseEntity<String> selectHgrkDeptFromYearList(@RequestParam("payload") String payload) throws Exception {
+        log.info("Call Controller : " + this.getClass().getName() + ".selectHgrkDeptFromYearList");
+        Payload requestPayload = super.parsePayload(payload, new TypeToken<Payload<DeptHistoryVO>>(){});
+
+        return super.composePayload(new Payload<JsonObject<List<DeptHistoryVO>, Object>>(deptService.selectHgrkDeptFromYearList(requestPayload)));
     }
 
     @PostMapping("/selectDeptListWhenAddRecord")
@@ -95,6 +142,14 @@ public class DeptController extends BaseController {
         Payload requestPayload = super.parsePayload(payload, new TypeToken<Payload<DeptHistoryVO>>(){});
 
         return super.composePayload(new Payload<JsonObject<List<DeptHistoryVO>, Object>>(deptService.selectHgrkDeptWhenAddRecordList(requestPayload)));
+    }
+
+    @PostMapping("/selectHgrkDeptYearAddRecordList")
+    public ResponseEntity<String> selectHgrkDeptYearAddRecordList(@RequestParam("payload") String payload) throws Exception {
+        log.info("Call Controller : " + this.getClass().getName() + ".selectHgrkDeptYearAddRecordList");
+        Payload requestPayload = super.parsePayload(payload, new TypeToken<Payload<DeptHistoryVO>>(){});
+
+        return super.composePayload(new Payload<JsonObject<List<DeptHistoryVO>, Object>>(deptService.selectHgrkDeptYearAddRecordList(requestPayload)));
     }
 
     @PostMapping("/selectDeptEmployeeCnt")

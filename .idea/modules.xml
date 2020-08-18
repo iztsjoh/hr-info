@@ -5,7 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/api.iml" filepath="$PROJECT_DIR$/.idea/modules/api.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/api.main.iml" filepath="$PROJECT_DIR$/.idea/modules/api.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/api.test.iml" filepath="$PROJECT_DIR$/.idea/modules/api.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/ibiz-hr-info-7700.iml" filepath="$PROJECT_DIR$/.idea/ibiz-hr-info-7700.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/hr-info2.iml" filepath="$PROJECT_DIR$/.idea/hr-info2.iml" />
     </modules>
   </component>
 </project>
