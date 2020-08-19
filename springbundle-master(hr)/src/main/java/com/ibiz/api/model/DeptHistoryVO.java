@@ -14,6 +14,16 @@ public class DeptHistoryVO {
     @Size(min = 1, max = 3,message = "8자이하")
     private String deptId;
 
+    /***
+     * 기준연도
+     */
+    private String critYear;
+
+    /***
+     * 기준연도
+     */
+    private String preYear;
+
     /**
      * 붓서명
      */
@@ -181,7 +191,21 @@ public class DeptHistoryVO {
         this.deptNm = deptNm;
     }
 
+    public String getCritYear() {
+        return critYear;
+    }
 
+    public void setCritYear(String critYear) {
+        this.critYear = critYear;
+    }
+
+    public String getPreYear() {
+        return preYear;
+    }
+
+    public void setPreYear(String preYear) {
+        this.preYear = preYear;
+    }
 
     public String getHgrkDeptId() {
         return hgrkDeptId;
