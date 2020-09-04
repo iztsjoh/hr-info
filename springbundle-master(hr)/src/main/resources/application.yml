@@ -1,5 +1,5 @@
 server:
-  port: 7700
+  port: 7701
 
 spring:
   application:
@@ -7,20 +7,20 @@ spring:
   redis:
     host: localhost
     port: 6379
-    password: operation0307
-    #password: staging1216
+    #password: operation0307
+    password: staging1216
     #password: dev5791
 
   datasource:
     driver-class-name: oracle.jdbc.OracleDriver #net.sf.log4jdbc.sql.jdbcapi.DriverSpy # oracle.jdbc.OracleDriver
-    #url: jdbc:oracle:thin:@192.168.18.120:1521:ibiz #jdbc:log4jdbc:oracle:thin:@192.168.19.230:1521:ibiz # jdbc:oracle:thin:@192.168.19.230:1521:ibiz
-    url: jdbc:oracle:thin:@183.111.96.41:1521:orcl
-    username: IBIZ_PRODUCT
-    password: IBIZ1229
+    url: jdbc:oracle:thin:@192.168.18.120:1521:ibiz #jdbc:log4jdbc:oracle:thin:@192.168.19.230:1521:ibiz # jdbc:oracle:thin:@192.168.19.230:1521:ibiz
+    #url: jdbc:oracle:thin:@183.111.96.41:1521:orcl
+    #username: IBIZ_PRODUCT
+    #password: IBIZ1229
     #username: IBIZ
     #password: IBIZ1229
-    #username: IBIZ_STAGING
-    #password: dkdlqlwm#123
+    username: IBIZ_STAGING
+    password: dkdlqlwm#123
 
 
 mybatis:
@@ -37,7 +37,7 @@ logging:
 
 eureka:
   instance:
-    instance-id: hr-info-7700
+    instance-id: hr-info-7701
   client:
     service-url:
       defaultZone: http://127.0.0.1:8761/eureka/

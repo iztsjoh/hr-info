@@ -10,14 +10,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="417465a2-9e8c-4643-abcf-2a25a350d8f6" name="Default Changelist" comment="표준화 버그픽스">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="417465a2-9e8c-4643-abcf-2a25a350d8f6" name="Default Changelist" comment="상위조직 가져오기 변경">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/controller/DeptController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/controller/DeptController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/dao/DeptDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/dao/DeptDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/service/DeptService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springbundle-master(hr)/src/main/java/com/ibiz/api/service/DeptService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbundle-master(hr)/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/springbundle-master(hr)/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbundle-master(hr)/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springbundle-master(hr)/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbundle-master(hr)/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springbundle-master(hr)/src/main/resources/logback-spring.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springbundle-master(hr)/src/main/resources/mapper/DeptMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springbundle-master(hr)/src/main/resources/mapper/DeptMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbundle-master(hr)/src/main/resources/mapper/EmployeeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springbundle-master(hr)/src/main/resources/mapper/EmployeeMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +79,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ibiz-domain/ibiz-hr-7700" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
@@ -91,7 +93,7 @@
       <recent name="C:\ibiz-domain(git)\ibiz-hr-info-7700\springbundle-master(hr)\src\main\java\com\ibiz\api\utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ApiApplication">
+  <component name="RunManager" selected="Gradle.springbundle-master(hr) [bootJar]">
     <configuration name="ApiApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -126,14 +128,56 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="springbundle-master(hr) [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/springbundle-master(hr)" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="springbundle-master(hr) [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/springbundle-master(hr)" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.ApiApplication" />
       <item itemvalue="Gradle.springbundle-master(hr) [bootJar]" />
+      <item itemvalue="Gradle.springbundle-master(hr) [clean]" />
+      <item itemvalue="Gradle.springbundle-master(hr) [build]" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ApiApplication" />
         <item itemvalue="Gradle.springbundle-master(hr) [bootJar]" />
+        <item itemvalue="Gradle.springbundle-master(hr) [build]" />
+        <item itemvalue="Gradle.springbundle-master(hr) [clean]" />
+        <item itemvalue="Application.ApiApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -176,7 +220,21 @@
       <option name="project" value="LOCAL" />
       <updated>1594701822427</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="연도별 조직 반영&#10;네이밍 룰 변경적용">
+      <created>1597737967706</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1597737967706</updated>
+    </task>
+    <task id="LOCAL-00006" summary="상위조직 가져오기 변경">
+      <created>1597799893797</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1597799893797</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -226,7 +284,9 @@
     <MESSAGE value="용어표준화(엑셀)" />
     <MESSAGE value="용어표준화 버그픽스" />
     <MESSAGE value="표준화 버그픽스" />
-    <option name="LAST_COMMIT_MESSAGE" value="표준화 버그픽스" />
+    <MESSAGE value="연도별 조직 반영&#10;네이밍 룰 변경적용" />
+    <MESSAGE value="상위조직 가져오기 변경" />
+    <option name="LAST_COMMIT_MESSAGE" value="상위조직 가져오기 변경" />
   </component>
   <component name="WindowStateProjectService">
     <state x="471" y="182" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597737490505">
@@ -254,62 +314,82 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2012" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594364166784" />
-    <state x="2659" y="261" key="FileChooserDialogImpl" timestamp="1594702823509">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="785" y="272" key="FileChooserDialogImpl" timestamp="1598234955318">
+      <screen x="74" y="0" width="1846" height="1080" />
     </state>
     <state x="2659" y="261" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594702823509" />
-    <state width="1804" height="295" key="GridCell.Tab.0.bottom" timestamp="1597737490770">
-      <screen x="73" y="0" width="1847" height="1080" />
+    <state x="2659" y="264" key="FileChooserDialogImpl/73.0.1847.1080/1920.0.1920.1050@1920.0.1920.1050" timestamp="1597881834431" />
+    <state x="785" y="272" key="FileChooserDialogImpl/74.0.1846.1080/1920.0.1920.1050@74.0.1846.1080" timestamp="1598234955318" />
+    <state width="938" height="338" key="GridCell.Tab.0.bottom" timestamp="1597886863705">
+      <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="290" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594713237132" />
-    <state width="1804" height="295" key="GridCell.Tab.0.bottom/73.0.1847.1080/1920.0.1920.1050@73.0.1847.1080" timestamp="1597737490770" />
-    <state width="1804" height="295" key="GridCell.Tab.0.center" timestamp="1597737490770">
-      <screen x="73" y="0" width="1847" height="1080" />
+    <state width="938" height="338" key="GridCell.Tab.0.bottom/73.0.1847.1080/1920.0.1920.1050@1920.0.1920.1050" timestamp="1597886863705" />
+    <state width="1804" height="295" key="GridCell.Tab.0.bottom/73.0.1847.1080/1920.0.1920.1050@73.0.1847.1080" timestamp="1597798942226" />
+    <state width="938" height="338" key="GridCell.Tab.0.center" timestamp="1597886863704">
+      <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="290" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594713237132" />
-    <state width="1804" height="295" key="GridCell.Tab.0.center/73.0.1847.1080/1920.0.1920.1050@73.0.1847.1080" timestamp="1597737490770" />
-    <state width="1804" height="295" key="GridCell.Tab.0.left" timestamp="1597737490770">
-      <screen x="73" y="0" width="1847" height="1080" />
+    <state width="938" height="338" key="GridCell.Tab.0.center/73.0.1847.1080/1920.0.1920.1050@1920.0.1920.1050" timestamp="1597886863704" />
+    <state width="1804" height="295" key="GridCell.Tab.0.center/73.0.1847.1080/1920.0.1920.1050@73.0.1847.1080" timestamp="1597798942226" />
+    <state width="938" height="338" key="GridCell.Tab.0.left" timestamp="1597886863703">
+      <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="290" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594713237132" />
-    <state width="1804" height="295" key="GridCell.Tab.0.left/73.0.1847.1080/1920.0.1920.1050@73.0.1847.1080" timestamp="1597737490770" />
-    <state width="1804" height="295" key="GridCell.Tab.0.right" timestamp="1597737490770">
-      <screen x="73" y="0" width="1847" height="1080" />
+    <state width="938" height="338" key="GridCell.Tab.0.left/73.0.1847.1080/1920.0.1920.1050@1920.0.1920.1050" timestamp="1597886863703" />
+    <state width="1804" height="295" key="GridCell.Tab.0.left/73.0.1847.1080/1920.0.1920.1050@73.0.1847.1080" timestamp="1597798942226" />
+    <state width="938" height="338" key="GridCell.Tab.0.right" timestamp="1597886863704">
+      <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="290" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594713237132" />
-    <state width="1804" height="295" key="GridCell.Tab.0.right/73.0.1847.1080/1920.0.1920.1050@73.0.1847.1080" timestamp="1597737490770" />
-    <state width="1877" height="290" key="GridCell.Tab.1.bottom" timestamp="1594713237030">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="938" height="338" key="GridCell.Tab.0.right/73.0.1847.1080/1920.0.1920.1050@1920.0.1920.1050" timestamp="1597886863704" />
+    <state width="1804" height="295" key="GridCell.Tab.0.right/73.0.1847.1080/1920.0.1920.1050@73.0.1847.1080" timestamp="1597798942226" />
+    <state width="1804" height="364" key="GridCell.Tab.1.bottom" timestamp="1597881264878">
+      <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="290" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594713237030" />
-    <state width="1877" height="290" key="GridCell.Tab.1.center" timestamp="1594713237029">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1804" height="364" key="GridCell.Tab.1.bottom/73.0.1847.1080/1920.0.1920.1050@1920.0.1920.1050" timestamp="1597881264878" />
+    <state width="1804" height="364" key="GridCell.Tab.1.bottom/73.0.1847.1080/1920.0.1920.1050@73.0.1847.1080" timestamp="1597738263125" />
+    <state width="1804" height="364" key="GridCell.Tab.1.center" timestamp="1597881264878">
+      <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="290" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594713237029" />
-    <state width="1877" height="290" key="GridCell.Tab.1.left" timestamp="1594713237029">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1804" height="364" key="GridCell.Tab.1.center/73.0.1847.1080/1920.0.1920.1050@1920.0.1920.1050" timestamp="1597881264878" />
+    <state width="1804" height="364" key="GridCell.Tab.1.center/73.0.1847.1080/1920.0.1920.1050@73.0.1847.1080" timestamp="1597738263125" />
+    <state width="1804" height="364" key="GridCell.Tab.1.left" timestamp="1597881264878">
+      <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="290" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594713237029" />
-    <state width="1877" height="290" key="GridCell.Tab.1.right" timestamp="1594713237030">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1804" height="364" key="GridCell.Tab.1.left/73.0.1847.1080/1920.0.1920.1050@1920.0.1920.1050" timestamp="1597881264877" />
+    <state width="1804" height="364" key="GridCell.Tab.1.left/73.0.1847.1080/1920.0.1920.1050@73.0.1847.1080" timestamp="1597738263125" />
+    <state width="1804" height="364" key="GridCell.Tab.1.right" timestamp="1597881264878">
+      <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="290" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594713237030" />
-    <state x="2381" y="164" key="SettingsEditor" timestamp="1594184402539">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1804" height="364" key="GridCell.Tab.1.right/73.0.1847.1080/1920.0.1920.1050@1920.0.1920.1050" timestamp="1597881264878" />
+    <state width="1804" height="364" key="GridCell.Tab.1.right/73.0.1847.1080/1920.0.1920.1050@73.0.1847.1080" timestamp="1597738263125" />
+    <state x="516" y="170" key="SettingsEditor" timestamp="1597738069785">
+      <screen x="73" y="0" width="1847" height="1080" />
     </state>
     <state x="2381" y="164" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594184402539" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1594701826436">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="516" y="170" key="SettingsEditor/73.0.1847.1080/1920.0.1920.1050@73.0.1847.1080" timestamp="1597738069785" />
+    <state x="607" y="262" key="Vcs.Push.Dialog.v2" timestamp="1599182976744">
+      <screen x="77" y="0" width="1843" height="1080" />
     </state>
     <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594701826436" />
-    <state x="2708" y="199" width="632" height="584" key="find.popup" timestamp="1594692569073">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="2472" y="255" key="Vcs.Push.Dialog.v2/73.0.1847.1080/1920.0.1920.1050@1920.0.1920.1050" timestamp="1597799901235" />
+    <state x="607" y="262" key="Vcs.Push.Dialog.v2/77.0.1843.1080/1920.0.1920.1050@77.0.1843.1080" timestamp="1599182976744" />
+    <state x="2708" y="201" width="632" height="590" key="find.popup" timestamp="1597805140793">
+      <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state x="2708" y="199" width="632" height="584" key="find.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594692569073" />
-    <state x="2614" y="307" key="git4idea.merge.GitPullDialog" timestamp="1594363760671">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="2708" y="201" width="632" height="590" key="find.popup/73.0.1847.1080/1920.0.1920.1050@1920.0.1920.1050" timestamp="1597805140793" />
+    <state x="831" y="207" width="608" height="607" key="find.popup/73.0.1847.1080/1920.0.1920.1050@73.0.1847.1080" timestamp="1597797840040" />
+    <state x="2614" y="310" key="git4idea.merge.GitPullDialog" timestamp="1597886852609">
+      <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state x="2614" y="307" key="git4idea.merge.GitPullDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594363760671" />
+    <state x="2614" y="310" key="git4idea.merge.GitPullDialog/73.0.1847.1080/1920.0.1920.1050@1920.0.1920.1050" timestamp="1597886852609" />
     <state x="2521" y="246" width="700" height="530" key="recent.locations.popup" timestamp="1594608661857">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

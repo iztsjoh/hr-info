@@ -55,5 +55,5 @@ test {
     useJUnitPlatform()
 }
 bootJar {
-    archiveFileName = 'ibiz-hr-info-7700.jar'
+    archiveFileName = 'ibiz-hr-info-7701.jar'
 }
