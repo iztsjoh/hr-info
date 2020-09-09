@@ -382,17 +382,10 @@
 
 		INSERT INTO SSYS252T
 		(
-		USER_ID,		SEQ,      USER_GRP_CD,		AUTH_DEPT_ID,		AVL_START_DATE,		AVL_END_DATE
+		USER_ID,		SEQ,      USER_GRP_CD,		AUTH_DEPT_ID,		SYS_USE_AUTH_CD
 		)
 		SELECT
-		#{empId},   NVL(MAX(SEQ), 0) + 1, 'GN', #{bltoDeptId}
-		,CASE WHEN #{compEncmDate} > '20181001' THEN  #{compEncmDate} ELSE '20181001' END
-		<if test="retDate == null or retDate ==''">
-			, '99991231'
-		</if>
-		<if test="retDate != null and retDate !=''">
-			, #{retDate}
-		</if>
+		#{empId},   NVL(MAX(SEQ), 0) + 1, 'GN', #{bltoDeptId}, 'C'
 		FROM SSYS252T
 		WHERE USER_ID = #{empId}
 
@@ -569,24 +562,6 @@
 	        AND CUST_REL_TYPE_CD = 'A1'
 
 	</update>
-
-
-	<update id="updateUserAuthForDept"
-			parameterType="com.ibiz.api.model.EmployeeResultIFVO">
-
-		UPDATE SSYS252T
-		SET AVL_START_DATE = CASE WHEN #{compEncmDate} > '20181001' THEN #{compEncmDate} ELSE '20181001' END
-		<if test="retDate != null and retDate !=''">
-			,AVL_END_DATE = #{retDate}
-		</if>
-		<if test="retDate == null or retDate ==''">
-			,AVL_END_DATE = '99991231'
-		</if>
-		WHERE USER_ID = #{empId}
-		AND AUTH_DEPT_ID = #{bltoDeptId}
-
-	</update>
-
 
     <update id="updateUserSystem"
             parameterType="com.ibiz.api.model.EmployeeIFVO">

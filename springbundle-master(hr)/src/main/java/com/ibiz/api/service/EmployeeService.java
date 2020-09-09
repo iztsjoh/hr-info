@@ -326,7 +326,6 @@ public class EmployeeService {
                     nResult = hrIFDAO.insertUserSystem(user);
 
                 //3.2 사용자 권한
-                nResult = hrIFDAO.updateUserAuthForDept(user);
 
                 if(nResult < 1)
                     nResult = hrIFDAO.insertUserAuthForDept(user);

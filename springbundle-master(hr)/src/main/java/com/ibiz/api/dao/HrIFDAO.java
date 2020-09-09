@@ -96,10 +96,6 @@ public class HrIFDAO {
         return mybatis.update("HrIFMapper.updateUserInfo", ifEmployeeInfo);
     }
 
-    public int updateUserAuthForDept(EmployeeResultIFVO ifEmployeeInfo) {
-        return mybatis.update("HrIFMapper.updateUserAuthForDept", ifEmployeeInfo);
-    }
-
     public int updateUserSystem(EmployeeResultIFVO ifEmployeeInfo) {
         return mybatis.update("HrIFMapper.updateUserSystem", ifEmployeeInfo);
     }
