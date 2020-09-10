@@ -850,7 +850,7 @@
 				AND (SELL_OCR_YN = 'Y'
 				OR EXISTS (SELECT 1 FROM HMST110T B   --★하위에 매출부서를 포함하고 있는 조직
 				WHERE 1 = 1
-				<if test='userGrpCd == "BS" or priorUserGrpCd == "BS" or userGrpCd == "BSR" or priorUserGrpCd == "BSR"'>
+				<if test='userGrpCd == "BS" or priorUserGrpCd == "BS" or userGrpCd == "BSR" or priorUserGrpCd == "BSR" or userGrpCd == "BRR" or priorUserGrpCd == "BRR"'>
 					AND SELL_OCR_YN = 'Y'
 				</if>
 				START WITH B.DEPT_ID = A.DEPT_ID AND CRIT_YEAR = A.CRIT_YEAR
@@ -881,7 +881,7 @@
 				AND (SELL_OCR_YN = 'Y'
 				OR EXISTS (SELECT 1 FROM HMST100T B   --★하위에 매출부서를 포함하고 있는 조직
 				WHERE 1 = 1
-				<if test='userGrpCd == "BS" or priorUserGrpCd == "BS" or userGrpCd == "BSR" or priorUserGrpCd == "BSR"'>
+				<if test='userGrpCd == "BS" or priorUserGrpCd == "BS" or userGrpCd == "BSR" or priorUserGrpCd == "BSR" or userGrpCd == "BRR" or priorUserGrpCd == "BRR"'>
 					AND SELL_OCR_YN = 'Y'
 				</if>
 				START WITH B.DEPT_ID = A.DEPT_ID
